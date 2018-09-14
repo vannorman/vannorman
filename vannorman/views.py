@@ -116,23 +116,23 @@ def home(request):
 			{"img":"sf8.png"},
 		],
 	})
-	obj['works'].append({
-		"title" : "Village Builder",
-		"background" : "vb1.png",
-		"position" : "Developer, Designer",
-		"link" : "",
-		"year" : "2017",
-		"subtitle" : "",
-		"description" : "A LightLodges.com production for communal coherence, village building and sustainable communities. Precursor to a live Mixed Reality gameshow coming 2018", 
-		"video" : { "source": "https://player.vimeo.com/video/246606943", "image" : "vb1.png" },
-	
-		"images" : [	
-			{"img":"vb1.png"},
-			{"img":"vb2.png"},
-			{"img":"vb3.png"},
-			{"img":"vb4.png"},
-		],	
-	})
+#	obj['works'].append({
+#		"title" : "Village Builder",
+#		"background" : "vb1.png",
+#		"position" : "Developer, Designer",
+#		"link" : "",
+#		"year" : "2017",
+#		"subtitle" : "",
+#		"description" : "A LightLodges.com production for communal coherence, village building and sustainable communities. Precursor to a live Mixed Reality gameshow coming 2018", 
+#		"video" : { "source": "https://player.vimeo.com/video/246606943", "image" : "vb1.png" },
+#	
+#		"images" : [	
+#			{"img":"vb1.png"},
+#			{"img":"vb2.png"},
+#			{"img":"vb3.png"},
+#			{"img":"vb4.png"},
+#		],	
+#	})
 	obj['works'].append({
 		"title" : "Humon AI COMPANY",
 		"video" : { 
