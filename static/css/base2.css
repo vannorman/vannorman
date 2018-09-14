@@ -1,0 +1,154 @@
+body {
+	margin: 0;	
+	background-size:cover;
+	 background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+#top {
+	position:relative;
+	vertical-align:top;
+	display:block;
+	margin:0 auto;
+	height:120px;
+	width:960px;
+	text-align:left;
+}
+
+
+#top .pic1 {
+	display:inline-block;
+    position:relative;
+    margin: 0 auto;
+    top:15px;
+    left:0;
+    width:97px; 
+    height:97px;
+/*    background-image:url('/static/img/bus-card-potrait-v4.png'); */
+/*    border:1px solid gray; */
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+
+    -webkit-border-radius: 300px;
+    -moz-border-radius: 300px;
+    border-radius: 300px; 
+
+}
+
+#top .name {
+	display:inline-block;
+	line-height:97px;
+	height: 97px;
+	width:300px;
+    position:relative;
+    text-align:left;
+    font-size:35.7px;
+    font-weight:600;
+	background-image:url('/static/img/lambo.png');
+	background-size: 100%;
+	background-repeat:no-repeat;
+}
+
+
+#top .text .subtitle {
+    position:relative;
+    margin: 0 auto;
+    text-align:center;
+	top:-10px;
+	
+}
+
+
+#top .links {
+	position:relative;
+	vertical-align:top;
+	top:0;
+	display:inline-block;
+	height:70px;
+	left:40px;
+	overflow:hidden;
+	width:520px;
+}
+
+
+
+#top ul {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+#top ul li {
+	margin:0;
+	padding:0;
+
+	display:inline-block;
+	width:140px;
+	line-height:70px;
+	font-size:18px;
+	font-weight:bold;
+	text-align:center;
+	color:white;
+	margin-right:-17px;
+	transition: .2s all;
+	-webkit-clip-path: polygon(9% 0, 100% 0, 100% 100%, 0% 100%);
+	clip-path: polygon(9% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+#top ul li:nth-child(1) { background-color: rgb(185,65,0); } 
+#top ul li:nth-child(2) { background-color: rgb(200,80,0); } 
+#top ul li:nth-child(3) { background-color: rgb(215,95,0); } 
+#top ul li:nth-child(4) { background-color: rgb(230,110,0); } 
+#top ul: hover {
+	cursor:pointer;
+
+}
+#top ul li .inner:hover { cursor:pointer; }
+#top ul li:nth-child(1):hover { background-color: rgb(155,55,0) ; }
+#top ul li:nth-child(2):hover { background-color: rgb(175,65,0) ; }
+#top ul li:nth-child(3):hover { background-color: rgb(195,75,0) ; }
+#top ul li:nth-child(4):hover { background-color: rgb(205,85,0) ; }
+
+/* inner */
+#top ul li .inner {
+	-webkit-clip-path: polygon(10% 0, 100% 0, 100% 100%, 1% 100%);
+	clip-path: polygon(10% 0, 100% 0, 100% 100%, 1% 100%);
+	overflow:hidden;
+	z-index:100;
+}
+
+
+#ninja {
+	background: url('/static/img/ninja.png') no-repeat center;
+	width:25px;
+	height:25px;
+	display:inline-block;
+	position:relative;
+	bottom:-4px;
+	background-size:contain;
+	margin-right:5px;
+}
+#sky1 {
+	position:absolute;
+	left: 0;
+	top:12px;
+	width:calc(50% - 220px);
+	height:110px;
+	background-image:url('/static/img/sf.png');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position-x:0%;
+}
+#sky2 {
+	position:absolute;
+	right: calc(50% - 700px);
+	width:500px;
+	height:110px;
+	background-image:url('/static/img/la.png');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+}
+
+
+

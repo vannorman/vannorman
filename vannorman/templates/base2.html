@@ -1,0 +1,74 @@
+{% load static %}
+	<head>
+		<title>  </title>
+<link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon_z.png" />		
+	<meta name="google-site-verification" content="KPrCTIkFg3RCIWPoYvQO3QBnFcEqKflrEQI_6ztrwzE" />
+	{% block styles %}
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:200,400,600,800" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+		<link rel='stylesheet' href="/static/css/vimeoPopup.css{{version}}" %} type='text/css'>
+	
+		<link rel='stylesheet' href="/static/css/base.css{{version}}" type='text/css'>
+		<link rel='stylesheet' href="/static/css/sine.css{{version}}" type='text/css'>
+	{% endblock %}
+
+	{% block scripts %}
+		<script src='{% static "js/jquery-1.11.0.min.js" %}'></script>
+		<script src='static/js/vimeoPopup.js'|add:version|safe ></script>
+		<script src='static/js/scrollcontrol.js'|add:version|safe ></script>
+		<script src='static/js/editor.js'|add:version|safe ></script>
+		<script src='static/js/sine.js'|add:version|safe ></script>
+	{% endblock %}
+	</head>
+<body>
+
+	<div id="vimeoPopupContainer" style="" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+		<div id="vimeoPopup" style="" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+			<iframe id="vimeo_iframe" src="https://player.vimeo.com/video/178361265" style="margin: 0 auto;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		</div>
+	</div>
+
+<div id="container">
+	<div id="top">
+		<div class="name">  </div>
+<!--	<div class="text">
+			<div class="title">Charlie Zannorman</div>
+			<div class="subtitle">VR Ninja <span id="ninja"></span>Full stack developer</div>
+		</div>	 -->
+		<div class="links">
+			<ul>
+				<li>
+					<div class="inner">
+					HOME
+					</div>
+				</li>
+				<li>
+					<div class="inner">
+					PORTFOLIO
+					</div>
+				</li>
+				<li>
+					<div class="inner">
+					BLOG
+					</div>
+				</li>
+				<li>
+					<div class="inner">
+					CONTACT
+					</div>
+				</li>
+<!--				<li>
+					<div class="inner">
+					RESUME
+					</div>
+				</li>-->
+			</ul>
+			<canvas id="canvas"></canvas>
+		</div>
+	
+	</div>
+
+</div>
+	{% block content %}
+	{% endblock %}
+</div>

@@ -1,0 +1,36 @@
+{% load static %}
+{% block head %}
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+	<link rel='stylesheet' href='/static/css/blog.css' />
+	<script src='{% static "js/jquery-1.11.0.min.js" %}'></script>
+
+	<script type='text/javascript' src='/static/js/blog.js'>
+	
+	</script>
+</head>
+<div id="top"></div>
+{% endblock %}
+<html>
+<div id="mainContainer">
+	{% block content %}
+	<div id="blogList">
+		<h1> I am a pragmatic VR evangelist. My blog focuses on where the rubber meets the road for VR in the real world. </h1>
+		<ul>
+		{% for blog in blogs %}	
+			<li> {{blog.date}}: <a href="/blog/{{blog.url}}">{{blog.title}}</a></li>
+		{% endfor %}
+		</ul>
+	{% endblock %}
+	</div>
+	{% block footer %}
+	<div id="footer">
+			<a href="/">vannorman.com</a>
+		</div>
+
+	{% endblock %}
+
+</div>
+</html>
+

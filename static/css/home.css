@@ -1,0 +1,108 @@
+
+body {
+	height:100%;
+}
+html {
+	height:100%;
+}
+
+@font-face {
+    font-family: 'gc';
+    src: url('../fonts/gc.ttf');
+}
+
+* {
+font-family: 'Open Sans', sans-serif;
+}
+*:focus {
+    outline: none;
+}
+
+#container {
+	position:relative;
+	width:100%;
+	margin: 0 auto;
+	text-align:center;
+	height:100%;
+}
+	
+#navLinks {
+	position:fixed;
+	left:0;
+	height:100%;
+	width:30%;
+}
+
+#content {
+	position:relative;
+	left:30%;
+	width:70%;
+
+}
+
+.tab {
+	position:relative;
+	margin:0;
+	color: rgb(96,108,136); 
+	height:100%;	
+	
+	padding:150px; 
+	padding-left:0; 
+}
+
+#hello {
+	position:absolute; top:calc(50% - 300px);
+}
+
+#hello .title {
+	position:relative;
+	font-size:50px;
+}
+
+@media all and (max-width: 960px) {
+    #navLinks {
+		width:250px;
+	}
+	#content {
+		left:250px;
+		width:calc(100% - 250px);
+	}
+}
+
+#tab_about {
+	padding-left:80px;
+
+}
+
+#tab_about p {
+	font-size:20px;
+	max-width:650px;
+}
+
+#tab_portfolio {
+	padding:0;
+}
+
+#tab_contact {
+	height:100%;
+}
+
+#tab_contact .email {
+	width:200px;	
+	height:40px;
+	position:relative;
+	top:calc(50% - 20px);
+	font-weight:bold;
+	margin-left:calc(5% + 250px);
+	margin-left:30%;
+	font-size:25px;
+}
+#tab_contact .email a, #tab_contact .email a:visited {
+	transition: .3s all;
+	text-decoration:none;
+	color: rgb(96,108,136); 
+}
+#tab_contact .email a:hover {
+	color: rgb(205,100,100);
+}
+

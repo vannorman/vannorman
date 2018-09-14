@@ -1,0 +1,127 @@
+{% extends 'base.html' %}
+{% load static %}
+	<head>
+		<title> Charlie Zannorman </title>
+<link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon_z.png" />		
+	<meta name="google-site-verification" content="KPrCTIkFg3RCIWPoYvQO3QBnFcEqKflrEQI_6ztrwzE" />
+	{% block styles %}
+		{{ block.super }}
+		<link rel='stylesheet' href="/static/css/home.css{{version}}" type='text/css'>
+		<link rel='stylesheet' href="/static/css/imageviewer.css{{version}}" type='text/css'>
+	{% endblock %}
+
+	{% block scripts %}
+		{{ block.super }}
+		<script src='static/js/home.js'|add:version|safe %}'></script>
+		<script src='static/js/imageviewer.js'|add:version|safe ></script>
+	{% endblock %}
+	</head>
+<body>
+
+{% block content %}
+	<div id="imageOverlay">
+		<div class="currentImage"></div>
+		<div class="x">X</div>
+	</div>
+
+	<div id="content">
+		<div id="works">
+			<ul>
+				{% for item in works %}
+					<li class='item'>
+						<div class='background' style="background-image:url('/static/img/{{item.background}}')"></div>
+						<div class="backgroundGradient"></div>
+						<div class='content'>
+							<div class="top1">
+								<div class='title'><a href={{item.link}} target="_blank"> {{ item.title }} </a></div>
+<!--
+								<div class='subtitle'> {{ item.subtitle }}	</div>
+-->
+								<div class="description">
+									{{ item.description|safe }} 
+									&#8212; 
+									{{ item.position }}
+								</div>
+								<div class="watchVideo2"><a href=javascript:void(0); onclick=javascript:VIMEO_OVERLAY.Show('{{item.video.source}}'); >Demo Video		&#9654;</a></div>	
+<!--
+									<div class="viewDetails2"><a href=javascript:void(0); >View details		&#9654;</a></div>	
+-->
+								</div>
+						
+						<div class="imageListContainer">
+								<ul class='imageList'>
+									
+								{% for image in item.images %}
+									<li>
+										<a class="imageLink" href=javascript:void(0) onclick=javascript:IMAGE_VIEWER.Show(this); target='_blank' name='{{image.img}}'> 
+											<div class="img {{image.class}}" style='background-image:url("/static/img/{{ image.img }}");' ></div>
+											<div class='imageHover {{image.class}}'></div>
+										</a>
+										
+									</li>
+								{% endfor %}
+							</div>
+						</ul>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+			<div id="tabContact" class='tab'>
+				<div class="x">X</div>
+				<div class="cont">
+					<ul>
+						<li><br /></li>
+						{% for item in social %} 
+							<li> <a style="color:blue;" href="{{item.link}}" target="_blank" >{{ item.name }}</a></li>
+						{% endfor %}
+						<li> <br /><a style='color:blue' href='mailto:charlie@vannorman.com?subject=Hello!' target="_blank">charlie@vannorman.com </a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="tabResume" class='tab'>
+				<div class="x">X</div>
+				<div class="cont" style="margin:0 auto;width:700px; text-align:center;padding-top:80px;margin-top:100px;background-color:white;font-size:1.4em;overflow:visible;height:120px;">
+					<a target="_blank" href="/static/img/resume.pdf" style='color:#77f'>(PDF download) Resume</a>
+<!--					<object width="85%" height="85%" style='overflow:visible;min-height:101%;' data="/static/img/resume.pdf"></object>-->
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+	<div id="works2" style="width:960px; margin:0 auto; padding:50px 0;">
+		<h1> More software & games </h1>
+		<ul>
+			{% for item in works2 %}
+				<li>
+					<h3> {{ item.title }}	</h3>
+					{{ item.description }}
+
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+	<div id="works3"  style="width:960px; margin:0 auto; padding:50px 0;">
+		<h1> Other works </h1>
+		<ul>
+			{% for item in works3 %}
+				<li>
+					<h3> {{ item.title }}	</h3>
+					{{ item.description }}
+
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+
+</div>
+</body>
+
+{% endblock %}
+
+
+
+
+
+

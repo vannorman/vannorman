@@ -1,0 +1,44 @@
+#imageOverlay {
+	position:fixed;
+	lefT:0;
+	top:0;
+	background-color:rgba(0,0,0,0.8);
+	width:100%;
+	height:100%;
+	z-index:200;
+	display:none;
+}
+
+#imageOverlay .x {
+	font-family: 'Orbitron', sans-serif;
+	position:absolute;
+	top:0px;
+	right:0px;
+	width:80px;
+	height:80px;
+	border:1px solid gray;
+	background-color:rgba(255,255,255,.5);
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	transition: .2s all;
+	font-size:3em;
+	font-weight:bold;
+	line-height:93px;
+	text-align:center;
+}
+#imageOverlay .x:hover {
+	
+	background-color:gray;
+	cursor:pointer;
+}
+#imageOverlay .currentImage {
+	position:relative;
+	margin: 0 auto;
+	width: 95%;
+	top: 2.5%;
+	height:95%;
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+}
