@@ -79,27 +79,10 @@ def home(request):
 	obj = {}
 	obj['works'] = []
 	obj['works'].append({
-		"title" : "Enterprise Training in VR",
-		"background" : "mm_background.jpg",
-		"position" : "Consultant, Designer, Programmer",
-		"link" : "http://tryvantagepoint.com/",
-		"description" : "As CTO I led the development of Vantage Point, a VR harassment training app; studies show that VR is highly effective at training, learning, empathy, and behavior change when compared to video. Note the video is private at the request of the company.",
-		"video" : { 
-			"source": "https://player.vimeo.com/video/294705276", 
-			"image" : "mm_background.jpg" 
-		},
-		"images" : [	
-			{"img":"mm_1.jpg"},
-			{"img":"mm_2.jpg"},
-			{"img":"mm_3.jpg"},
-			{"img":"mm_4.jpg"},
-		],
-	})
-
-	obj['works'].append({
 		"title" : "Gamified AR mesh mapping",
 		"background" : "mm_background.jpg",
 		"position" : "Consultant, Designer, Programmer",
+                "date" : "2018 Q3",
 		"link" : "http://vertical.ai/",
 		"description" : "PlaceNote is a platform for AR developers, many of whom need prefabs and techniques to get started for guiding the end user to optimal mapping behaviors. I wrote an extension to the PlaceNote SDK that includes prefabs for developers to help them achieve this.",
 		"video" : { 
@@ -119,7 +102,7 @@ def home(request):
 		"background" : "mm_background.jpg",
 		"position" : "Developer, Graphic Designer",
 		"link" : "https://foresight.org/nanotechnology-leading-to-molecular-machines/",
-		"year" : "2017",
+                "date" : "2018 Q1",
 #		"subtitle" : "A Virtual Reality fitness game in collaboration with Alex Goldman",
 		"description" : "Based on projects designed by the Foresight Institute's May 2018 Molecular Machines workshop",
 		"video" : { 
@@ -134,11 +117,30 @@ def home(request):
 		],
 	})
 	obj['works'].append({
+		"title" : "Enterprise Training in VR",
+		"background" : "mm_background.jpg",
+		"position" : "Consultant, Designer, Programmer",
+                "date" : "2018 Q2",
+		"link" : "http://tryvantagepoint.com/",
+		"description" : "As CTO I led the development of Vantage Point, a VR harassment training app; studies show that VR is highly effective at training, learning, empathy, and behavior change when compared to video. Note the video is private at the request of the company.",
+		"video" : { 
+			"source": "https://player.vimeo.com/video/294705276", 
+			"image" : "mm_background.jpg" 
+		},
+		"images" : [	
+			{"img":"mm_1.jpg"},
+			{"img":"mm_2.jpg"},
+			{"img":"mm_3.jpg"},
+			{"img":"mm_4.jpg"},
+		],
+	})
+
+	obj['works'].append({
 		"title" : "Space Frog, a VR Active Game",
 		"background" : "spacefrog_background.jpg",
 		"position" : "Developer, Game Designer",
 		"link" : "https://www.facebook.com/spacefrogvr/",
-		"year" : "2017",
+		"date" : "2018 Q1 - Q4",
 #		"subtitle" : "A Virtual Reality fitness game in collaboration with Alex Goldman",
 		"description" : "A fitness game in collaboration with Alex Goldman, guaranteed to make you sweat",
 		"video" : { 
@@ -178,7 +180,7 @@ def home(request):
 		"background" : "hi3.png",
 		"position" : "Developer",
 		"link" : "",
-		"year" : "2017",
+		"date" : "2017 Q4",
 		"subtitle" : "",
 		"description" : "Robots are controlled using human inputs in Virtual Reality, and can be trained on the data gathered by human inputs (using Vive controllers)",
 		"images" : [	
@@ -199,7 +201,7 @@ def home(request):
 		"link" : "http://vertical.ai/",
 		"description" : "As a big believer in video games as the best medium for learning, I also believe VR takes this one step further. This is an experimental immersive experience to teach about the makeup of a cell with labeled organelles.",
 		"video" : { 
-			"source": "https://vimeo.com/294705147", 
+			"source": "https://player.vimeo.com/video/294705147", 
 			"image" : "mm_background.jpg" 
 		},
 		"images" : [	
@@ -231,7 +233,7 @@ def home(request):
 		"background" : "mouse4.png",
 		"video" : { "source": "https://player.vimeo.com/video/117482417", "img" : "3scan_1.jpg" },
 		"link" : "https://3scan.com",
-		"year" : "2015",
+		"date" : "2015 Q1",
 		"position" : "Developer",
 		"subtitle" : "Fly through a real mouse brain",
 		"description" : "Using a cubic centimeter of a mouse brain imaged with 3Scan's equipment, I made a virtual reality tour through the vasculature and a mini-game to destroy blood clots. This was on exhibit during the Exploratorium's science week in 2015.",
@@ -260,7 +262,7 @@ def home(request):
 		"video" : { "source": "https://player.vimeo.com/video/219464062", "img" : "smw_1.jpg" },
 		"background" : "smw_2.jpg",
 		"link" : "https://supermathworld.com",
-		"year" : "2016 - 2017",
+		"date" : "2016 Q1 - 2017 Q3",
 		"position" : "Founder, CTO",
 #		"subtitle" : "A WebGL based math sandbox",
 		"description" : "A math sandbox video game for grades 2 - 8 which allows users to edit, create, and share game content from directly inside the application, natively in a web browser.",
@@ -282,7 +284,7 @@ def home(request):
 		"video" : { "source": "https://player.vimeo.com/video/73754523", "img" : "mb_1.jpg" },
 		"background" : "mb_1.png",
 		"link" : "https://mathbreakers.com",
-		"year" : "2013 - 2015",
+		"date" : "2013 Q3 - 2015 Q4",
 		"position" : "Co-Founder",
 		"subtitle" : "A math puzzle platformer for grades 2 - 8",
 		"description" : "We partnered with some of the biggest names in math education, including Dan Meyer and Jo Boaler, to discover the intersection between 3-D action gaming and elementary mathematics. The result was a truly immersive, stress free math game that kids love to play.",
@@ -298,46 +300,46 @@ def home(request):
 			{ "img" : "mb_4.jpg"}
 		],	
 		})
-	obj['works2'] = []
-	obj['works2'].append({
-		"title" : "Coffee Command ARKit",
-		"position" : "Developer/Designer",
-		"link" : "",
-		"year" : "2017",
-		"subtitle" : "A passive multiplayer base control game",
-		"description" : "Your phone becomes a ship which can attack bases and drones at your favorite coffee shop in a 3-D shooter style game. Once you clear the area, you can build your own turrets to deter other players and control the area, and mine resources from areas you control to become more powerful.",
-		"images" : [
-			{"img":"coffeecommand1.png"},
-			{"img":"coffeecommand2.png"},
-			{"img":"coffeecommand3.png"},
-		],	
-	})
-	obj['works2'].append({
-		"title" : "Magic Hands VR",
-		"position" : "Developer/Designer",
-		"link" : "",
-		"year" : "2017",
-		"subtitle" : "An action game for Vive/Oculus + LeapMotion",
-		"description" : "Use your hands to cast spells and open portals to other worlds.",
-		"images" : [	
-			{"video" : { "source": "https://player.vimeo.com/video/241614660", "image" : "" }},
-			{"img":"magichands1.png"},
-			{"img":"magichands2.png"}
-		],	
-	})
-	obj['works2'].append({
-		"title" : "Space Archer VR",
-		"position" : "Developer/Designer",
-		"link" : "",
-		"year" : "2017",
-		"subtitle" : "An action game for Vive/Oculus",
-		"description" : "Fly around in 3D space and shoot drones and space-men with your bow and arrow.",
-		"images" : [	
-			{"video" : { "source": "https://player.vimeo.com/video/230824116", "image" : "" }},
-			{"img":"archer2.png"},
-			{"img":"archer1.png"}
-		],	
-	})
+#	obj['works2'] = []
+#	obj['works2'].append({
+#		"title" : "Coffee Command ARKit",
+#		"position" : "Developer/Designer",
+#		"link" : "",
+#		"year" : "2017",
+#		"subtitle" : "A passive multiplayer base control game",
+#		"description" : "Your phone becomes a ship which can attack bases and drones at your favorite coffee shop in a 3-D shooter style game. Once you clear the area, you can build your own turrets to deter other players and control the area, and mine resources from areas you control to become more powerful.",
+#		"images" : [
+#			{"img":"coffeecommand1.png"},
+#			{"img":"coffeecommand2.png"},
+#			{"img":"coffeecommand3.png"},
+#		],	
+#	})
+#	obj['works2'].append({
+#		"title" : "Magic Hands VR",
+#		"position" : "Developer/Designer",
+#		"link" : "",
+#		"year" : "2017",
+#		"subtitle" : "An action game for Vive/Oculus + LeapMotion",
+#		"description" : "Use your hands to cast spells and open portals to other worlds.",
+#		"images" : [	
+#			{"video" : { "source": "https://player.vimeo.com/video/241614660", "image" : "" }},
+#			{"img":"magichands1.png"},
+#			{"img":"magichands2.png"}
+#		],	
+#	})
+#	obj['works2'].append({
+#		"title" : "Space Archer VR",
+#		"position" : "Developer/Designer",
+#		"link" : "",
+#		"year" : "2017",
+#		"subtitle" : "An action game for Vive/Oculus",
+#		"description" : "Fly around in 3D space and shoot drones and space-men with your bow and arrow.",
+#		"images" : [	
+#			{"video" : { "source": "https://player.vimeo.com/video/230824116", "image" : "" }},
+#			{"img":"archer2.png"},
+#			{"img":"archer1.png"}
+#		],	
+#	})
 #	obj['works'].append({
 #		"title" : "Fitness Cube VR",
 #		"link" : "",
@@ -350,20 +352,20 @@ def home(request):
 #		],	
 #	})
 
-	obj['works2'].append({
-		"title" : "Radian.ai",
-		"link" : "http://radian.ai",
-		"year" : "2017",
-		"position" : "Consultant",
-		"description" : "Consulting for VR and AR applications, including project management, enterprise sales, experience design, and full stack development. ",
-		"responsibilities" : 
-		[
-		],
-		"images" : [
-			{ "img" : "radian_logo.png", "class" : "contain square", "link" : "http://radian.ai"},
-		],	
-	})
-	obj['works2'].append({
+#	obj['works2'].append({
+#		"title" : "Radian.ai",
+#		"link" : "http://radian.ai",
+#		"year" : "2017",
+#		"position" : "Consultant",
+#		"description" : "Consulting for VR and AR applications, including project management, enterprise sales, experience design, and full stack development. ",
+#		"responsibilities" : 
+#		[
+#		],
+#		"images" : [
+#			{ "img" : "radian_logo.png", "class" : "contain square", "link" : "http://radian.ai"},
+#		],	
+#	})
+	obj['works'].append({
 		"title" : "Fractal Games",
 		"link" : "https://fractalgames.com (old)",
 		"year" : "2010 - 2011",
@@ -384,7 +386,7 @@ def home(request):
 			{"img" : "sls2.png"}
 			],	
 		})
-	obj['works2'].append({
+	obj['works'].append({
 		"title" : "Startup Grid (Hactus)",
 		"link" : "https://startupgrid.net",
 		"year" : "2012",
@@ -392,7 +394,7 @@ def home(request):
 		"description" : "One of my first solo projects, a search-and-filter website for exploring the startup landscape and searching for new opportunities. The startup data is scraped from CrunchBase. The original vision was to provide startups a go-to resource for funding, incubators, and other opportunities.",
 		"images" : [{"img":'startupgrid.png', "link":"http://startupgrid.net"}],	
 		})
-	obj['works2'].append({
+	obj['works'].append({
 		"title" : "Code Hero",
 		"link" : "https://codehero.org",
 		"year" : "2011",
@@ -403,40 +405,15 @@ def home(request):
 		],	
 
 	})	
-	obj['works3'] = []
-	obj['works3'].append({
-		"title" : "Tech program director",
-		"description" : "I designed the curriculum for Synapse middle school in Menlo Park and taught kids how to program and make video games."
-	})	
-	obj['works3'].append({
-		"title" : "Sales",
-		"description" : "I was the top leasing agent during a lease-up of a 180 unit luxury apartment complex in SoMa, San Francisco."
-	})	
-	obj['works3'].append({
-		"title" : "Property Manager",
-		"description" : "I managed two residential apartment complexes for Alexander Forrest Investments, where I rehabilitated each property improving occupancy and collections from about 50% to 95%+ at each property over ~4 months."
-	})	
-	obj['works3'].append({
-		"title" : "Sales",
-		"description" : "I sold candies and soft drinks for Manidsa L.A. to food truck supply warehouses."
-	})	
-#	obj['works3'].append({
-#		"title" : "Real Estate Agent",
-#		"description" : "I was a licenesed agent in 2007 (right after the housing crash)."
-#	})	
-	obj['works3'].append({
-		"title" : "Teacher",
-		"description" : "I taught English in China during college."
-	})	
-						
-	obj['social'] = [
-		{ "name" : "github.com/vannorman", "link" : "https://github.com/vannorman" },
-		{ "name" : "linkedin.com/in/vannorman", "link" : "https://www.linkedin.com/in/vannorman" },
-		{ "name" : "facebook.com/vannorman", "link" : "https://www.facebook.com/vannorman" },
-		{ "name" : "twitter.com/@vannorman", "link" : "https://twitter.com/@vannorman" },
-		{ "name" : "angel.co/supermathworld", "link" : "https://angel.co/supermathworld" },
-		{ "name" : "soundcloud.com/vannorman", "link" : "https://soundcloud.com/vannorman" },
-	]
+					
+#	obj['social'] = [
+#		{ "name" : "github.com/vannorman", "link" : "https://github.com/vannorman" },
+#		{ "name" : "linkedin.com/in/vannorman", "link" : "https://www.linkedin.com/in/vannorman" },
+#		{ "name" : "facebook.com/vannorman", "link" : "https://www.facebook.com/vannorman" },
+#		{ "name" : "twitter.com/@vannorman", "link" : "https://twitter.com/@vannorman" },
+#		{ "name" : "angel.co/supermathworld", "link" : "https://angel.co/supermathworld" },
+#		{ "name" : "soundcloud.com/vannorman", "link" : "https://soundcloud.com/vannorman" },
+#	]
 
 	return renderWithNav(request,'home.html', obj)
 

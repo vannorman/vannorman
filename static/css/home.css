@@ -17,7 +17,7 @@
 	position:relative;
 	left:22%;
 	width:78%;
-
+	top:calc(50% - 360px);
 }
 
 .tab {
@@ -30,17 +30,23 @@
 	padding-left:0; 
 }
 
-#tab_about p {
+#tab_about p, #tab_hello p {
 	font-size:25px;
 	max-width:750px;
 }
 
 
-#tab_about {
+#tab_about, #tab_hello {
 	min-height:100%;
 	height:auto;
 	padding-left:80px;
+}
+#tab_about {
 	top:100px;
+}
+
+#tab_hello {
+	top:0px;
 }
 
 .tab .title {
@@ -62,6 +68,7 @@
 #tab_portfolio {
 	padding:0;
 	padding-left:80px;
+	top:100px;
 }
 
 #tab_contact {
@@ -71,7 +78,7 @@
 #tab_contact .email {
 	width:350px;	
 	position:relative;
-	top:calc(50% - 155px);
+	top:calc(50% + 50px);
 	left:20%;
 	font-weight:bold;
 	font-size:25px;

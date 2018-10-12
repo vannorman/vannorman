@@ -23,4 +23,24 @@ ul {
 	font-size:25px;
 }
 
+.item .description {
+	width:800px;
+	font-size:22px;
+}
+
+.item .iframe {
+	width:640px;
+	height:360px;
+}
+
+@media all and (max-width: 960px) {
+	.item .description {
+		width:500px;
+		font-size:22px;
+	}
+	.item .iframe {
+		width:50%;
+	}
+}
+
 

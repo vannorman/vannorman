@@ -23,17 +23,26 @@
 {% block content %}
 <div id="content">
 	<div class="tab" id="tab_hello">
-		<div class="title"> Charlie Van Norman </div>
+		<div class="container">
+			<div class="title"> Charlie Van Norman </div>
 
-		<P> Hello! I am a game designer and full stack web developer.</p>
-		<p> I believe the world will be saved by new heroes being born all the time who will have access to greater and greater powers of technology. 100 years ago, a genius being born in a poor village meant they were probably stuck for life. Today, that same person might become a world famous game developer or entrepreneur.
-		</p>
+			<P> Hello! I am a game designer, web developer, and aspiring machine learning wizard.</p>
+			<p> I believe the world will be saved* by new heroes being born all the time, due to ever increasing access to technology. 
+			</p>
+			<p>
+			<i>* By "save the world" I mean "to usher in more [ education, opportunity, peace, awesomeness ..] at scale" </i>
+			</p>
+			</div>
+		
 	</div>
 	<div class="tab" id="tab_about">
-		<p> My favorite mediums are VR and AR; both for enterprise applications and video games. I'm also excited to be studying Machine Learning and Computer Vision.  </p>
+		<div class="title"> About my work </div>
+<!--		<p> Video games had a big impact on me; growing up I would find myself totally engrossed in deep and rich virtual worlds, often with my friends, for hours at a time. Games are one of the highest fidelity ways to create and share experiences. </p> -->
+		<p> My favorite mediums are VR and AR; they are as exciting today as TV was in the 1950s!</p>
 
 		<p> My tools and platforms are Unity, C#, python, Forth, C++, javascript, Photoshop, Sketchup, ffmpeg, Final Cut Pro, HTC Vive, Oculus, Daydream, Android, iOS, and Leap Motion. </p>
-		<p> I also enjoy sales and business development; as an entrepreneur I formed key partnerships for my company, and before my career in software, I worked as a sales agent for real estate and b2b consumer foods. </p>
+		<p> I also value soft skills very highly. To make the biggest impact requires good communication (e.g., sales).
+		</p>
 	</div>
 	<div class="tab" id="tab_portfolio">
 		<div id="portfolio">
@@ -57,14 +66,10 @@
 -->
 							<div class="description">
 								{{ item.description|safe }} 
-								&#8212; 
-								{{ item.position }}
+								<!-- &#8212; 
+								{{ item.position }} -->
 							</div>
-							<div class="watchVideo2"><a href=javascript:void(0); onclick=javascript:VIMEO_OVERLAY.Show('{{item.video.source}}'); >Demo Video		&#9654;</a></div>	
-<!--
-								<div class="viewDetails2"><a href=javascript:void(0); >View details		&#9654;</a></div>	
--->
-							</div>
+						</div>
 					
 					<div class="imageListContainer">
 							<ul class='imageList'>

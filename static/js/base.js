@@ -20,14 +20,14 @@ $(window).scroll(function(e){
 			if (i < tabs.length - 1) {
 				nextTabTop =  tabs[parseInt(i)+1].offset().top;
 			} else if (i > 0) {
-				nextTabTop =  tabs[parseInt(i)-1].offset().top;
+				nextTabTop =  tabs[parseInt(i)].offset().top;
 			}
 			if (i < tabs.length - 1 && dt > 0 && top > nextTabTop - buffer){
 				HighlightTab(buttons[parseInt(i)+1]);
-			} else if (i > 0 && dt < 0 && top < tabs[parseInt(i)].offset().top - buffer){
+			} else if (i > 0 && dt < 0 && top < tabs[parseInt(i)].offset().top - buffer * 2){
 				HighlightTab(buttons[parseInt(i)-1]);
 			} else {
-//				console.log("top;"+top+", next top:"+nextTabTop);
+				console.log("top;"+top+", next top:"+nextTabTop);
 			}
 		} else {
 //			console.log("thistab:"+thisTab+", curtab:"+currentTab);
