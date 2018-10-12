@@ -1,7 +1,104 @@
-
-body {
+#container {
+	position:relative;
+	width:100%;
+	margin: 0 auto;
+	text-align:center;
 	height:100%;
 }
+	
+#navLinks {
+	position:fixed;
+	left:0;
+	height:100%;
+	width:22%;
+}
+
+#content {
+	position:relative;
+	left:22%;
+	width:78%;
+
+}
+
+.tab {
+	position:relative;
+	margin:0;
+	color: rgb(96,108,136); 
+	height:100%;	
+	
+	padding:150px; 
+	padding-left:0; 
+}
+
+#tab_about p {
+	font-size:25px;
+	max-width:750px;
+}
+
+
+#tab_about {
+	min-height:100%;
+	height:auto;
+	padding-left:80px;
+	top:100px;
+}
+
+.tab .title {
+	font-size:50px;
+	margin-bottom:28px;
+}
+
+
+@media all and (max-width: 960px) {
+    #navLinks {
+		width:250px;
+	}
+	#content {
+		left:250px;
+		width:calc(100% - 250px);
+	}
+}
+
+#tab_portfolio {
+	padding:0;
+	padding-left:80px;
+}
+
+#tab_contact {
+	height:100%;
+}
+
+#tab_contact .email {
+	width:350px;	
+	position:relative;
+	top:calc(50% - 155px);
+	left:20%;
+	font-weight:bold;
+	font-size:25px;
+	text-align:center;
+	padding:30px;
+	border:2px solid gray;
+}
+#tab_contact .email a, #tab_contact .email a:visited {
+	transition: .3s all;
+	text-decoration:none;
+	color: rgb(96,108,136); 
+}
+#tab_contact .email a:hover {
+	color: rgb(205,100,100);
+}
+
+
+/* BASE */
+body {
+	height:100%;
+	margin: 0;	
+	background-size:cover;
+	 background-repeat: no-repeat;
+    background-attachment: fixed;
+	overflow-x:hidden;
+}
+
 html {
 	height:100%;
 }
@@ -18,91 +115,65 @@ font-family: 'Open Sans', sans-serif;
     outline: none;
 }
 
-#container {
-	position:relative;
-	width:100%;
-	margin: 0 auto;
-	text-align:center;
-	height:100%;
-}
-	
-#navLinks {
-	position:fixed;
-	left:0;
-	height:100%;
-	width:30%;
-}
 
-#content {
-	position:relative;
-	left:30%;
-	width:70%;
 
+.fadeBg {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#606c88+0,3f4c6b+100;Grey+3D+%232 */
+	background: rgb(96,108,136); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(96,108,136,1) 0%, rgba(63,76,107,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(96,108,136,1) 0%,rgba(63,76,107,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(96,108,136,1) 0%,rgba(63,76,107,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606c88', endColorstr='#3f4c6b',GradientType=0 ); /* IE6-9 */
 }
-
-.tab {
-	position:relative;
+#navLinks ul {
+	font-size:22px;
+	color:white;
+	position:absolute;
+	right:0;
+	top:calc(50% - 125px);
+	height:250px;
+	list-style-type:none;
 	margin:0;
-	color: rgb(96,108,136); 
-	height:100%;	
+	padding-left:0;
 	
-	padding:150px; 
-	padding-left:0; 
 }
 
-#hello {
-	position:absolute; top:calc(50% - 300px);
-}
-
-#hello .title {
+#navLinks ul li {
+	
+	text-align:center;
+	width:150px;
+	padding-right:15px;
+	padding-left:20px;
+	margin: 12px 0;
+	transition: 0.15s all;
 	position:relative;
-	font-size:50px;
+	left:1px;
+}
+.leftSlant {	
+	-webkit-clip-path: polygon(9% 0, 100% 0, 100% 100%, 0% 100%);
+	clip-path: polygon(9% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
-@media all and (max-width: 960px) {
-    #navLinks {
-		width:250px;
-	}
-	#content {
-		left:250px;
-		width:calc(100% - 250px);
-	}
-}
 
-#tab_about {
-	padding-left:80px;
-
-}
-
-#tab_about p {
-	font-size:20px;
-	max-width:650px;
-}
-
-#tab_portfolio {
-	padding:0;
-}
-
-#tab_contact {
-	height:100%;
-}
-
-#tab_contact .email {
-	width:200px;	
-	height:40px;
-	position:relative;
-	top:calc(50% - 20px);
-	font-weight:bold;
-	margin-left:calc(5% + 250px);
-	margin-left:30%;
-	font-size:25px;
-}
-#tab_contact .email a, #tab_contact .email a:visited {
-	transition: .3s all;
-	text-decoration:none;
+#navLinks ul li:hover {
+	cursor:pointer;
+	background-color:white;	
 	color: rgb(96,108,136); 
 }
-#tab_contact .email a:hover {
-	color: rgb(205,100,100);
+
+#navLinks ul li.selected {
+	background-color:white;
+	color: rgb(96,108,136); 
 }
 
+
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}

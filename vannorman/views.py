@@ -79,7 +79,43 @@ def home(request):
 	obj = {}
 	obj['works'] = []
 	obj['works'].append({
-		"title" : "Molecular Machines",
+		"title" : "Enterprise Training in VR",
+		"background" : "mm_background.jpg",
+		"position" : "Consultant, Designer, Programmer",
+		"link" : "http://tryvantagepoint.com/",
+		"description" : "As CTO I led the development of Vantage Point, a VR harassment training app; studies show that VR is highly effective at training, learning, empathy, and behavior change when compared to video. Note the video is private at the request of the company.",
+		"video" : { 
+			"source": "https://player.vimeo.com/video/294705276", 
+			"image" : "mm_background.jpg" 
+		},
+		"images" : [	
+			{"img":"mm_1.jpg"},
+			{"img":"mm_2.jpg"},
+			{"img":"mm_3.jpg"},
+			{"img":"mm_4.jpg"},
+		],
+	})
+
+	obj['works'].append({
+		"title" : "Gamified AR mesh mapping",
+		"background" : "mm_background.jpg",
+		"position" : "Consultant, Designer, Programmer",
+		"link" : "http://vertical.ai/",
+		"description" : "PlaceNote is a platform for AR developers, many of whom need prefabs and techniques to get started for guiding the end user to optimal mapping behaviors. I wrote an extension to the PlaceNote SDK that includes prefabs for developers to help them achieve this.",
+		"video" : { 
+			"source": "https://player.vimeo.com/video/294704893", 
+			"image" : "mm_background.jpg" 
+		},
+		"images" : [	
+			{"img":"mm_1.jpg"},
+			{"img":"mm_2.jpg"},
+			{"img":"mm_3.jpg"},
+			{"img":"mm_4.jpg"},
+		],
+	})
+
+	obj['works'].append({
+		"title" : "Visualizing Molecular Machines",
 		"background" : "mm_background.jpg",
 		"position" : "Developer, Graphic Designer",
 		"link" : "https://foresight.org/nanotechnology-leading-to-molecular-machines/",
@@ -98,7 +134,7 @@ def home(request):
 		],
 	})
 	obj['works'].append({
-		"title" : "Space Frog",
+		"title" : "Space Frog, a VR Active Game",
 		"background" : "spacefrog_background.jpg",
 		"position" : "Developer, Game Designer",
 		"link" : "https://www.facebook.com/spacefrogvr/",
@@ -134,7 +170,7 @@ def home(request):
 #		],	
 #	})
 	obj['works'].append({
-		"title" : "Humon AI COMPANY",
+		"title" : "Humon AI Company",
 		"video" : { 
 			"source": "https://player.vimeo.com/video/250308773", 
 			"image" : "sf1.png" 
@@ -155,6 +191,40 @@ def home(request):
 #			{"img":"vb3.png"},
 #			{"img":"vb4.png"},
 		],	
+	})
+	obj['works'].append({
+		"title" : "Cell Explorer VR",
+		"background" : "mm_background.jpg",
+		"position" : "Consultant, Designer, Programmer",
+		"link" : "http://vertical.ai/",
+		"description" : "As a big believer in video games as the best medium for learning, I also believe VR takes this one step further. This is an experimental immersive experience to teach about the makeup of a cell with labeled organelles.",
+		"video" : { 
+			"source": "https://vimeo.com/294705147", 
+			"image" : "mm_background.jpg" 
+		},
+		"images" : [	
+			{"img":"mm_1.jpg"},
+			{"img":"mm_2.jpg"},
+			{"img":"mm_3.jpg"},
+			{"img":"mm_4.jpg"},
+		],
+	})
+	obj['works'].append({
+		"title" : "Magic Hands",
+		"background" : "mm_background.jpg",
+		"position" : "Consultant, Designer, Programmer",
+		"link" : "http://vertical.ai/",
+		"description" : "Leveraging Vive and Leap Motion, I built a simple game that lets you portal between worlds and use your hands to cast magic spells.",
+		"video" : { 
+			"source": "https://player.vimeo.com/video/294705016", 
+			"image" : "mm_background.jpg" 
+		},
+		"images" : [	
+			{"img":"mm_1.jpg"},
+			{"img":"mm_2.jpg"},
+			{"img":"mm_3.jpg"},
+			{"img":"mm_4.jpg"},
+		],
 	})
 	obj['works'].append({
 		"title" : "Mouse Brain Explorer",
