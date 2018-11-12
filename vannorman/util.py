@@ -17,7 +17,7 @@ from django.http import HttpResponseRedirect, HttpResponse, JsonResponse
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 from django.forms.models import model_to_dict
-from django.middleware import csrf
+# from django.middleware import csrf
 from django.conf import settings
 from django.views.decorators.http import require_http_methods
 from django.views.decorators.csrf import csrf_exempt
@@ -43,12 +43,13 @@ def client_get(view):
 	return csrf_exempt(require_http_methods(['GET'])(view))
 
 def get_or_create_csrf_token(request):
-	token = request.META.get('CSRF_COOKIE', None)
-	if token is None:
-		token = csrf._get_new_csrf_key()
-		request.META['CSRF_COOKIE'] = token
-	request.META['CSRF_COOKIE_USED'] = True
-	return token
+    return None
+#	token = request.META.get('CSRF_COOKIE', None)
+#	if token is None:
+#		token = csrf._get_new_csrf_key()
+#		request.META['CSRF_COOKIE'] = token
+#	request.META['CSRF_COOKIE_USED'] = True
+#	return token
 
 def json_response(obj):
 	try:
@@ -75,7 +76,7 @@ def renderWithNav(request, template, obj = None, cookies = None):
 	obj['safari'] = False
 #	if not valid_browser(request):
 #		obj['safari'] = True # Strictly here to know whether or not to render the mp4 first or the webm first, since Safari is too retarded
-	obj["csrf"] = get_or_create_csrf_token(request)
+#	obj["csrf"] = get_or_create_csrf_token(request)
 	obj["version"] =  "?" + str(time.time())
 	response = render(request, template, obj)
 	return response
@@ -101,14 +102,14 @@ class EmailThread(threading.Thread):
 			send_mail(self.subject, self.body, self.from_email, self.recipients)
 		except Exception as e:
 #			print "aws email user:" + 
-			print str(timezone.now()) + " : Email sending failed to " + str(self.recipients)
-			print e
+			print (str(timezone.now()) + " : Email sending failed to " + str(self.recipients))
+			print (e)
 
 def emailtest():
 	boto.set_stream_logger('boto')
-	print >>sys.stderr, 'email testing boto cred:'
-	print >>sys.stderr, str(boto.config.get_value('Credentials', 'aws_secret_access_key')) 
-	print >>sys.stderr, str(boto.config.get_value('Credentials', 'aws_access_key_id')) 
+#	print >>sys.stderr, 'email testing boto cred:'
+#	print >>sys.stderr, str(boto.config.get_value('Credentials', 'aws_secret_access_key')) 
+#	print >>sys.stderr, str(boto.config.get_value('Credentials', 'aws_access_key_id')) 
 
 	# Potential BOTO problem if you get "404" somewhere before "no authenticator found" -- boto needs to find its ~/.boto config file, but django can't see ~/ folder here. Solution: Put boto [Credentials] into /etc/boto.cfg, which Django can find.
 	send_mail('s2','m2','robot@vannorman.com',['ccvannorman@gmail.com'])

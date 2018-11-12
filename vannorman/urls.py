@@ -13,6 +13,8 @@ urlpatterns = [
 	url(r'^blog/$', vannorman.views.blog_base), 
 	url(r'^base/$', vannorman.views.simple_page('base.html')), 
 	url(r'^resume/$', vannorman.views.simple_page('resume.html')), 
+	url(r'^rl/$', vannorman.views.simple_page('rl.html')), 
+	url(r'^lunar/$', vannorman.views.lunar), # ('lunar.html')), 
 	url(r'^portfolio/$', vannorman.views.simple_page('portfolio.html')), 
 	url(r'^address/$', vannorman.views.simple_page('address.html')), 
 	url(r'^blog/(.*)/$', vannorman.views.blog), 

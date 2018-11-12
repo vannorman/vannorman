@@ -27,7 +27,7 @@ $(window).scroll(function(e){
 			} else if (i > 0 && dt < 0 && top < tabs[parseInt(i)].offset().top - buffer * 2){
 				HighlightTab(buttons[parseInt(i)-1]);
 			} else {
-				console.log("top;"+top+", next top:"+nextTabTop);
+//				console.log("top;"+top+", next top:"+nextTabTop);
 			}
 		} else {
 //			console.log("thistab:"+thisTab+", curtab:"+currentTab);
@@ -51,18 +51,24 @@ $(document).ready(function(){
 //	}
 	$(navBtn).on('click',function(){
 		HighlightTab($(this));
+        console.log($(this).attr('id'));
 		switch($(this).attr('id')){
+			case 'button_hello': 
+				ScrollToPx(0);
+				break;
 			case 'button_about': 
 				ScrollTo('#tab_about');
 				break;
 			case 'button_portfolio': 
-				ScrollTo('#tab_portfolio');
+                n = $('#tab_portfolio').offset().top - 100;
+				ScrollToPx(n);
 				break;
 			case 'button_vrar': 
 				ScrollTo('#tab_vrar');
 				break;
 			case 'button_contact': 
-				ScrollTo('#tab_contact');
+                n = $('#tab_contact').offset().top + 300;
+				ScrollToPx(n);
 				break;
 		}
 	}); 
@@ -76,7 +82,11 @@ function HighlightTab($this){
 	
 }
 
+function ScrollToPx(i){
+	$('html, body').animate({scrollTop:i}, 400);
+    
+}
 function ScrollTo(div){
-	$('html, body').animate({scrollTop:$(div).offset().top}, 400);
+	$('html, body').animate({}, 400);
 }
 

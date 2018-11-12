@@ -31,7 +31,8 @@ def file_b(request):
 	return HttpResponse("v9b5S4UbuLtvh_PwuhqjfOUnVfiulJSmFCYkNHtD6mA.myqbUoOfbuYMTb3HuxVonYYuwHgoAV2835bCeWTwqkY")
 
 
-
+def lunar(request):
+   return renderWithNav(request, "lunar.html")
 
 def blog_base(request):
 	return blog(request,None)
