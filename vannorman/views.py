@@ -79,13 +79,13 @@ def home(request):
 	obj = {}
 	obj['works'] = []
 	obj['works'].append({
-		"title" : "Space Frog, a VR Active Game",
+		"title" : "Space Frog",
 		"background" : "spacefrog_background.jpg",
 		"position" : "Developer, Game Designer",
 		"link" : "https://www.facebook.com/spacefrogvr/",
 		"date" : "2018 Q1 - Q4",
 #		"subtitle" : "A Virtual Reality fitness game in collaboration with Alex Goldman",
-		"description" : "A fitness game in collaboration with Alex Goldman, guaranteed to make you sweat",
+		"description" : "A VR Active Fitness game in collaboration with Alex Goldman, which engages the player to utilize the body and controllers in motion throughout the full play area (2 x 3 meters)",
 		"video" : { 
 			"source": "https://player.vimeo.com/video/244438057", 
 			"image" : "sf1.png" 
@@ -97,6 +97,52 @@ def home(request):
 			{"img":"sf8.png"},
 		],
 	})
+	obj['works'].append({
+		"title" : "Humon AI Company",
+		"video" : { 
+			"source": "https://player.vimeo.com/video/250308773", 
+			"image" : "sf1.png" 
+		},
+		"background" : "hi3.png",
+		"position" : "Developer",
+		"link" : "",
+		"date" : "2017 Q4",
+		"subtitle" : "",
+		"description" : "Robots are controlled using human inputs in Virtual Reality, and can be trained on the data gathered by human inputs (using Vive controllers)",
+		"images" : [	
+			{"img":"hi1.png"},
+			{"img":"hi2.png"},
+			{"img":"hi3.png"},
+			{"img":"hi4.png"},
+#			{"video" : { "source": "https://player.vimeo.com/video/246606943", "image" : "vb1.png" }},
+#			{"img":"vb2.png"},
+#			{"img":"vb3.png"},
+#			{"img":"vb4.png"},
+		],	
+	})
+	obj['works'].append({
+
+		"title" : "Super Math World",
+		"video" : { "source": "https://player.vimeo.com/video/219464062", "img" : "smw_1.jpg" },
+		"background" : "smw_2.jpg",
+		"link" : "https://supermathworld.com",
+		"date" : "2016 Q1 - 2017 Q3",
+		"position" : "Founder, CTO",
+#		"subtitle" : "A WebGL based math sandbox",
+		"description" : "A math sandbox video game for grades 2 - 8 which allows users to edit, create, and share game content from directly inside the application, natively in a web browser.",
+		"responsibilities" : 
+		[
+				"Unity c# framework architecture",
+				"Game design & programming",
+				"Web backend (python, django, MySQL, AWS)",
+		],
+		"images" : [
+			{ "img" : "smw_1.jpg" },
+			{ "img" : "smw_3.jpg"},
+			{ "img" : "smw_4.jpg"},
+			{ "img" : "smw_3.jpg"}
+		],	
+		})
 	obj['works'].append({
 		"title" : "Gamified AR mesh mapping",
 		"background" : "mm_background.jpg",
@@ -141,7 +187,7 @@ def home(request):
 		"position" : "Consultant, Designer, Programmer",
                 "date" : "2018 Q2",
 		"link" : "http://tryvantagepoint.com/",
-		"description" : "As CTO I led the development of Vantage Point, a VR harassment training app; studies show that VR is highly effective at training, learning, empathy, and behavior change when compared to video. Note the video is private at the request of the company.",
+		"description" : "As interim CTO I led the development of Vantage Point, a VR harassment enterprise training application. Note the video is private at the request of the company - video demo available on request.",
 		"video" : { 
 			"source": "https://player.vimeo.com/video/294705276", 
 			"image" : "mm_background.jpg" 
@@ -171,29 +217,6 @@ def home(request):
 #			{"img":"vb4.png"},
 #		],	
 #	})
-	obj['works'].append({
-		"title" : "Humon AI Company",
-		"video" : { 
-			"source": "https://player.vimeo.com/video/250308773", 
-			"image" : "sf1.png" 
-		},
-		"background" : "hi3.png",
-		"position" : "Developer",
-		"link" : "",
-		"date" : "2017 Q4",
-		"subtitle" : "",
-		"description" : "Robots are controlled using human inputs in Virtual Reality, and can be trained on the data gathered by human inputs (using Vive controllers)",
-		"images" : [	
-			{"img":"hi1.png"},
-			{"img":"hi2.png"},
-			{"img":"hi3.png"},
-			{"img":"hi4.png"},
-#			{"video" : { "source": "https://player.vimeo.com/video/246606943", "image" : "vb1.png" }},
-#			{"img":"vb2.png"},
-#			{"img":"vb3.png"},
-#			{"img":"vb4.png"},
-		],	
-	})
 	obj['works'].append({
 		"title" : "Cell Explorer VR",
 		"background" : "mm_background.jpg",
@@ -256,29 +279,6 @@ def home(request):
 #			
 #		],	
 #	})	
-	obj['works'].append({
-
-		"title" : "Super Math World",
-		"video" : { "source": "https://player.vimeo.com/video/219464062", "img" : "smw_1.jpg" },
-		"background" : "smw_2.jpg",
-		"link" : "https://supermathworld.com",
-		"date" : "2016 Q1 - 2017 Q3",
-		"position" : "Founder, CTO",
-#		"subtitle" : "A WebGL based math sandbox",
-		"description" : "A math sandbox video game for grades 2 - 8 which allows users to edit, create, and share game content from directly inside the application, natively in a web browser.",
-		"responsibilities" : 
-		[
-				"Unity c# framework architecture",
-				"Game design & programming",
-				"Web backend (python, django, MySQL, AWS)",
-		],
-		"images" : [
-			{ "img" : "smw_1.jpg" },
-			{ "img" : "smw_3.jpg"},
-			{ "img" : "smw_4.jpg"},
-			{ "img" : "smw_3.jpg"}
-		],	
-		})
 	obj['works'].append({
 		"title" : "Mathbreakers",
 		"video" : { "source": "https://player.vimeo.com/video/73754523", "img" : "mb_1.jpg" },
@@ -371,7 +371,7 @@ def home(request):
 		"year" : "2010 - 2011",
 		"position" : "Founder",
 		"subtitle" : "An iOS game development studio.",
-		"description" : "We produced two games, 'Santa\'s Last Stand' and 'Bank Defense' for iOS." ,
+		"description" : "I led a small team of developers and artists to design and publish two iOS titles, \"Santa's Last Stand\" and \"Bank Defense\" for iOS." ,
 		"responsibilities" : 
 		[
 			"Game design & programming",

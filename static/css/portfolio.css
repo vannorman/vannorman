@@ -21,9 +21,11 @@ ul {
 
 .item .title {
 	font-size:25px;
+	font-weight:600;
 }
 
 .item .description {
+	margin-top:15px;
 	width:800px;
 	font-size:22px;
 }

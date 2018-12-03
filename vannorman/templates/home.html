@@ -46,19 +46,18 @@
 		<ul>
 			{% for item in works %}
 				<li class='item'>
+					<div class='title'><a href={{item.link}} target="_blank"> {{ item.title }} </a></div>
+				{% if item.video.source %}
 					<div class="iframe" style="height:360px;width:640px;">
 						<iframe src="{{item.video.source}}" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					</div>
+				{% endif %}
 					<div class='featured'>
 
 					</div>
 					<div class="backgroundGradient"></div>
 					<div class='content'>
 						<div class="top1">
-							<div class='title'><a href={{item.link}} target="_blank"> {{ item.title }} </a></div>
-<!--
-							<div class='subtitle'> {{ item.subtitle }}	</div>
--->
 							<div class="description">
 								{{ item.description|safe }} 
 								<!-- &#8212; 
