@@ -67,7 +67,7 @@ function ScrollTo(div){
 			topOffset = 0;
 			break;
 		case 'tab_portfolio': 
-			topOffset -= 400;
+			topOffset -= 300;
 			break;
 		case 'vrar': 
 			break;

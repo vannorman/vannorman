@@ -79,6 +79,25 @@ def home(request):
 	obj = {}
 	obj['works'] = []
 	obj['works'].append({
+		"title" : "Space Frog, a VR Active Game",
+		"background" : "spacefrog_background.jpg",
+		"position" : "Developer, Game Designer",
+		"link" : "https://www.facebook.com/spacefrogvr/",
+		"date" : "2018 Q1 - Q4",
+#		"subtitle" : "A Virtual Reality fitness game in collaboration with Alex Goldman",
+		"description" : "A fitness game in collaboration with Alex Goldman, guaranteed to make you sweat",
+		"video" : { 
+			"source": "https://player.vimeo.com/video/244438057", 
+			"image" : "sf1.png" 
+		},
+		"images" : [	
+			{"img":"sf5.png"},
+			{"img":"sf6.png"},
+			{"img":"sf7.png"},
+			{"img":"sf8.png"},
+		],
+	})
+	obj['works'].append({
 		"title" : "Gamified AR mesh mapping",
 		"background" : "mm_background.jpg",
 		"position" : "Consultant, Designer, Programmer",
@@ -135,25 +154,6 @@ def home(request):
 		],
 	})
 
-	obj['works'].append({
-		"title" : "Space Frog, a VR Active Game",
-		"background" : "spacefrog_background.jpg",
-		"position" : "Developer, Game Designer",
-		"link" : "https://www.facebook.com/spacefrogvr/",
-		"date" : "2018 Q1 - Q4",
-#		"subtitle" : "A Virtual Reality fitness game in collaboration with Alex Goldman",
-		"description" : "A fitness game in collaboration with Alex Goldman, guaranteed to make you sweat",
-		"video" : { 
-			"source": "https://player.vimeo.com/video/244438057", 
-			"image" : "sf1.png" 
-		},
-		"images" : [	
-			{"img":"sf5.png"},
-			{"img":"sf6.png"},
-			{"img":"sf7.png"},
-			{"img":"sf8.png"},
-		],
-	})
 #	obj['works'].append({
 #		"title" : "Village Builder",
 #		"background" : "vb1.png",
