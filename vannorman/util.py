@@ -45,7 +45,7 @@ def client_get(view):
 def get_or_create_csrf_token(request):
 	token = request.META.get('CSRF_COOKIE', None)
 	if token is None:
-		token = csrf._get_new_csrf_key()
+		token = csrf._get_new_csrf_string()
 		request.META['CSRF_COOKIE'] = token
 	request.META['CSRF_COOKIE_USED'] = True
 	return token
@@ -54,9 +54,7 @@ def json_response(obj):
 	try:
 		if obj['success'] == False:
 			del obj['success']
-			# print 'deleted key suces'
 	except KeyError:
-		# print 'no key succes'
 		pass
 	return JsonResponse(obj) 
 
@@ -94,21 +92,17 @@ class EmailThread(threading.Thread):
 		threading.Thread.__init__(self)
 
 	def run(self):
-	#	print str(settings.EMAIL_BACKEND)
 		if 'SES' in settings.EMAIL_BACKEND:
 			time.sleep(random.randint(0, 60))
 		try:
 			send_mail(self.subject, self.body, self.from_email, self.recipients)
 		except Exception as e:
-#			print "aws email user:" + 
-			print str(timezone.now()) + " : Email sending failed to " + str(self.recipients)
-			print e
+			pass
+#			print str(timezone.now()) + " : Email sending failed to " + str(self.recipients)
+#			print e
 
 def emailtest():
 	boto.set_stream_logger('boto')
-	print >>sys.stderr, 'email testing boto cred:'
-	print >>sys.stderr, str(boto.config.get_value('Credentials', 'aws_secret_access_key')) 
-	print >>sys.stderr, str(boto.config.get_value('Credentials', 'aws_access_key_id')) 
 
 	# Potential BOTO problem if you get "404" somewhere before "no authenticator found" -- boto needs to find its ~/.boto config file, but django can't see ~/ folder here. Solution: Put boto [Credentials] into /etc/boto.cfg, which Django can find.
 	send_mail('s2','m2','robot@vannorman.com',['ccvannorman@gmail.com'])
@@ -125,7 +119,6 @@ def send_mail_threaded(subject, body, fr, to):
 
 def valid_browser(request):
 	if 'HTTP_USER_AGENT' in request.META:
-		# print 'got user agent:' + str(request.META['HTTP_USER_AGENT'])
 		if 'Chrome' not in request.META['HTTP_USER_AGENT'] and 'Firefox' not in request.META['HTTP_USER_AGENT']:
 			return False
 		else:

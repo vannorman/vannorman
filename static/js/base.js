@@ -27,7 +27,7 @@ $(window).scroll(function(e){
 			} else if (i > 0 && dt < 0 && top < tabs[parseInt(i)].offset().top - buffer * 2){
 				HighlightTab(buttons[parseInt(i)-1]);
 			} else {
-				console.log("top;"+top+", next top:"+nextTabTop);
+				// console.log("top;"+top+", next top:"+nextTabTop);
 			}
 		} else {
 //			console.log("thistab:"+thisTab+", curtab:"+currentTab);
@@ -42,29 +42,13 @@ $(document).ready(function(){
 
 	$('.tab_button').each(function(){ buttons.push($(this))});
 	for (i in tabs){
-		console.log("added "+i+":"+tabs[i].attr('id'));
+//		console.log("added "+i+":"+tabs[i].attr('id'));
 	}
-	//	tabs = ['tab_about','tab_portfolio','tab_contact'];
-//	for (i in tabs){
-//		t = tabs[i];
-//		console.log(t+': '+$('#'+t).offset().top);
-//	}
 	$(navBtn).on('click',function(){
 		HighlightTab($(this));
-		switch($(this).attr('id')){
-			case 'button_about': 
-				ScrollTo('#tab_about');
-				break;
-			case 'button_portfolio': 
-				ScrollTo('#tab_portfolio');
-				break;
-			case 'button_vrar': 
-				ScrollTo('#tab_vrar');
-				break;
-			case 'button_contact': 
-				ScrollTo('#tab_contact');
-				break;
-		}
+		buttonId = $(this).attr('id');
+		tabId = buttonId.replace('button_','tab_');
+		ScrollTo(tabId);
 	}); 
 });
 
@@ -77,6 +61,20 @@ function HighlightTab($this){
 }
 
 function ScrollTo(div){
-	$('html, body').animate({scrollTop:$(div).offset().top}, 400);
+	var topOffset = $('#'+div).offset().top;
+	switch(div){
+		case 'tab_hello': 
+			topOffset = 0;
+			break;
+		case 'tab_portfolio': 
+			topOffset -= 400;
+			break;
+		case 'vrar': 
+			break;
+		case 'tab_contact': 
+			topOffset = $(document).height() + 500;
+			break;
+	}
+	$('html, body').animate({scrollTop:topOffset}, 400);
 }
 
