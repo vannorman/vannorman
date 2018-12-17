@@ -87,7 +87,7 @@ def home(request):
 #		"subtitle" : "A Virtual Reality fitness game in collaboration with Alex Goldman",
 		"description" : "A VR Active Fitness game in collaboration with Alex Goldman, which engages the player to utilize the body and controllers in motion throughout the full play area (2 x 3 meters)",
 		"video" : { 
-			"source": "https://player.vimeo.com/video/244438057", 
+			"source": "https://player.vimeo.com/video/305282073", 
 			"image" : "sf1.png" 
 		},
 		"images" : [	
