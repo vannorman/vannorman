@@ -239,7 +239,7 @@ def home(request):
 		"background" : "mm_background.jpg",
 		"position" : "Consultant, Designer, Programmer",
 		"link" : "http://vertical.ai/",
-		"description" : "Leveraging Vive and Leap Motion, I built a simple game that lets you portal between worlds and use your hands to cast magic spells.",
+		"description" : "Using Vive and Leap Motion, I built a prototype game that lets you portal between worlds, and recognizes hand gestures for casting magic spells.", 
 		"video" : { 
 			"source": "https://player.vimeo.com/video/294705016", 
 			"image" : "mm_background.jpg" 
@@ -371,7 +371,7 @@ def home(request):
 		"year" : "2010 - 2011",
 		"position" : "Founder",
 		"subtitle" : "An iOS game development studio.",
-		"description" : "I led a small team of developers and artists to design and publish two iOS titles, \"Santa's Last Stand\" and \"Bank Defense\" for iOS." ,
+		"description" : "I led a small team of developers and artists to design and publish two titles, \"Santa's Last Stand\" and \"Bank Defense\" for iOS." ,
 		"responsibilities" : 
 		[
 			"Game design & programming",
