@@ -16,7 +16,10 @@
 <div id="mainContainer">
 	{% block content %}
 	<div id="blogList">
-		<h1> I am a pragmatic VR evangelist. My blog focuses on where the rubber meets the road for VR in the real world. </h1>
+		<h1> 
+
+			Hello! I play and create video games, especially VR games, and am also a VR evangelist and work in the virutal enterprise space. 
+	</h1>
 		<ul>
 		{% for blog in blogs %}	
 			<li> {{blog.date}}: <a href="/blog/{{blog.url}}">{{blog.title}}</a></li>

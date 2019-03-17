@@ -66,11 +66,19 @@ def blog(request,blog):
 			"date":"April 7, 2018"
 		})
 
+		obj['blogs'].append(
+		{
+			"url":"spacefrogvr.html",
+			"title":"Space Frog VR",
+			"date":"Mar 17, 2019"
+		})
+
 #		{
 #			"url":"these-vr-startups-are-rocking-the-medical-world.html",
 #			"title":"[IN PROGRESS] These VR Startups are rocking the medical world",
 #			"date":"Feb 6, 2018"
-#		})	
+#		})
+		obj['blogs'].reverse()
 		return renderWithNav(request,"blogbase.html",obj)
 	else:
 		return renderWithNav(request,"blog/"+blog)
