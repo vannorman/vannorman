@@ -22,7 +22,7 @@
 	</h1>
 		<ul>
 		{% for blog in blogs %}	
-			<li> {{blog.date}}: <a href="/blog/{{blog.url}}">{{blog.title}}</a></li>
+			<li> {{blog.date}}: <a href="/blog/{{blog.url}}/">{{blog.title}}</a></li>
 		{% endfor %}
 		</ul>
 	{% endblock %}

@@ -1,6 +1,8 @@
 {% extends "blogbase.html" %}	
 {% block content %}
-	<span id="customBackgroundPointer" href="/static/img/spacefrog_background.jpg"></span>
+	<span	id="customBackgroundPointer" 
+			href="/static/img/spacefrog_background.jpg" 
+			css="background-repeat:no-repeat,background-position:top,background-size:800px 600px"></span>
 	<div id="mainContainer">
 		<div id="main">
 			<h1> Space Frog VR </h1>
@@ -12,6 +14,7 @@
 			<p class="left"> 
 				The year is 41206. Thousands of years ago, an eccentric billionaire had launched his red roaster into orbit, which was stuffed with .. frogs (as a science experiment). The frogs were hit with a cosmic ray which imbued them with superintelligence and they took over the entire Milky Way, challenged only by the Klurxons, a race of aliens that absorb other species and reorganize their bodies and technologies into weapons.
 			</p>
+			<img class="right40" src="/static/img/sf3.jpg" />
 
 			<p> Space Frogs have a tradition of Warrior Princesses who fight threats from outer space. You play as the princess of the current generation, and your prince has been captured by the Klurxons! You must rescue him by punching your way through the Klurxon fleet while avoiding their attacks (defining the core mechanics of the game, Punching and Dodging.)
 			</p>
@@ -28,7 +31,24 @@
 				</ul>
 			
 				This stuff just simply wasn't possible with PC or console games before! 
-							
+		<h2> Challenges </h2>
+			<p> 
+				Of course, this new medium and new ways of engaging with the content came with its own challenges. Having never built something like this before, Alex and I were both excited to see how it would turn out. Here are some of the unexpected and interesting things we overcame during the development of the game:
+				<ul>
+					<li> Humans don't punch straight, and everyone punches differently. This is difficult to detect and standardize, which means that the resulting "punch detector" we built is as close to a one-size-fits all as we could get.
+					<li> Despite many hours of testing on punching, we still end up needing to teach players how to punch in the game. Ideally, it would be natural, but we ran into the limitation that there really is no "natural" punch. A WWF fighter probably punches much differnetly than your grandmother.
+					<li> Speaking of which, my grandmother played and enjoyed this game! It really is approachable by anyone.
+					<li> Punching is inherently dangerous. In addition to the inevitable walls and occasional ceiling, other things that were punched during the making of this game include my own face (by a 12 year old tester) and Alex was punched by his own mother during a filming session. Whoops! This caused us to put strong warning language around our game so that players would be prepared, and I've since noticed similar language around other VR titles that may result in injury if playersare not careful.
+					<li> Dodging is also inherently dangerous. Like many people I have a desk, computer, and chair in my vicinity while playing VR games, and during the development of SpaceFrog I have at one time or another hit all of them with some part of my body. Ouch! This made me feel reluctant to move freely throughout my space, because I was worried about stepping into things. We knew our players would feel this, too.
+					<li> To resolve this, we have the player "walk the perimeter" each time they start a play session so that they can ensure total freedom to move throughout the play area. This made players (including myself) much more confident that we weren't going to bang our shin during gameplay.
+				</ul>
+			<p> All in all this game really is physically active, and this is something we had at top of mind during development. Because of the extreme immersion, we're able to help the player actually get a sweat going during play, and naturally we've thought of using games like this one as a daily physical exercise medium.
+			<p> But it's not just physical. Moving your body is just one piece of the total immersion package. Virtual Reality really is able to transport you to another world, and your mind and body will really think you're there. 
+			<p> I hope you enjoyed this blog post, and found it useful as a player or developer of VR games! Head on over to the Steam store to check out SpaceFrogVR for yourself. We'd love to hear what you think!
+			<p><a href="http://store.steampowered.com/app/978650/SpaceFrog_VR/">Space Frog VR on Steam</a>
+	
+				</ul>
+								
 
 
 

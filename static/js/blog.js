@@ -2,7 +2,15 @@ $(document).ready(function(){
 	if ($('#customBackgroundPointer').length == null){
 		SetRandomBackground();
 	} else {
-		SetBackground($('#customBackgroundPointer').attr('href'));		
+		var bgsource = $('#customBackgroundPointer').attr('href');		
+		$('#top').css('background-image','url("'+bgsource+'")');
+		var rules = $('#customBackgroundPointer').attr('css').split(',');
+		for (var i=0; i<rules.length;i++)
+		{
+			var css = rules[i].split(':');	
+			$('#top').css(css[0],css[1]);
+
+		}	
 	}
 	$(window).scroll(function(){
 	//	$('#top').css('background-position-y',(window).top());
@@ -32,11 +40,7 @@ function SetRandomBackground(){
 
 	var index = Math.floor(Math.random() * backgrounds.length);
 	var bgsource = '/static/img/backgrounds/' + backgrounds[index];
-	SetBackground(bgsource);
-}
-
-function SetBackground(var bgsource)
-{
 	$('#top').css('background-image','url("'+bgsource+'")');
 }
+
 
