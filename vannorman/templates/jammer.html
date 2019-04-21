@@ -1,0 +1,46 @@
+{% load static %}
+	<head>
+		<title> Charlie	Van Norman</title>
+	<meta name="google-site-verification" content="KPrCTIkFg3RCIWPoYvQO3QBnFcEqKflrEQI_6ztrwzE" />
+		<link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon_v.png" />		
+	{% block styles %}
+	{% endblock %}
+
+	{% block scripts %}
+		<script src='{% static "js/jquery-1.11.0.min.js" %}'></script>
+		<script>
+			// "F" 70
+			// "J" 74
+			$(document).ready(function(){
+				{% for v in videos %}
+					$(document).keypress(function( event ) {
+					  if ( event.which == {{v.keycode}} ) {
+							$("#youtube iframe").remove();
+							$('<iframe width="420" height="315" autoplay=1 frameborder="0" allowfullscreen></iframe>')
+							.attr("src", "http://www.youtube.com/embed/" + "{{v.id}}?autoplay=1")
+							.appendTo("#youtube");	 
+						}
+					  var msg = "Handler for .keypress() called  some number of  time(s).";
+					  console.log( msg, "html" );
+					  console.log( event.which );
+					});
+					 
+				{% endfor %}
+			});
+				</script>
+	{% endblock %}
+	</head>
+<body>
+
+{% block content %}
+	{% for v in videos %}
+		<div style="border: 1px dotted #777; width:400px; background-white; padding:20px; margin: 0 auto;">
+			<ul>
+			<li>Youtube: {{v.url}}
+			<li>Hotkey: {{v.hotkey}}
+		</div>
+	{% endfor %}
+<div id="youtube"></div>
+{% endblock %}
+</body>
+

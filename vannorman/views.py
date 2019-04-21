@@ -83,6 +83,23 @@ def blog(request,blog):
 	else:
 		return renderWithNav(request,"blog/"+blog)
 
+def jammer(request):
+	obj = {}
+	obj['videos'] = []
+	obj['videos'].append({
+		"url" : "https://www.youtube.com/watch?v=ogH7yrA-fHc",
+		"id" : "ogH7yrA-fHc",
+		"hotkey" : "F",
+		"keycode" : 102
+	})
+	obj['videos'].append({
+		"url" : "https://www.youtube.com/watch?v=2EUOYON3eZg",
+		"id" : "2EUOYON3eZg",
+		"hotkey" : "J",
+		"keycode" : 106
+	})
+	return renderWithNav(request,'jammer.html', obj)
+	
 def home(request):
 	obj = {}
 	obj['works'] = []
