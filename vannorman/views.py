@@ -98,6 +98,24 @@ def jammer(request):
 		"hotkey" : "J",
 		"keycode" : 106
 	})
+	obj['videos'].append({
+		"url" : "https://www.youtube.com/watch?v=kuMY2X22PHA",
+		"id" : "kuMY2X22PHA",
+		"hotkey" : "D",
+		"keycode" : 100
+	})
+	obj['videos'].append({
+		"url" : "https://www.youtube.com/watch?v=2EUOYON3eZg",
+		"id" : "2EUOYON3eZg",
+		"hotkey" : "S",
+		"keycode" : 115
+	})
+	obj['videos'].append({
+		"url" : "https://www.youtube.com/watch?v=mKYb7Juflz0",
+		"id" : "mKYb7Juflz0",
+		"hotkey" : "A",
+		"keycode" : 97
+	})
 	return renderWithNav(request,'jammer.html', obj)
 	
 def home(request):
