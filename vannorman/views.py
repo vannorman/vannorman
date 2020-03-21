@@ -122,10 +122,38 @@ def home(request):
 	obj = {}
 	obj['works'] = []
 	obj['works'].append({
-		"title" : "Space Frog",
+		"title" : "Admirals of Adaris VR",
+		"background" : "",
+		"position" : "Developer, Game Designer",
+		"link" : "https://www.havik.us",
+		"date" : "2019",
+		"description" : "A multiplayer VR experience where you build and control a fleet of ships in space.",
+		"video" : { 
+			"source": "https://player.vimeo.com/video/362128849", 
+			"image" : "" 
+		},
+		"images" : [	
+		],
+	})
+	obj['works'].append({
+		"title" : "Havik Air Strike VR",
+		"background" : "",
+		"position" : "Developer, Game Designer",
+		"link" : "https://www.havik.us",
+		"date" : "2019",
+		"description" : "A simulation for Air Force equipment and procedure training. Features include weather control, night vision, Garmin GPS, Garmin watch, izlid, rangefinder, 3rd party military vehicle and mission integration. Video is confidential, private demo may be available upon request.",
+		"video" : { 
+			"source": "https://player.vimeo.com/video/399474483", 
+			"image" : "" 
+		},
+		"images" : [	
+		],
+	})
+	obj['works'].append({
+		"title" : "Space Frog VR",
 		"background" : "spacefrog_background.jpg",
 		"position" : "Developer, Game Designer",
-		"link" : "https://www.facebook.com/spacefrogvr/",
+		"link" : "https://store.steampowered.com/app/978650/SpaceFrog_VR/",
 		"date" : "2018 Q1 - Q4",
 #		"subtitle" : "A Virtual Reality fitness game in collaboration with Alex Goldman",
 		"description" : "A VR Active Fitness game in collaboration with Alex Goldman, which engages the player to utilize the body and controllers in motion throughout the full play area (2 x 3 meters)",
