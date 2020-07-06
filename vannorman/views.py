@@ -122,6 +122,20 @@ def home(request):
 	obj = {}
 	obj['works'] = []
 	obj['works'].append({
+		"title" : "Secret VR Game",
+		"background" : "",
+		"position" : "Monkey Wizard",
+		"link" : "",
+		"date" : "Summer 2020",
+        	"description" : "Early prototype. Magical powers of cube control. Written for Quest using Unity3D",
+		"video" : { 
+			"source": "https://player.vimeo.com/video/435624506", 
+			"image" : "" 
+		},
+		"images" : [	
+		],
+	})
+	obj['works'].append({
 		"title" : "Admirals of Adaris VR",
 		"background" : "",
 		"position" : "Developer, Game Designer",
