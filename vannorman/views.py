@@ -12,10 +12,13 @@ from django.utils import timezone
 from django.contrib import auth
 #from django.forms.util import ErrorList
 from django.template.context import RequestContext
-from django.shortcuts import render_to_response
-from django.shortcuts import render_to_response, redirect, render
+from django.shortcuts import render
+from django.shortcuts import render, redirect, render
 from django.contrib.auth import logout as auth_logout
 from django.contrib.auth.decorators import login_required
+
+import markdown
+md = markdown.Markdown()
 
 #import requests
 
@@ -44,18 +47,21 @@ def blog(request,blog):
 		{
 			"url":"while-vr-for-consumer-lags-corporate-training-booms.html",
 			"title":"While VR for consumers lags, Corporate Training booms",
+                        "description":"My views on the current market, and why I'm long on corporate VR ahead of consumer VR by 10-20 years.",
 			"date":"Jan 14, 2018"
 		})
 		obj['blogs'].append(
 		{
 			"url":"virtual-reality-bridges-gamer-gap.html",
 			"title":"Virtual Reality Bridges the Gamer Gap",
+                        "description":"By getting out of the way of human users, VR paves the way for seameless HCI.",
 			"date":"Mar 25, 2018"
 		})
 		obj['blogs'].append(
 		{
 			"url":"freedom-from-the-tyrants-deep-monkey.html",
-			"title":"Freedom From The Tyrants - Deep Monkey",
+			"title":"Freedom From The Tyrants",
+                        "description":"Everyone knows tech giants rule us, but you will have more options in the future.",
 			"date":"Mar 27, 2018"
 		})
 
@@ -63,14 +69,24 @@ def blog(request,blog):
 		{
 			"url":"sustainable-futures-are-collaborative-not-adversarial.html",
 			"title":"Sustainable Futures Are Collaborative Not Adversarial",
-			"date":"April 7, 2018"
+                        "description":"My unsupported arguments for world piece, rooted in capitalism.",
+                        "date":"April 7, 2018"
 		})
 
 		obj['blogs'].append(
 		{
 			"url":"spacefrogvr.html",
 			"title":"Space Frog VR",
-			"date":"Mar 17, 2019"
+                        "description":"A brief look at my first full-length VR title.",
+                        "date":"Mar 17, 2019"
+		})
+
+		obj['blogs'].append(
+		{
+			"url":"redefinelearning.html",
+			"title":"Redefine Schools and Learning",
+                        "description":"Schools do not set students up for success in today's world. Here's what I plan to change.",
+                        "date":"Sep 20, 2020"
 		})
 
 #		{
@@ -78,10 +94,21 @@ def blog(request,blog):
 #			"title":"[IN PROGRESS] These VR Startups are rocking the medical world",
 #			"date":"Feb 6, 2018"
 #		})
+
+
 		obj['blogs'].reverse()
 		return renderWithNav(request,"blogbase.html",obj)
 	else:
 		return renderWithNav(request,"blog/"+blog)
+
+def render_md_blog(request):
+    with open('vannorman/templates/blog/redefinelearning.md', 'rb') as fp:
+        v = fp.read()
+        v = md.convert(v)
+        obj = {}
+        obj['html_text'] = v
+        return renderWithNav(request,"render_md_blog.html", obj)
+
 
 def jammer(request):
 	obj = {}

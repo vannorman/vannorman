@@ -30,13 +30,13 @@
 	padding-left:0; 
 }
 
-#tab_about p, #tab_hello p {
+#tab_about p, #tab_hello p, #tab_blog p {
 	font-size:25px;
 	max-width:750px;
 }
 
 
-#tab_about, #tab_hello {
+#tab_about, #tab_hello, #tab_blog {
 	min-height:100%;
 	height:auto;
 	padding-left:80px;

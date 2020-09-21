@@ -47,7 +47,8 @@ $(document).ready(function(){
 	$(navBtn).on('click',function(){
 		HighlightTab($(this));
 		buttonId = $(this).attr('id');
-		tabId = buttonId.replace('button_','tab_');
+		tabId = buttonId.replace('button_','tab_'); // Years ago was trying to be clever, should have been more explicit with individual tab names! 
+
 		ScrollTo(tabId);
 	}); 
 });
@@ -66,8 +67,10 @@ function ScrollTo(div){
 		case 'tab_hello': 
 			topOffset = 0;
 			break;
+		case 'tab_blog': 
+			topOffset += -100;
+			break;
 		case 'tab_portfolio': 
-			console.log('hi')
 			topOffset += -100;
 			break;
 		case 'vrar': 

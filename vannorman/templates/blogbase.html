@@ -10,19 +10,17 @@
 	
 	</script>
 </head>
-<div id="top"></div>
 {% endblock %}
 <html>
 <div id="mainContainer">
 	{% block content %}
 	<div id="blogList">
-		<h1> 
-
-			Hello! I play and create video games, especially VR games, and am also a VR evangelist and work in the virutal enterprise space. 
-	</h1>
 		<ul>
 		{% for blog in blogs %}	
-			<li> {{blog.date}}: <a href="/blog/{{blog.url}}/">{{blog.title}}</a></li>
+			<li> <a href="/blog/{{blog.url}}">{{blog.title}}</a>
+				<br>{{blog.date}}
+				<br>{{blog.description}}
+			</li>
 		{% endfor %}
 		</ul>
 	{% endblock %}
