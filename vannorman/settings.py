@@ -28,9 +28,9 @@ TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, 'vannorman/templates'),
 )
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
-]
+#STATICFILES_DIRS = [
+#    os.path.join(BASE_DIR, "static"),
+#]
 
 TEMPLATES = [
     {
@@ -81,12 +81,24 @@ WSGI_APPLICATION = 'vannorman.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#    }
+#}
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'vannorman',
+        'USER': 'vannorman',
+        'PASSWORD': 'vannorman',
+        'HOST': 'localhost',
+        'PORT': ''
+        }
+            
     }
-}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
@@ -106,9 +118,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 APPEND_SLASH = False
-ALLOWED_HOSTS = ['104.154.149.102']
+ALLOWED_HOSTS = ['165.22.230.88', 'vannorman.ai', 'blog.vannorman.ai', 'www.vannorman.ai']
 
 # from settings_local import *
 
