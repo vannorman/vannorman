@@ -7,3 +7,4 @@ db.sqlite3
 venv/*
 static/bin/
 static/Builds/
+static/music
