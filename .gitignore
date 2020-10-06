@@ -8,3 +8,4 @@ venv/*
 static/bin/
 static/Builds/
 static/music
+push.sh
