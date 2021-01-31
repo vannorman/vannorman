@@ -10,3 +10,5 @@ static/Builds/
 static/music
 venv-vannorman/
 push.sh
+
+static/admin/

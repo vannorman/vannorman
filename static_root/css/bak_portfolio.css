@@ -1,0 +1,335 @@
+#works ul, #works ul li {
+	margin:0;
+	padding:0;
+	border:0;
+	list-style-type:none;
+}
+
+#works .item {
+	position:relative;
+	color:white;
+	width: 100%;
+	border-bottom: 1px solid white;
+	height:723px;
+	list-style-type:none;
+}
+#works .item .title a, #works .title .item a:hover {
+    font-family: 'gc';
+	color:white;
+	font-weight:bold;
+	font-size:55px;	
+	text-decoration:none;
+}
+
+#works .item > .background {
+	position:absolute;
+	top:0;
+	padding:0;
+	width:calc(100% - 180px);
+	height:720px;
+	opacity: .7;
+	background-repeat:no-repeat;
+	background-size:cover;
+	pointer-events:none;
+	background-position-x: 50%;
+}
+
+#works .item:nth-child(odd) > .background {
+	left:0;
+
+}
+#works .item:nth-child(even) > .background {
+	left:180px;
+
+}
+
+#works .item > .backgroundGradient {
+	position:absolute;
+	left:0;
+	height:720px;
+	width:150px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&1+31,0+100 */
+background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 31%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 31%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 31%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+
+#works .item .content { 
+	text-align:left;
+	z-index:1;
+	position:absolute;
+	width:100%;
+}
+
+#works .item .top1 {
+	width:600px;
+	position:absolute;
+	top:280px;
+}
+
+#works .item:nth-child(odd) .top1 {
+	right:calc(50% - 320px);
+
+}
+#works .item:nth-child(even) .top1 {
+	left: calc(40% - 120px);
+}
+
+
+#works .item .imageList {
+	position:absolute;
+	top:0;
+	height:720px;
+	width:200px;
+}
+
+
+#works .item:nth-child(odd) .imageList{
+	right:0;
+}
+
+#works .item:nth-child .imageList (even){
+	left:0;
+}
+
+
+#works .item .imageList li {
+	display:block;
+	width:100%;
+	height:180px;
+	border-bottom:1px solid gray;
+	background-color:white;
+}
+
+
+
+/* ODD projects */
+/* outer */
+#works .item:nth-child(odd) .imageList li:nth-child(odd) {
+	-webkit-clip-path: polygon(9% 0, 100% 0, 100% 100%, 0% 100%);
+	clip-path: polygon(9% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+#works .item:nth-child(odd) .imageList li:nth-child(even) {
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 9% 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 9% 100%);
+}
+/* inner */
+#works .item:nth-child(odd) .imageList li:nth-child(odd) > a {
+	-webkit-clip-path: polygon(10% 0, 100% 0, 100% 100%, 1% 100%);
+	clip-path: polygon(10% 0, 100% 0, 100% 100%, 1% 100%);
+	overflow:hidden;
+
+}
+#works .item:nth-child(odd) .imageList li:nth-child(even) > a {
+	-webkit-clip-path: polygon(1% 0, 100% 0, 100% 100%, 10% 100%);
+	clip-path: polygon(1% 0, 100% 0, 100% 100%, 10% 100%);
+	overflow:hidden;
+}
+
+
+
+
+
+
+/* EVEN projects */
+/* outer */
+
+
+#works .item:nth-child(even) .imageList li:nth-child(odd) {
+-webkit-clip-path: polygon(0 0, 100% 0, 91% 100%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 91% 100%, 0% 100%);
+}
+
+#works .item:nth-child(even) .imageList li:nth-child(even) {
+-webkit-clip-path: polygon(0 0, 91% 0, 100% 100%, 0% 100%);
+clip-path: polygon(0 0, 91% 0, 100% 100%, 0% 100%);
+}
+/* inner */
+#works .item:nth-child(even) .imageList li:nth-child(odd) > a {
+	-webkit-clip-path: polygon(0 0, 99% 0, 90% 100%, 0% 100%);
+clip-path: polygon(0 0, 99% 0, 90% 100%, 0% 100%);
+	overflow:hidden;
+
+}
+#works .item:nth-child(even) .imageList li:nth-child(even) > a {
+	-webkit-clip-path: polygon(0 0, 90% 0, 99% 100%, 0% 100%);
+clip-path: polygon(0 0, 90% 0, 99% 100%, 0% 100%);
+overflow:hidden;
+}
+
+
+
+
+
+
+
+#works .item .imageList li > a {
+	width:100%;
+	height:100%;
+	display:block;
+}
+#works .item .imageList li > a .img {
+	width:100%;
+	height:100%;
+	display:block;
+	background-size:cover;
+	background-position:center;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+	transition: all .15s;
+	border:0;
+	outline:0;
+}
+
+#works .item .imageList li > a .img:hover {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+	border:0;
+	outline:0;
+
+}
+#works .item .description {
+
+	position:relative;
+	width:500px;
+}
+
+#works .item .top1  .video {
+	position:absolute;
+		
+}
+
+#works .item .top1  .viewDetails {
+	background-image:url('/static/img/details.png');
+	background-size: contain;
+	background-position:center;
+	background-repeat:no-repeat;
+	width:100px;
+	height:100px;	
+	position:absolute;
+    -webkit-filter: grayscale(i100%) brightness(2); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%) brightness(2);
+	transition: .2s all;
+		
+}
+
+#works .item .top1  .viewDetails2 a {
+	font-family: 'Open Sans', sans-serif;
+	text-decoration:none;
+	color:#99f;
+
+}
+#works .item .top1  .viewDetails2 a:hover {
+	text-decoration:none;
+	color:#55f;
+}
+#works .item .top1  .watchVideo2 a {
+	font-family: 'Open Sans', sans-serif;
+	text-decoration:none;
+	color:#f70;
+
+}
+#works .item .top1  .watchVideo2 a:hover {
+	text-decoration:none;
+	color:#d50;
+}
+
+
+#works .item .top1  .viewDetails:hover {
+    cursor:pointer;
+	-webkit-filter: grayscale(0%) brighness(1); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%) brightness(1);
+	
+}
+
+#tabContact a {
+	text-color:#77f;
+	text-decoration:none;
+}
+#tabContact, #tabResume {
+	display:none;
+	position:fixed;
+	width:100%;
+	height:100%;
+	text-align:center;
+	z-index:101;
+	top:0;
+	left:0;
+	background-color:rgba(0,0,0,.5);
+}
+
+
+#tabContact .x, #tabResume .x {
+	font-family: 'Orbitron', sans-serif;
+	position:absolute;
+	top:0px;
+	right:0px;
+	width:80px;
+	height:80px;
+	border:1px solid gray;
+	background-color:rgba(255,255,255,.5);
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	transition: .2s all;
+	font-size:3em;
+	font-weight:bold;
+	line-height:93px;
+	text-align:center;
+}
+
+#tabContact .cont {
+	background-color:white;
+	margin:0 auto; 
+	width:500px;	
+	position:relative;	
+	margin-top:200px;
+	padding-top:30px;
+	padding-bottom:30px;
+
+}
+
+#tabContact  .cont ul {
+list-style-type:none;width:240px;margin:0 auto;padding:0;position:relative;
+}
+#tabContact .x:hover {
+	
+	background-color:gray;
+	cursor:pointer;
+}
+
+#intro {
+	position:relative;
+	font-size:2em;
+	width:960px;
+	margin:0 auto;
+}
+
+
+@media only screen and (max-width: 900px) { 
+	#top  {		
+		height:240px;
+	
+	}
+	#top  .links {		
+		display:block;
+	}
+	#works .item .title a, #works .title .item a:hover {
+		
+		font-size:35px;
+	}
+	#works .item .title, 
+	#works .item .description {
+		width:350px;
+	}
+	#works .item:nth-child(odd) .top1 {
+		left:5px;
+	}
+	#works .item:nth-child(even) .top1 {
+		left: calc(40% - 20px);
+	}
+
+}
+

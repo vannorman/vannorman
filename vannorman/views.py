@@ -536,4 +536,6 @@ def file_b(request):
 	return HttpResponse("Z9DF236bXRfXjvGlUflaI98PMWAKsG9qpGnrDXllb2o.HrFduo8MJADNQACN38q371h8yDpWwuARiTcP3lgNOOM")	
 
 
+def test(request):
+    return renderWithNav(request,"test.html", {})
 

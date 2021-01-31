@@ -1,0 +1,186 @@
+#container {
+	position:relative;
+	width:100%;
+	margin: 0 auto;
+	text-align:center;
+	height:100%;
+}
+	
+#navLinks {
+	position:fixed;
+	left:0;
+	height:100%;
+	width:22%;
+}
+
+#content {
+	position:relative;
+	left:22%;
+	width:78%;
+	top:calc(50% - 360px);
+}
+
+.tab {
+	position:relative;
+	margin:0;
+	color: rgb(96,108,136); 
+	height:100%;	
+	
+	padding:150px; 
+	padding-left:0; 
+}
+
+#tab_about p, #tab_hello p, #tab_blog p {
+	font-size:25px;
+	max-width:750px;
+}
+
+
+#tab_about, #tab_hello, #tab_blog {
+	min-height:100%;
+	height:auto;
+	padding-left:80px;
+}
+#tab_about {
+	top:100px;
+}
+
+#tab_hello {
+	top:0px;
+}
+
+.tab .title {
+	font-size:50px;
+	margin-bottom:28px;
+}
+
+
+@media all and (max-width: 960px) {
+    #navLinks {
+		width:250px;
+	}
+	#content {
+		left:250px;
+		width:calc(100% - 250px);
+	}
+}
+
+#tab_portfolio {
+	padding:0;
+	padding-left:80px;
+	top:100px;
+}
+
+#tab_contact {
+	height:100%;
+}
+
+#tab_contact .email {
+	width:350px;	
+	position:relative;
+	top:calc(50% + 50px);
+	left:20%;
+	font-weight:bold;
+	font-size:25px;
+	text-align:center;
+	padding:30px;
+	border:2px solid gray;
+}
+#tab_contact .email a, #tab_contact .email a:visited {
+	transition: .3s all;
+	text-decoration:none;
+	color: rgb(96,108,136); 
+}
+#tab_contact .email a:hover {
+	color: rgb(205,100,100);
+}
+
+
+/* BASE */
+body {
+	height:100%;
+	margin: 0;	
+	background-size:cover;
+	 background-repeat: no-repeat;
+    background-attachment: fixed;
+	overflow-x:hidden;
+}
+
+html {
+	height:100%;
+}
+
+@font-face {
+    font-family: 'gc';
+    src: url('../fonts/gc.ttf');
+}
+
+* {
+font-family: 'Open Sans', sans-serif;
+}
+*:focus {
+    outline: none;
+}
+
+
+
+.fadeBg {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#606c88+0,3f4c6b+100;Grey+3D+%232 */
+	background: rgb(96,108,136); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(96,108,136,1) 0%, rgba(63,76,107,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(96,108,136,1) 0%,rgba(63,76,107,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(96,108,136,1) 0%,rgba(63,76,107,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606c88', endColorstr='#3f4c6b',GradientType=0 ); /* IE6-9 */
+}
+#navLinks ul {
+	font-size:22px;
+	color:white;
+	position:absolute;
+	right:0;
+	top:calc(50% - 125px);
+	height:250px;
+	list-style-type:none;
+	margin:0;
+	padding-left:0;
+	
+}
+
+#navLinks ul li {
+	
+	text-align:center;
+	width:150px;
+	padding-right:15px;
+	padding-left:20px;
+	margin: 12px 0;
+	transition: 0.15s all;
+	position:relative;
+	left:1px;
+}
+.leftSlant {	
+	-webkit-clip-path: polygon(9% 0, 100% 0, 100% 100%, 0% 100%);
+	clip-path: polygon(9% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+
+#navLinks ul li:hover {
+	cursor:pointer;
+	background-color:white;	
+	color: rgb(96,108,136); 
+}
+
+#navLinks ul li.selected {
+	background-color:white;
+	color: rgb(96,108,136); 
+}
+
+
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}

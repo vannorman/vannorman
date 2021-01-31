@@ -2,11 +2,11 @@
 {% load static %}
 	<head>
 		<title> Charlie	Van Norman</title>
-<link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon_z.png" />		
+	<link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon_z.png" />		
 	<meta name="google-site-verification" content="KPrCTIkFg3RCIWPoYvQO3QBnFcEqKflrEQI_6ztrwzE" />
 	{% block styles %}
 		{{ block.super }}
-		<link rel='stylesheet' href="/static/css/home.css{{version}}" type='text/css'>
+		<link rel='stylesheet' href="{% static 'css/home.css' %}" type='text/css'>
 		<link rel='stylesheet' href="/static/css/imageviewer.css{{version}}" type='text/css'>
 		<link rel='stylesheet' href="/static/css/canvas_big.css{{version}}" type='text/css'>
 		<link rel='stylesheet' href="/static/css/portfolio.css{{version}}" type='text/css'>

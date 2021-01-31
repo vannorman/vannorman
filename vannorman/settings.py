@@ -89,14 +89,14 @@ WSGI_APPLICATION = 'vannorman.wsgi.application'
 #}
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'vannorman',
-        'USER': 'vannorman',
-        'PASSWORD': 'vannorman',
-        'HOST': 'localhost',
-        'PORT': ''
-        }
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#        'NAME': 'vannorman',
+#        'USER': 'vannorman',
+#        'PASSWORD': 'vannorman',
+#        'HOST': 'localhost',
+#        'PORT': ''
+#        }
             
     }
 
@@ -118,10 +118,20 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
+STATICFILES_DIRS = (
+  os.path.join(BASE_DIR, 'static'),
+)
 APPEND_SLASH = False
-ALLOWED_HOSTS = ['165.22.230.88', 'vannorman.ai', 'blog.vannorman.ai', 'www.vannorman.ai']
+ALLOWED_HOSTS =  [
+    '165.22.230.88', 
+    'vannorman.ai', 
+    'blog.vannorman.ai',
+    'www.vannorman.ai',
+    '127.0.0.1'
+]
 
 # from settings_local import *
-
+print ("base dir:"+BASE_DIR)
+print("static url:"+STATIC_URL)
+print("static root:"+STATIC_ROOT)
