@@ -81,27 +81,12 @@ WSGI_APPLICATION = 'vannorman.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#    }
-#}
-
 DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#        'NAME': 'vannorman',
-#        'USER': 'vannorman',
-#        'PASSWORD': 'vannorman',
-#        'HOST': 'localhost',
-#        'PORT': ''
-#        }
-            
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR , 'db.sqlite3'),
     }
-
-# Internationalization
-# https://docs.djangoproject.com/en/1.7/topics/i18n/
+}
 
 LANGUAGE_CODE = 'en-us'
 
@@ -124,7 +109,7 @@ STATICFILES_DIRS = (
 )
 APPEND_SLASH = False
 ALLOWED_HOSTS =  [
-    '165.22.230.88', 
+    '164.90.155.131', 
     'vannorman.ai', 
     'blog.vannorman.ai',
     'www.vannorman.ai',
