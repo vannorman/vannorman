@@ -1,6 +1,12 @@
 @font-face {
   font-family: 'Nunito';
   src:  url('/static/fonts/nunito-light.ttf') format('truetype');
+    font-style:normal;
+}
+@font-face {
+  font-family: 'Nunito';
+  src:  url('/static/fonts/nunito-bold.ttf') format('truetype');
+    font-style:bold;
 
 }
 
@@ -46,14 +52,11 @@ body{
     text-justify:inter-word;
 
 }
-#content2{
-    position:relative;margin:25px auto 0 auto;
-	width:100%;
 
-}
-
-#content h2 {margin: 0 auto; width: 740px; margin-top:40px;} 
-@media only screen and (max-width:823px){ #content h2 {width:90%;}; }
+#intro2 span { font-weight:bold; }
+#content {background-color:#4c4;}
+#content h2 {margin: 0 auto; width: 960px;} 
+@media only screen and (max-width:1067px){ #content h2 {width:90%;}; }
 
 #content p {width:960px;margin:0 auto;text-align:justify;text-justify:inter-word;margin-bottom:40px;}
 @media only screen and (max-width: 1067px) { #content p { width:90%; }; } 
