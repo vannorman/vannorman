@@ -527,7 +527,7 @@ def home(request):
 #		{ "name" : "soundcloud.com/vannorman", "link" : "https://soundcloud.com/vannorman" },
 #	]
 
-	return renderWithNav(request,'home2.html', obj)
+	return renderWithNav(request,'home.html', obj)
 
 def file_a(request):
 	return HttpResponse("7GN_wPd4X1PrCxmqKOrw9sHsAd0_uayFhOnWdEw6Ytc.HrFduo8MJADNQACN38q371h8yDpWwuARiTcP3lgNOOM")
