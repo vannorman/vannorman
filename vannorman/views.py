@@ -256,7 +256,7 @@ def home(request):
 		],	
 		})
 	obj['works'].append({
-		"title" : "Gamified AR mesh mapping",
+		"title" : "Gamified AR mapping",
 		"background" : "mm_background.jpg",
 		"position" : "Consultant, Designer, Programmer",
                 "date" : "2018 Q3",
@@ -275,7 +275,7 @@ def home(request):
 	})
 
 	obj['works'].append({
-		"title" : "Visualizing Molecular Machines",
+		"title" : "Molecular Visualization",
 		"background" : "mm_background.jpg",
 		"position" : "Developer, Graphic Designer",
 		"link" : "https://foresight.org/nanotechnology-leading-to-molecular-machines/",
@@ -346,23 +346,23 @@ def home(request):
 			{"img":"mm_4.jpg"},
 		],
 	})
-	obj['works'].append({
-		"title" : "Magic Hands",
-		"background" : "mm_background.jpg",
-		"position" : "Consultant, Designer, Programmer",
-		"link" : "http://vertical.ai/",
-		"description" : "Using Vive and Leap Motion, I built a prototype game that lets you portal between worlds, and recognizes hand gestures for casting magic spells.", 
-		"video" : { 
-			"source": "https://player.vimeo.com/video/294705016", 
-			"image" : "mm_background.jpg" 
-		},
-		"images" : [	
-			{"img":"mm_1.jpg"},
-			{"img":"mm_2.jpg"},
-			{"img":"mm_3.jpg"},
-			{"img":"mm_4.jpg"},
-		],
-	})
+#	obj['works'].append({
+#		"title" : "Magic Hands",
+#		"background" : "mm_background.jpg",
+#		"position" : "Consultant, Designer, Programmer",
+#		"link" : "http://vertical.ai/",
+#		"description" : "Using Vive and Leap Motion, I built a prototype game that lets you portal between worlds, and recognizes hand gestures for casting magic spells.", 
+#		"video" : { 
+#			"source": "https://player.vimeo.com/video/294705016", 
+#			"image" : "mm_background.jpg" 
+#		},
+#		"images" : [	
+#			{"img":"mm_1.jpg"},
+#			{"img":"mm_2.jpg"},
+#			{"img":"mm_3.jpg"},
+#			{"img":"mm_4.jpg"},
+#		],
+#	})
 	obj['works'].append({
 		"title" : "Mouse Brain Explorer",
 		"background" : "mouse4.png",
@@ -477,46 +477,46 @@ def home(request):
 #			{ "img" : "radian_logo.png", "class" : "contain square", "link" : "http://radian.ai"},
 #		],	
 #	})
-	obj['works'].append({
-		"title" : "Fractal Games",
-		"link" : "https://fractalgames.com (old)",
-		"year" : "2010 - 2011",
-		"position" : "Founder",
-		"subtitle" : "An iOS game development studio.",
-		"description" : "I led a small team of developers and artists to design and publish two titles, \"Santa's Last Stand\" and \"Bank Defense\" for iOS." ,
-		"responsibilities" : 
-		[
-			"Game design & programming",
-			"Hired and managed art team",
-		],
-		"images" : [	
-			{"img": "fg.png","class":"contain"},
-			{"img" : "bd1.png"},
-			{"img" : "bd2.png"},
-			{"img" : "bd3.png"},
-			{"img" : "sls1.png"},
-			{"img" : "sls2.png"}
-			],	
-		})
-	obj['works'].append({
-		"title" : "Startup Grid (Hactus)",
-		"link" : "https://startupgrid.net",
-		"year" : "2012",
-		"position" : "Founder",
-		"description" : "One of my first solo projects, a search-and-filter website for exploring the startup landscape and searching for new opportunities. The startup data is scraped from CrunchBase. The original vision was to provide startups a go-to resource for funding, incubators, and other opportunities.",
-		"images" : [{"img":'startupgrid.png', "link":"http://startupgrid.net"}],	
-		})
-	obj['works'].append({
-		"title" : "Code Hero",
-		"link" : "https://codehero.org",
-		"year" : "2011",
-		"position" : "Contractor",
-		"description" : "I led production of the first 3D version of Code Hero, in which you learn programming by editing the world around you in real time using a javascript laser.",
-	"images" : [
-			{"img":"codehero.png"},
-		],	
-
-	})	
+#	obj['works'].append({
+#		"title" : "Fractal Games",
+#		"link" : "https://fractalgames.com (old)",
+#		"year" : "2010 - 2011",
+#		"position" : "Founder",
+#		"subtitle" : "An iOS game development studio.",
+#		"description" : "I led a small team of developers and artists to design and publish two titles, \"Santa's Last Stand\" and \"Bank Defense\" for iOS." ,
+#		"responsibilities" : 
+#		[
+#			"Game design & programming",
+#			"Hired and managed art team",
+#		],
+#		"images" : [	
+#			{"img": "fg.png","class":"contain"},
+#			{"img" : "bd1.png"},
+#			{"img" : "bd2.png"},
+#			{"img" : "bd3.png"},
+#			{"img" : "sls1.png"},
+#			{"img" : "sls2.png"}
+#			],	
+#		})
+#	obj['works'].append({
+#		"title" : "Startup Grid (Hactus)",
+#		"link" : "https://startupgrid.net",
+#		"year" : "2012",
+#		"position" : "Founder",
+#		"description" : "One of my first solo projects, a search-and-filter website for exploring the startup landscape and searching for new opportunities. The startup data is scraped from CrunchBase. The original vision was to provide startups a go-to resource for funding, incubators, and other opportunities.",
+#		"images" : [{"img":'startupgrid.png', "link":"http://startupgrid.net"}],	
+#		})
+#	obj['works'].append({
+#		"title" : "Code Hero",
+#		"link" : "https://codehero.org",
+#		"year" : "2011",
+#		"position" : "Contractor",
+#		"description" : "I led production of the first 3D version of Code Hero, in which you learn programming by editing the world around you in real time using a javascript laser.",
+#	"images" : [
+#			{"img":"codehero.png"},
+#        ],	
+#
+#	})	
 					
 #	obj['social'] = [
 #		{ "name" : "github.com/vannorman", "link" : "https://github.com/vannorman" },

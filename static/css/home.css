@@ -41,7 +41,9 @@ body{
 	padding-bottom:10px;
 	line-height:25px;
 	outline:1px dotted black;
-	width:720px;height:100px;
+	width:720px;height:300px;
+    text-align:justify;
+    text-justify:inter-word;
 
 }
 #content2{
@@ -50,8 +52,11 @@ body{
 
 }
 
-#content p {width:740px;margin:0 auto;text-align:justify;text-justify:inter-word;}
-@media only screen and (max-width: 823px) { #content p { width:90%; }; } 
+#content h2 {margin: 0 auto; width: 740px; margin-top:40px;} 
+@media only screen and (max-width:823px){ #content h2 {width:90%;}; }
+
+#content p {width:960px;margin:0 auto;text-align:justify;text-justify:inter-word;margin-bottom:40px;}
+@media only screen and (max-width: 1067px) { #content p { width:90%; }; } 
 
 .bar {
 	position:relative;
@@ -101,3 +106,7 @@ body{
         margin-bottom: 1rem;
     }
 }
+
+.apps { width: 90%; margin: 0 auto; text-align:center; } 
+.appBox { display:inline-block;width:340px;height:220px;margin:0 auto; text-align:center; }
+.app { margin:10px; border:1px solid green; }

@@ -19,13 +19,12 @@
 
 </div>
 <div id="intro2"> 
-    <p> I build teams, solve fun problems, and produce full stack applications </p>
-    <p> Vertical interests: Real Estate | 3D Software | EdTech </p>
+    <p> Hello! Welcome to my personal site, where I share some of my interests and business endeavors. I'm a builder and a founder who enjoys making awesome products and contributing to the good change in the world. I believe that my biggest lever of impact is through education and real estate, to gather people together and provide well-architected communication, so that we can be more aligned and prosper together. Incidentally my favorite Ted speaker Hans Rosling has changed my life with his approach to long-form statistics, showing that humanity is improving over all metrics despite our "bad news headlines". I see my place in this world as contributing to this positive trend as much as I can (and hopefully having some fun along the way!)</p>
 </div> 
 <div id="content">
     <h2> Regenerative Living</h2>
-    <p> How we live and work is changing: a central building with amenities and coliving, surrounded by additional private dwellings. These new developments offer the opportunity for equitable ownership and regenerative practices, as well as an affordable, remote paradise enabled by Starlink.</p>
-    <br>    <p> I invest, develop, syndicate, consult, and build applications for real estate projects. Pictured below are two of my portfolio projects in Puerto Rico, Mana Retreat Center and Mana Ranch.</p>
+    <!--- <p> How we live and work is changing: a central building with amenities and coliving, surrounded by additional private dwellings. These new developments offer the opportunity for equitable ownership and regenerative practices, as well as an affordable, remote paradise enabled by Starlink.</p> -->
+    <br>    <p> I invest, develop, syndicate, and consult in real estate. Pictured below are two of my portfolio projects in Puerto Rico, Mana Retreat Center and Mana Ranch.</p>
     <div class="bar green"></div>
     <div class="bar"></div>
     <div class="container">
@@ -41,24 +40,23 @@
     </div>
     <div class="bar"></div>
     <div class="bar green"></div>
-    <h2> Regenerative Living</h2>
-    <p> I am an investor and developer of micro-campuses across the U.S. and Latin America. The way humans live and work is changing; remote, Starlink enabled villages are popping up everywhere. Especially interesting to me is the equitable, fractional ownership models available, and the opportunity to design regenerative spaces for the ecosystem and for our selves, our work, and our relationships.</p>
-    <div class="container">
-        <div class="tile">
-            <img src="https://via.placeholder.com/800x600/EE4540/BE3733" alt="">
-        </div>
-        <div class="tile">
-            <img src="https://via.placeholder.com/800x600/C72B41/9F2234" alt="">
-        </div>
-        <div class="tile">
-            <img src="https://via.placeholder.com/800x600/800834/66062A" alt="">
-        </div>
-        <div class="tile">
-            <img src="https://via.placeholder.com/800x600/530332/420228" alt="">
-        </div>
-        <div class="tile">
-            <img src="https://via.placeholder.com/800x600/2E122D/2A021A" alt="">
-        </div>
+    <h2> Full Stack Applications </h2>
+    <p> I build applications, visualizations, and video games. Here are some of my works: </p>
+    <div class="apps">
+	    {% for item in works %}
+			<div class="appBox">
+				<div class="app">
+					<h3> {{ item.title }} </h3>
+					<div class="video">
+						<iframe src="{{item.video.source}}?h=5204f730dc&title=0&byline=0&portrait=0" width="320" height="165" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>	
+					</div>
+
+				</div>
+
+			</div>
+				
+        {% endfor %}
+            
     </div>
 </div>
 
