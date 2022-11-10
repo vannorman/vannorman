@@ -56,7 +56,10 @@ float:left;
 }
 
 #intro2 span { font-weight:bold; }
-#content1 {background-color:#4c4;margin-bottom:100pxt}
+#content1 {
+    background: linear-gradient(180deg, #4c4 80%, #873e23 20%);
+    padding-bottom:80px;
+}
 #content1 h2 {margin: 0 auto; width: 960px;} 
 @media only screen and (max-width:1067px){ #content h2 {width:90%;}; }
 
