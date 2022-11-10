@@ -14,39 +14,45 @@
 <body>
 
 <div id="top">
-    <div id="portrait"></div>
-    <h1 id='name2'> Charlie Van Norman </h1>
+    <div id="me">
+        <div id="portrait"></div>
+        <h1 id='name2'> Charlie Van Norman </h1>
+    </div>
 
 </div>
 <div id="intro2">
     <p> 
-    <span> Hello </span> &#8211; I'm a creator with a technical background who enjoys bringing awesome products to life in Real Estate, Education, and Video Games. </p>
-    <p>
-    <span> Humanity is improving </span> across key metrics like income, longevity, and safety. Tech trends are accelerating exponentially, and live / work / play models are evolving. I have a particular interest in real estate developments that synergize with these trends. </p> 
-    <p> <span>My Mission</span> is to accelerate these positive trends (and hopefully have some fun along the way!) Let's build awesome products and solutions to enable people to be informed, aligned, and empowered, so we may prosper together and build our future.</p>
+    <span> Hello </span> &#8211; I'm a creator with a technical background, who enjoys leading teams and building products in Real Estate, Education, and Software. </p>
+    <p> <span> Humanity is improving </span> worldwide across key metrics like income, longevity, and safety. Tech trends are accelerating, and live / work / play models are evolving.</p> 
+    <p> <span>My Mission</span> is to accelerate our progress (and hopefully have some fun along the way!) Let's build new spaces and effective products that inform, align, and empower, so we may prosper and build our future together. <p>
 </div> 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#44cc44" fill-opacity="1" d="M0,192L75.8,164L151.6,224L227.4,288L303.2,264L378.9,292L454.7,192L530.5,264L606.3,332L682.1,264L757.9,288L833.7,288L909.5,196L985.3,256L1061.1,320L1136.8,224L1212.6,296L1288.4,160L1364.2,224L1440,192L1440,320L1364.2,320L1288.4,320L1212.6,320L1136.8,320L1061.1,320L985.3,320L909.5,320L833.7,320L757.9,320L682.1,320L606.3,320L530.5,320L454.7,320L378.9,320L303.2,320L227.4,320L151.6,320L75.8,320L0,320Z"></path></svg>
-<div id="content">
-    <h2> Regenerative Living</h2>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220"><path fill="#44cc44" fill-opacity="1" d="M0,92L75.8,64L151.6,124L227.4,188L303.2,164L378.9,192L454.7,92L530.5,164L606.3,232L682.1,164L757.9,188L833.7,150L909.5,96L985.3,156L1061.1,220L1136.8,124L1212.6,196L1288.4,60L1364.2,124L1440,92L1440,320L1364.2,320L1288.4,320L1212.6,320L1136.8,320L1061.1,320L985.3,320L909.5,320L833.7,320L757.9,320L682.1,320L606.3,320L530.5,320L454.7,320L378.9,320L303.2,320L227.4,320L151.6,320L75.8,320L0,320Z"></path></svg>
+<div id="content1">
     <!--- <p> How we live and work is changing: a central building with amenities and coliving, surrounded by additional private dwellings. These new developments offer the opportunity for equitable ownership and regenerative practices, as well as an affordable, remote paradise enabled by Starlink.</p> -->
-    <br>    <p> I invest, develop, syndicate, and consult in real estate. Pictured below are two of my portfolio projects in Puerto Rico, Mana Retreat Center and Mana Ranch.</p>
-    <div class="bar green"></div>
-    <div class="bar"></div>
-    <div class="container">
-        <div class="tile">
-            <img src="/static/img/mana1.jpg" alt="">
-        </div>
-        <div class="tile">
-            <img src="https://via.placeholder.com/800x600/C72B41/9F2234" alt="">
-        </div>
-        <div class="tile">
-            <img src="https://via.placeholder.com/800x600/800834/66062A" alt="">
+    <div class="heading">
+        <p> <span> Regenerative Living: </span> At Mana Developments, we develop micro campuses to enable remote work, coliving, and retreat events.</p>
+    </div>
+    <br>
+    <div class="block">
+        <div class="container">
+            <div class="tile">
+                <img src="/static/img/mana1.webp" alt="">
+            </div>
+            <div class="tile">
+                <img src="/static/img/mana2.webp" alt="">
+            </div>
+            <div class="tile">
+                <img src="/static/img/mana3.webp" alt="">
+            </div>
         </div>
     </div>
-    <div class="bar"></div>
-    <div class="bar green"></div>
-    <h2> Full Stack Applications </h2>
-    <p> I build applications, visualizations, and video games. Here are some of my works: </p>
+</div>
+
+<div id="content2">
+    <div class="heading">
+        <p> <span> Full Stack Applications </span> I build applications, visualizations, and video games. Here are some of my works: </p>
+    </div>
     <div class="apps">
 	    {% for item in works %}
 			<div class="appBox">

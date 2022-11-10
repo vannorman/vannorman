@@ -28,11 +28,14 @@ body{
     background-size:cover;
     padding:0; margin:0;
 }
-#name2 {color:white;position:absolute;top:180px;left:200px;}
+#me {margin:0 auto;text-align:center;width:720px;position:relative;top:140px;}
+@media only screen and (max-width:957px){ #me {width:90%;}; }
+#name2 {color:white;position:absolute;top:50px;left:180px;}
 #portrait {
+    position:relative;
+float:left;
     width:155px;
     height:155px;
-	position:absolute;top:140px;left:25px;
 	border:2px solid black;
 	border-radius:50%;
 	background-image:url('/static/img/bus-card-jpg.jpg');background-size:cover;background-position:center;
@@ -53,13 +56,14 @@ body{
 }
 
 #intro2 span { font-weight:bold; }
-#content {background-color:#4c4;}
-#content h2 {margin: 0 auto; width: 960px;} 
+#content1 {background-color:#4c4;margin-bottom:100pxt}
+#content1 h2 {margin: 0 auto; width: 960px;} 
 @media only screen and (max-width:1067px){ #content h2 {width:90%;}; }
 
-#content p {width:960px;margin:0 auto;text-align:justify;text-justify:inter-word;margin-bottom:40px;}
-@media only screen and (max-width: 1067px) { #content p { width:90%; }; } 
-
+#content1 .heading {width:960px;margin:0 auto; display:block;height:120px;}
+@media only screen and (max-width: 1067px) { #content .heading { width:90%; }; } 
+#content1 p { width: 460px; float:left; border-radius:25px;background-color:white;padding:15px;text-align:justify;text-justify:inter-word;}
+#content1 span { font-weight:bold; }
 .bar {
 	position:relative;
 	width:100%;
@@ -71,6 +75,7 @@ body{
 .green {
 	background-color:#0a0;
 }
+.block {display:block;}
 .container{
     position:relative;
 	display: grid;
