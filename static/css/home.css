@@ -60,13 +60,13 @@ float:left;
     background: linear-gradient(180deg, #4c4 80%, #873e23 20%);
     padding-bottom:80px;
 }
-#content1 h2 {margin: 0 auto; width: 960px;} 
+.content h2 {margin: 0 auto; width: 960px;} 
 @media only screen and (max-width:1067px){ #content h2 {width:90%;}; }
 
-#content1 .heading {width:960px;margin:0 auto; display:block;height:120px;}
+.content .heading {width:960px;margin:0 auto; display:block;height:120px;}
 @media only screen and (max-width: 1067px) { #content .heading { width:90%; }; } 
-#content1 p { width: 460px; float:left; border-radius:25px;background-color:white;padding:15px;text-align:justify;text-justify:inter-word;}
-#content1 span { font-weight:bold; }
+.content p { width: 600px; margin:0 auto; position:relative;top:20px;border-radius:25px;background-color:white;padding:15px;text-align:center;}
+.content span { font-weight:bold; }
 .bar {
 	position:relative;
 	width:100%;
@@ -77,6 +77,11 @@ float:left;
 
 .green {
 	background-color:#0a0;
+}
+
+#content2 {
+    background: linear-gradient(180deg, #09f 80%, #09f 20%);
+    padding-bottom:0px;
 }
 .block {display:block;}
 .container{
@@ -119,4 +124,4 @@ float:left;
 
 .apps { width: 90%; margin: 0 auto; text-align:center; } 
 .appBox { display:inline-block;width:340px;height:220px;margin:0 auto; text-align:center; }
-.app { margin:10px; border:1px solid green; }
+.app { margin:10px; border:1px solid green; background-color:white;border-radius:25px;}

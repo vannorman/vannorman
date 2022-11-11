@@ -149,35 +149,84 @@ def home(request):
 	obj = {}
 	obj['works'] = []
 	obj['works'].append({
-		"title" : "Secret VR Game",
-		"background" : "",
-		"position" : "Monkey Wizard",
-		"link" : "",
-		"date" : "Summer 2020",
-        	"description" : "Early prototype. Magical powers of cube control. Written for Quest using Unity3D",
+		"title" : "Super Math World",
+		"video" : { "source": "https://player.vimeo.com/video/219464062", "img" : "smw_1.jpg" },
+		"background" : "smw_2.jpg",
+		"link" : "https://supermathworld.com",
+		"date" : "2016 Q1 - 2017 Q3",
+		"position" : "Founder, CTO",
+#		"subtitle" : "A WebGL based math sandbox",
+		"description" : "A math sandbox video game for grades 2 - 8 which allows users to edit, create, and share game content from directly inside the application, natively in a web browser.",
+		"responsibilities" : 
+		[
+				"Unity c# framework architecture",
+				"Game design & programming",
+				"Web backend (python, django, MySQL, AWS)",
+		],
+		"images" : [
+			{ "img" : "smw_1.jpg" },
+			{ "img" : "smw_3.jpg"},
+			{ "img" : "smw_4.jpg"},
+			{ "img" : "smw_3.jpg"}
+		],	
+    })
+	obj['works'].append({
+		"title" : "Mathbreakers",
+		"video" : { "source": "https://player.vimeo.com/video/73754523", "img" : "mb_1.jpg" },
+		"background" : "mb_1.png",
+		"link" : "https://mathbreakers.com",
+		"date" : "2013 Q3 - 2015 Q4",
+		"position" : "Co-Founder",
+		"subtitle" : "A math puzzle platformer for grades 2 - 8",
+		"description" : "We partnered with some of the biggest names in math education, including Dan Meyer and Jo Boaler, to discover the intersection between 3-D action gaming and elementary mathematics. The result was a truly immersive, stress free math game that kids love to play.",
+		"responsibilities" : 
+		[
+			"Game design & programming",
+			"Strategic partnerships",
+		],
+		"images" : [
+			{ "img" : "mb_1.jpg"},
+			{ "img" : "mb_2.jpg"},
+			{ "img" : "mb_3.jpg"},
+			{ "img" : "mb_4.jpg"}
+		],	
+		})
+
+#	obj['works'].append({
+#		"title" : "Admirals Multiplayer",
+#		"background" : "",
+#		"position" : "Developer, Game Designer",
+#		"link" : "https://www.havik.us",
+#		"date" : "2019",
+#		"description" : "A multiplayer VR experience where you build and control a fleet of ships in space.",
+#		"video" : { 
+#			"source": "https://player.vimeo.com/video/362128849", 
+#			"image" : "" 
+#		},
+#		"images" : [	
+#		],
+#	})
+	obj['works'].append({
+		"title" : "Enterprise Training",
+		"background" : "mm_background.jpg",
+		"position" : "Consultant, Designer, Programmer",
+                "date" : "2018 Q2",
+		"link" : "http://tryvantagepoint.com/",
+		"description" : "As interim CTO I led the development of Vantage Point, a VR harassment enterprise training application. Note the video is private at the request of the company - video demo available on request.",
 		"video" : { 
-			"source": "https://player.vimeo.com/video/435624506", 
-			"image" : "" 
+			"source": "https://player.vimeo.com/video/294705276", 
+			"image" : "mm_background.jpg" 
 		},
 		"images" : [	
+			{"img":"mm_1.jpg"},
+			{"img":"mm_2.jpg"},
+			{"img":"mm_3.jpg"},
+			{"img":"mm_4.jpg"},
 		],
 	})
+
 	obj['works'].append({
-		"title" : "Admirals of Adaris VR",
-		"background" : "",
-		"position" : "Developer, Game Designer",
-		"link" : "https://www.havik.us",
-		"date" : "2019",
-		"description" : "A multiplayer VR experience where you build and control a fleet of ships in space.",
-		"video" : { 
-			"source": "https://player.vimeo.com/video/362128849", 
-			"image" : "" 
-		},
-		"images" : [	
-		],
-	})
-	obj['works'].append({
-		"title" : "Havik Air Strike VR",
+		"title" : "Military Training",
 		"background" : "",
 		"position" : "Developer, Game Designer",
 		"link" : "https://www.havik.us",
@@ -191,26 +240,7 @@ def home(request):
 		],
 	})
 	obj['works'].append({
-		"title" : "Space Frog VR",
-		"background" : "spacefrog_background.jpg",
-		"position" : "Developer, Game Designer",
-		"link" : "https://store.steampowered.com/app/978650/SpaceFrog_VR/",
-		"date" : "2018 Q1 - Q4",
-#		"subtitle" : "A Virtual Reality fitness game in collaboration with Alex Goldman",
-		"description" : "A VR Active Fitness game in collaboration with Alex Goldman, which engages the player to utilize the body and controllers in motion throughout the full play area (2 x 3 meters)",
-		"video" : { 
-			"source": "https://player.vimeo.com/video/305282073", 
-			"image" : "sf1.png" 
-		},
-		"images" : [	
-			{"img":"sf5.png"},
-			{"img":"sf6.png"},
-			{"img":"sf7.png"},
-			{"img":"sf8.png"},
-		],
-	})
-	obj['works'].append({
-		"title" : "Humon AI Company",
+		"title" : "Remote Control Robot",
 		"video" : { 
 			"source": "https://player.vimeo.com/video/250308773", 
 			"image" : "sf1.png" 
@@ -232,50 +262,27 @@ def home(request):
 #			{"img":"vb4.png"},
 		],	
 	})
-	obj['works'].append({
-
-		"title" : "Super Math World",
-		"video" : { "source": "https://player.vimeo.com/video/219464062", "img" : "smw_1.jpg" },
-		"background" : "smw_2.jpg",
-		"link" : "https://supermathworld.com",
-		"date" : "2016 Q1 - 2017 Q3",
-		"position" : "Founder, CTO",
-#		"subtitle" : "A WebGL based math sandbox",
-		"description" : "A math sandbox video game for grades 2 - 8 which allows users to edit, create, and share game content from directly inside the application, natively in a web browser.",
-		"responsibilities" : 
-		[
-				"Unity c# framework architecture",
-				"Game design & programming",
-				"Web backend (python, django, MySQL, AWS)",
-		],
-		"images" : [
-			{ "img" : "smw_1.jpg" },
-			{ "img" : "smw_3.jpg"},
-			{ "img" : "smw_4.jpg"},
-			{ "img" : "smw_3.jpg"}
-		],	
-		})
-	obj['works'].append({
-		"title" : "Gamified AR mapping",
-		"background" : "mm_background.jpg",
-		"position" : "Consultant, Designer, Programmer",
-                "date" : "2018 Q3",
-		"link" : "http://vertical.ai/",
-		"description" : "PlaceNote is a platform for AR developers, many of whom need prefabs and techniques to get started for guiding the end user to optimal mapping behaviors. I wrote an extension to the PlaceNote SDK that includes prefabs for developers to help them achieve this.",
-		"video" : { 
-			"source": "https://player.vimeo.com/video/294704893", 
-			"image" : "mm_background.jpg" 
-		},
-		"images" : [	
-			{"img":"mm_1.jpg"},
-			{"img":"mm_2.jpg"},
-			{"img":"mm_3.jpg"},
-			{"img":"mm_4.jpg"},
-		],
-	})
+#	obj['works'].append({
+#		"title" : "Gamified AR mapping",
+#		"background" : "mm_background.jpg",
+#		"position" : "Consultant, Designer, Programmer",
+#                "date" : "2018 Q3",
+#		"link" : "http://vertical.ai/",
+#		"description" : "PlaceNote is a platform for AR developers, many of whom need prefabs and techniques to get started for guiding the end user to optimal mapping behaviors. I wrote an extension to the PlaceNote SDK that includes prefabs for developers to help them achieve this.",
+#		"video" : { 
+#			"source": "https://player.vimeo.com/video/294704893", 
+#			"image" : "mm_background.jpg" 
+#		},
+#		"images" : [	
+#			{"img":"mm_1.jpg"},
+#			{"img":"mm_2.jpg"},
+#			{"img":"mm_3.jpg"},
+#			{"img":"mm_4.jpg"},
+#		],
+#	})
 
 	obj['works'].append({
-		"title" : "Molecular Visualization",
+		"title" : "Molecular Machines",
 		"background" : "mm_background.jpg",
 		"position" : "Developer, Graphic Designer",
 		"link" : "https://foresight.org/nanotechnology-leading-to-molecular-machines/",
@@ -293,25 +300,6 @@ def home(request):
 			{"img":"mm_4.jpg"},
 		],
 	})
-	obj['works'].append({
-		"title" : "Enterprise Training in VR",
-		"background" : "mm_background.jpg",
-		"position" : "Consultant, Designer, Programmer",
-                "date" : "2018 Q2",
-		"link" : "http://tryvantagepoint.com/",
-		"description" : "As interim CTO I led the development of Vantage Point, a VR harassment enterprise training application. Note the video is private at the request of the company - video demo available on request.",
-		"video" : { 
-			"source": "https://player.vimeo.com/video/294705276", 
-			"image" : "mm_background.jpg" 
-		},
-		"images" : [	
-			{"img":"mm_1.jpg"},
-			{"img":"mm_2.jpg"},
-			{"img":"mm_3.jpg"},
-			{"img":"mm_4.jpg"},
-		],
-	})
-
 #	obj['works'].append({
 #		"title" : "Village Builder",
 #		"background" : "vb1.png",
@@ -330,7 +318,7 @@ def home(request):
 #		],	
 #	})
 	obj['works'].append({
-		"title" : "Cell Explorer VR",
+		"title" : "Cellular Anatomy",
 		"background" : "mm_background.jpg",
 		"position" : "Consultant, Designer, Programmer",
 		"link" : "http://vertical.ai/",
@@ -391,28 +379,7 @@ def home(request):
 #			
 #		],	
 #	})	
-	obj['works'].append({
-		"title" : "Mathbreakers",
-		"video" : { "source": "https://player.vimeo.com/video/73754523", "img" : "mb_1.jpg" },
-		"background" : "mb_1.png",
-		"link" : "https://mathbreakers.com",
-		"date" : "2013 Q3 - 2015 Q4",
-		"position" : "Co-Founder",
-		"subtitle" : "A math puzzle platformer for grades 2 - 8",
-		"description" : "We partnered with some of the biggest names in math education, including Dan Meyer and Jo Boaler, to discover the intersection between 3-D action gaming and elementary mathematics. The result was a truly immersive, stress free math game that kids love to play.",
-		"responsibilities" : 
-		[
-			"Game design & programming",
-			"Strategic partnerships",
-		],
-		"images" : [
-			{ "img" : "mb_1.jpg"},
-			{ "img" : "mb_2.jpg"},
-			{ "img" : "mb_3.jpg"},
-			{ "img" : "mb_4.jpg"}
-		],	
-		})
-#	obj['works2'] = []
+	#	obj['works2'] = []
 #	obj['works2'].append({
 #		"title" : "Coffee Command ARKit",
 #		"position" : "Developer/Designer",
@@ -526,6 +493,25 @@ def home(request):
 #		{ "name" : "angel.co/supermathworld", "link" : "https://angel.co/supermathworld" },
 #		{ "name" : "soundcloud.com/vannorman", "link" : "https://soundcloud.com/vannorman" },
 #	]
+	obj['works'].append({
+		"title" : "VR Fitness",
+		"background" : "spacefrog_background.jpg",
+		"position" : "Developer, Game Designer",
+		"link" : "https://store.steampowered.com/app/978650/SpaceFrog_VR/",
+		"date" : "2018 Q1 - Q4",
+#		"subtitle" : "A Virtual Reality fitness game in collaboration with Alex Goldman",
+		"description" : "A VR Active Fitness game in collaboration with Alex Goldman, which engages the player to utilize the body and controllers in motion throughout the full play area (2 x 3 meters)",
+		"video" : { 
+			"source": "https://player.vimeo.com/video/305282073", 
+			"image" : "sf1.png" 
+		},
+		"images" : [	
+			{"img":"sf5.png"},
+			{"img":"sf6.png"},
+			{"img":"sf7.png"},
+			{"img":"sf8.png"},
+		],
+	})
 
 	return renderWithNav(request,'home.html', obj)
 
