@@ -149,14 +149,35 @@ def home(request):
 	obj = {}
 	obj['works'] = []
 	obj['works'].append({
+		"title" : "Mathbreakers",
+		"video" : { "source": "https://player.vimeo.com/video/73754523", "img" : "mb_1.jpg" },
+		"background" : "mb_1.png",
+		"link" : "https://mathbreakers.com",
+		"date" : "2013 Q3 - 2015 Q4",
+		"position" : "Co-Founder",
+		"subtitle" : "A math puzzle platformer for grades 2 - 8",
+		"description" : "3D math adventure game for Mac, PC, and iOS with a linear storyline for arithmetic, number line, and fractions." ,
+		"responsibilities" : 
+		[
+			"Game design & programming",
+			"Strategic partnerships",
+		],
+		"images" : [
+			{ "img" : "mb_1.jpg"},
+			{ "img" : "mb_2.jpg"},
+			{ "img" : "mb_3.jpg"},
+			{ "img" : "mb_4.jpg"}
+		],	
+		})
+	obj['works'].append({
 		"title" : "Super Math World",
 		"video" : { "source": "https://player.vimeo.com/video/219464062", "img" : "smw_1.jpg" },
 		"background" : "smw_2.jpg",
 		"link" : "https://supermathworld.com",
 		"date" : "2016 Q1 - 2017 Q3",
 		"position" : "Founder, CTO",
-#		"subtitle" : "A WebGL based math sandbox",
-		"description" : "A math sandbox video game for grades 2 - 8 which allows users to edit, create, and share game content from directly inside the application, natively in a web browser.",
+#		"subtitle" : "A WebGL based math sandbox",www
+		"description" : "3D open world math learning game for Web Browsers, with level builder and teacher dashboard.",
 		"responsibilities" : 
 		[
 				"Unity c# framework architecture",
@@ -170,27 +191,6 @@ def home(request):
 			{ "img" : "smw_3.jpg"}
 		],	
     })
-	obj['works'].append({
-		"title" : "Mathbreakers",
-		"video" : { "source": "https://player.vimeo.com/video/73754523", "img" : "mb_1.jpg" },
-		"background" : "mb_1.png",
-		"link" : "https://mathbreakers.com",
-		"date" : "2013 Q3 - 2015 Q4",
-		"position" : "Co-Founder",
-		"subtitle" : "A math puzzle platformer for grades 2 - 8",
-		"description" : "We partnered with some of the biggest names in math education, including Dan Meyer and Jo Boaler, to discover the intersection between 3-D action gaming and elementary mathematics. The result was a truly immersive, stress free math game that kids love to play.",
-		"responsibilities" : 
-		[
-			"Game design & programming",
-			"Strategic partnerships",
-		],
-		"images" : [
-			{ "img" : "mb_1.jpg"},
-			{ "img" : "mb_2.jpg"},
-			{ "img" : "mb_3.jpg"},
-			{ "img" : "mb_4.jpg"}
-		],	
-		})
 
 #	obj['works'].append({
 #		"title" : "Admirals Multiplayer",
@@ -212,7 +212,7 @@ def home(request):
 		"position" : "Consultant, Designer, Programmer",
                 "date" : "2018 Q2",
 		"link" : "http://tryvantagepoint.com/",
-		"description" : "As interim CTO I led the development of Vantage Point, a VR harassment enterprise training application. Note the video is private at the request of the company - video demo available on request.",
+		"description" : "Harassment training app with virtual cell phone and branching narrative for Oculus Rift.",
 		"video" : { 
 			"source": "https://player.vimeo.com/video/294705276", 
 			"image" : "mm_background.jpg" 
@@ -231,7 +231,7 @@ def home(request):
 		"position" : "Developer, Game Designer",
 		"link" : "https://www.havik.us",
 		"date" : "2019",
-		"description" : "A simulation for Air Force equipment and procedure training. Features include weather control, night vision, Garmin GPS, Garmin watch, izlid, rangefinder, 3rd party military vehicle and mission integration. Video is confidential, private demo may be available upon request.",
+		"description" : "Virtual Air Strike simulator including weather control and several interactive military equipment pieces.",
 		"video" : { 
 			"source": "https://player.vimeo.com/video/399474483", 
 			"image" : "" 

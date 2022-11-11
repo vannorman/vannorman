@@ -123,5 +123,7 @@ float:left;
 }
 
 .apps { width: 90%; margin: 0 auto; text-align:center; } 
-.appBox { display:inline-block;width:340px;height:220px;margin:0 auto; text-align:center; }
-.app { margin:10px; border:1px solid green; background-color:white;border-radius:25px;}
+.appBox { display:inline-block;width:340px;height:360px;margin:0 auto; text-align:center;vertical-align:top; }
+.app { margin:10px; background-color:white;border-radius:25px;}
+.app .title { margin: 5px auto 10px auto; font-weight:bold;font-size:1.2em; padding-top:10px; } 
+.app .description { height:100px; max-height:100px; padding: 20px; text-align:left;}

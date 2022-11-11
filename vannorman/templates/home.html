@@ -29,7 +29,7 @@
 
 
 <!-- APPS --> 
-<svg style="margin-top:-75px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,96L30,128C60,160,120,224,180,224C240,224,300,160,360,165.3C420,171,480,245,540,234.7C600,224,660,128,720,117.3C780,107,840,181,900,213.3C960,245,1020,235,1080,202.7C1140,171,1200,117,1260,106.7C1320,96,1380,128,1410,144L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
+<svg style="margin-top:-115px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,96L30,128C60,160,120,224,180,224C240,224,300,160,360,165.3C420,171,480,245,540,234.7C600,224,660,128,720,117.3C780,107,840,181,900,213.3C960,245,1020,235,1080,202.7C1140,171,1200,117,1260,106.7C1320,96,1380,128,1410,144L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
 <div id="content2" class="content">
     <div class="heading">
         <p> <span> Apps and Video Games </span></p> 
@@ -38,11 +38,13 @@
 	    {% for item in works %}
 			<div class="appBox">
 				<div class="app">
-					<h3> {{ item.title }} </h3>
+					<div class="title"> {{ item.title }} </div>
 					<div class="video">
 						<iframe src="{{item.video.source}}?h=5204f730dc&title=0&byline=0&portrait=0" width="320" height="165" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>	
 					</div>
-
+                    <div class="description">
+                        {{ item.description }}
+                    </div>
 				</div>
 
 			</div>
@@ -58,7 +60,7 @@
 <div id="content1" class="content">
     <!--- <p> How we live and work is changing: a central building with amenities and coliving, surrounded by additional private dwellings. These new developments offer the opportunity for equitable ownership and regenerative practices, as well as an affordable, remote paradise enabled by Starlink.</p> -->
     <div class="heading">
-        <p> <span> Regenerative Living</span> </p> 
+        <p> <span> Coliving Developments </span> </p> 
     </div>
     <br>
     <div class="block">
