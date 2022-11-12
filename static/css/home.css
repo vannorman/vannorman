@@ -56,6 +56,19 @@ float:left;
 }
 @media only screen and (max-width:800px){ #intro2 {width:90%;}; }
 
+#intro2 .intro {
+    vertical-align:top;
+    outline:1px solid black;
+}
+#intro2 .intro .left { outline:1px solid blue;width:15%;height:100px;float:left; }
+#intro2 .intro .right { width:85%;float:right;outline:1px solid purple; }
+
+
+#intro2 p {
+    display: inline-block;
+    width: 85%; float:right;
+}
+
 #intro2 span { font-weight:bold; }
 #content1 {
     background: linear-gradient(180deg, #4c4 80%, #873e23 20%);
