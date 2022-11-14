@@ -19,6 +19,8 @@ body{
   font-family: sans-serif;
   margin: 0; padding:0;
 }
+
+.headingTitle {font-size:1.5em;}
 #top{
     position:relative;top:0;left:0;
     width:100%;
@@ -33,7 +35,7 @@ body{
 #name2 {color:white;position:absolute;top:50px;left:180px;}
 #portrait {
     position:relative;
-float:left;
+    float:left;
     width:155px;
     height:155px;
 	border:2px solid black;
@@ -42,36 +44,22 @@ float:left;
 
 }
 
-#intro2 {
-	position:relative;
-	margin:50px auto 50px auto;
-	text-align:center;
-	padding-top:1px;
-	padding-bottom:10px;
-	line-height:25px;
-	width:720px;
-    text-align:justify;
-    text-justify:inter-word;
-    
+#introTable {
+    display:table;
+    margin:50px auto 20px auto;
+   	width:720px;
+	border-collapse: separate;
+	border-spacing: 0 30px ;
 }
-@media only screen and (max-width:800px){ #intro2 {width:90%;}; }
+@media only screen and (max-width:800px){ #introTable {width:90%;}; }
 
-#intro2 .intro {
-    vertical-align:top;
-    outline:1px solid black;
-}
-#intro2 .intro .left { outline:1px solid blue;width:15%;height:100px;float:left; }
-#intro2 .intro .right { width:85%;float:right;outline:1px solid purple; }
+.introRow {	display:table-row; padding-bottom:15px; }
 
+.introCell {display:table-cell; width:15%;font-size:2.25em;line-height:0;text-align:center;vertical-align:middle; }
+.introCell2 { display:table-cell; width:85%; }
 
-#intro2 p {
-    display: inline-block;
-    width: 85%; float:right;
-}
-
-#intro2 span { font-weight:bold; }
 #content1 {
-    background: linear-gradient(180deg, #4c4 80%, #873e23 20%);
+    background: linear-gradient(180deg, #2db54d 80%, #873e23 20%);
     padding-bottom:80px;
 }
 .content h2 {margin: 0 auto; width: 960px;} 
@@ -79,8 +67,7 @@ float:left;
 
 .content .heading {width: 550px; margin:0 auto; display:block;height:120px;}
 @media only screen and (max-width: 1067px) { #content .heading { width:90%; }; } 
-.content p { margin:0 auto; position:relative;top:20px;border-radius:25px;background-color:white;padding:15px;text-align:center;}
-.content span { font-weight:bold; }
+.content p { margin:0 auto; position:relative;border-radius:25px;background-color:white;padding:15px;text-align:center;}
 .bar {
 	position:relative;
 	width:100%;
@@ -135,6 +122,15 @@ float:left;
         margin-bottom: 1rem;
     }
 }
+
+#blogs {
+	width:100%;
+	text-align:center;
+	background-color:#273036;
+	height:400px;
+}
+
+
 
 .apps { width: 90%; margin: 0 auto; text-align:center; } 
 .appBox { display:inline-block;width:340px;height:360px;margin:0 auto; text-align:center;vertical-align:top; }
