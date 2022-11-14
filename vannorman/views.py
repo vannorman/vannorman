@@ -250,7 +250,7 @@ def home(request):
 		"link" : "",
 		"date" : "2017 Q4",
 		"subtitle" : "",
-		"description" : "Robots are controlled using human inputs in Virtual Reality, and can be trained on the data gathered by human inputs (using Vive controllers)",
+		"description" : "Remote control industrial robot which can make toast, pour drinks, and pick junkyard metals.",
 		"images" : [	
 			{"img":"hi1.png"},
 			{"img":"hi2.png"},
@@ -288,7 +288,7 @@ def home(request):
 		"link" : "https://foresight.org/nanotechnology-leading-to-molecular-machines/",
                 "date" : "2018 Q1",
 #		"subtitle" : "A Virtual Reality fitness game in collaboration with Alex Goldman",
-		"description" : "Based on projects designed by the Foresight Institute's May 2018 Molecular Machines workshop",
+		"description" : "Animated showcase including a modular catalyst synthesizer, controlled molecule flow, and energy storage.",
 		"video" : { 
 			"source": "https://player.vimeo.com/video/273109330", 
 			"image" : "mm_background.jpg" 
@@ -322,7 +322,7 @@ def home(request):
 		"background" : "mm_background.jpg",
 		"position" : "Consultant, Designer, Programmer",
 		"link" : "http://vertical.ai/",
-		"description" : "As a big believer in video games as the best medium for learning, I also believe VR takes this one step further. This is an experimental immersive experience to teach about the makeup of a cell with labeled organelles.",
+		"description" : "An immersive exploration of an animal cell with labeled organelles and structures.",
 		"video" : { 
 			"source": "https://player.vimeo.com/video/294705147", 
 			"image" : "mm_background.jpg" 
@@ -359,7 +359,7 @@ def home(request):
 		"date" : "2015 Q1",
 		"position" : "Developer",
 		"subtitle" : "Fly through a real mouse brain",
-		"description" : "Using a cubic centimeter of a mouse brain imaged with 3Scan's equipment, I made a virtual reality tour through the vasculature and a mini-game to destroy blood clots. This was on exhibit during the Exploratorium's science week in 2015.",
+		"description" : "Immersive tour through a mouse brain with simulated Clopidogrel administration — Exploratorium exhibit 2015.",
 		"images" : [
 			{"img":"mouse2.png"},
 			{"img":"mouse3.png"},
@@ -500,7 +500,7 @@ def home(request):
 		"link" : "https://store.steampowered.com/app/978650/SpaceFrog_VR/",
 		"date" : "2018 Q1 - Q4",
 #		"subtitle" : "A Virtual Reality fitness game in collaboration with Alex Goldman",
-		"description" : "A VR Active Fitness game in collaboration with Alex Goldman, which engages the player to utilize the body and controllers in motion throughout the full play area (2 x 3 meters)",
+		"description" : "Boxing / Dodging game that engages the player in motion throughout the full body as they rescue the Frog Princess.",
 		"video" : { 
 			"source": "https://player.vimeo.com/video/305282073", 
 			"image" : "sf1.png" 

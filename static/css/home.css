@@ -30,13 +30,28 @@ body{
     background-size:cover;
     padding:0; margin:0;
 }
-#me {margin:0 auto;text-align:center;width:720px;position:relative;top:140px;}
+#me {
+    margin:0 auto;
+    text-align:center;  
+    width:720px;
+    position:relative;
+    top:140px;
+    vertical-align:top;
+}
+@media only screen and (max-width:653px){ #top {margin-bottom:100px;}; }
 @media only screen and (max-width:957px){ #me {width:90%;}; }
-#name2 {color:white;position:absolute;top:50px;left:180px;}
+#name2 {
+    color:white;
+   display:inline-block; 
+    height:155px;
+    vertical-align:middle;
+    margin-left:30px;
+}
+@media only screen and (max-width:653px){ #name2 {color:black;}; }
 #portrait {
     position:relative;
-    float:left;
     width:155px;
+    display:inline-block;
     height:155px;
 	border:2px solid black;
 	border-radius:50%;
@@ -55,8 +70,15 @@ body{
 
 .introRow {	display:table-row; padding-bottom:15px; }
 
-.introCell {display:table-cell; width:15%;font-size:2.25em;line-height:0;text-align:center;vertical-align:middle; }
-.introCell2 { display:table-cell; width:85%; }
+.introCell {
+    display:table-cell; 
+    width:20%;
+    font-size:2.25em;
+    line-height:0;
+    text-align:center;
+    vertical-align:middle; 
+}
+.introCell2 { display:table-cell; width:80%; }
 
 #content1 {
     background: linear-gradient(180deg, #2db54d 80%, #873e23 20%);
@@ -67,7 +89,7 @@ body{
 
 .content .heading {width: 550px; margin:0 auto; display:block;height:120px;}
 @media only screen and (max-width: 1067px) { #content .heading { width:90%; }; } 
-.content p { margin:0 auto; position:relative;border-radius:25px;background-color:white;padding:15px;text-align:center;}
+.content p { margin:0 auto; position:relative;border-radius:25px;background-color:white;padding:15px;text-align:center; line-height:2em;}
 .bar {
 	position:relative;
 	width:100%;
@@ -133,7 +155,7 @@ body{
 
 
 .apps { width: 90%; margin: 0 auto; text-align:center; } 
-.appBox { display:inline-block;width:340px;height:360px;margin:0 auto; text-align:center;vertical-align:top; }
+.appBox { display:inline-block;width:340px;height:360px;margin:20px auto; text-align:center;vertical-align:top; }
 .app { margin:10px; background-color:white;border-radius:25px;}
-.app .title { margin: 5px auto 10px auto; font-weight:bold;font-size:1.2em; padding-top:10px; } 
+.app .title { margin: 5px auto 10px auto; font-weight:bold;font-size:1.2em; padding: 23px 0 7px 0; } 
 .app .description { height:100px; max-height:100px; padding: 20px; text-align:left;}
