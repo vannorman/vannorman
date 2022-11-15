@@ -87,9 +87,18 @@ body{
 .content h2 {margin: 0 auto; width: 960px;} 
 @media only screen and (max-width:1067px){ #content h2 {width:90%;}; }
 
-.content .heading {width: 550px; margin:0 auto; display:block;height:120px;}
-@media only screen and (max-width: 1067px) { #content .heading { width:90%; }; } 
-.content p { margin:0 auto; position:relative;border-radius:25px;background-color:white;padding:15px;text-align:center; line-height:2em;}
+.content .heading {
+    width: 550px;
+    margin:0 auto;
+    display:block;
+    position:relative;
+    border-radius:25px;
+    background-color:white;
+    padding:15px;
+    text-align:center;
+    line-height:2em;
+}
+@media only screen and (max-width: 1067px) { #content .heading { width:90%; }; }  
 .bar {
 	position:relative;
 	width:100%;
@@ -152,10 +161,36 @@ body{
 	height:400px;
 }
 
+#blogsContent {
+    width:720px;
+    background-color:white;
+    margin: 0 auto;
+/* Fucking firefox mozilla piece of shit with their custom -moz- tag because they refuse to be compatible with -webkit- means this code is impossbile to cross browser support goddamn shit munching assholes     clip-path: polygon(0px 25px, 25px 0px, -webkit-calc(100% - 25px) 0%, 100% 25px, 100% -webkit-calc(100% - 25px), -webkit-calc(100% - 25px) 100%, 25px 100%, 0% -webkit-calc(100% - 25px));
+    clip-path: polygon(0px 25px, 25px 0px, -moz-calc(100% - 25px) 0%, 100% 25px, 100% -webkit-calc(100% - 25px), -webkit-calc(100% - 25px) 100%, 25px 100%, 0% -webkit-calc(100% - 25px)); */
 
+}
+
+#blogsContent .title {
+}
+#blogsContent .heading {border-radius:0;}
 
 .apps { width: 90%; margin: 0 auto; text-align:center; } 
 .appBox { display:inline-block;width:340px;height:360px;margin:20px auto; text-align:center;vertical-align:top; }
 .app { margin:10px; background-color:white;border-radius:25px;}
 .app .title { margin: 5px auto 10px auto; font-weight:bold;font-size:1.2em; padding: 23px 0 7px 0; } 
 .app .description { height:100px; max-height:100px; padding: 20px; text-align:left;}
+
+.topLeftCorner {
+    width:25px;
+    height:25px;
+    clip-path: polygon(0px 25px, 0 0, 25px 0);
+    top:0;
+    left:0;
+}
+.topLeftCorner {
+    width:25px;
+    height:25px;
+    clip-path: polygon(0px 25px, 0 0, 25px 0);
+    top:0;
+    left:0;
+}
