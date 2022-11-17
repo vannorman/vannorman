@@ -158,21 +158,21 @@ body{
 	width:100%;
 	text-align:center;
 	background-color:#273036;
-	height:400px;
+    overflow:auto;
+    padding-top:40px;
 }
 
 #blogsContent {
-    width:720px;
+    width:520px;
     background-color:white;
     margin: 0 auto;
-/* Fucking firefox mozilla piece of shit with their custom -moz- tag because they refuse to be compatible with -webkit- means this code is impossbile to cross browser support goddamn shit munching assholes     clip-path: polygon(0px 25px, 25px 0px, -webkit-calc(100% - 25px) 0%, 100% 25px, 100% -webkit-calc(100% - 25px), -webkit-calc(100% - 25px) 100%, 25px 100%, 0% -webkit-calc(100% - 25px));
-    clip-path: polygon(0px 25px, 25px 0px, -moz-calc(100% - 25px) 0%, 100% 25px, 100% -webkit-calc(100% - 25px), -webkit-calc(100% - 25px) 100%, 25px 100%, 0% -webkit-calc(100% - 25px)); */
-
 }
+
+#blogsContent ul { list-style:none;text-align:left;padding-bottom:40px; margin-bottom:50px; line-height:2.5em; font-size:1.2em;}
 
 #blogsContent .title {
 }
-#blogsContent .heading {border-radius:0;}
+#blogsContent .heading {border-radius:0; width:400px;padding-top:40px;}
 
 .apps { width: 90%; margin: 0 auto; text-align:center; } 
 .appBox { display:inline-block;width:340px;height:360px;margin:20px auto; text-align:center;vertical-align:top; }
