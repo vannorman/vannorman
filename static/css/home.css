@@ -80,11 +80,7 @@ body{
 }
 .introCell2 { display:table-cell; width:80%; }
 
-#content1 {
-    background: linear-gradient(180deg, #2db54d 80%, #873e23 20%);
-    padding-bottom:80px;
-}
-.content h2 {margin: 0 auto; width: 960px;} 
+content h2 {margin: 0 auto; width: 960px;} 
 @media only screen and (max-width:1067px){ #content h2 {width:90%;}; }
 
 .content .heading {
@@ -115,7 +111,6 @@ body{
     background: linear-gradient(180deg, #09f 80%, #09f 20%);
     padding-bottom:0px;
 }
-.block {display:block;}
 .container{
     position:relative;
 	display: grid;
@@ -163,15 +158,16 @@ body{
 }
 
 #blogsContent {
-    width:520px;
+    width:720px;
     background-color:white;
     margin: 0 auto;
 }
+@media only screen and (max-width:800px){ #blogsContent { width:90%;} }
 
 #blogsContent ul { list-style:none;text-align:left;padding-bottom:40px; margin-bottom:50px; line-height:2.5em; font-size:1.2em;}
+#blogsContent ul li { margin-bottom:10px;} 
+#blogsContent .description { display:block;font-size:20px;width:85%;line-height:1.2em; margin-top:-10px;}
 
-#blogsContent .title {
-}
 #blogsContent .heading {border-radius:0; width:400px;padding-top:40px;}
 
 .apps { width: 90%; margin: 0 auto; text-align:center; } 
@@ -180,17 +176,15 @@ body{
 .app .title { margin: 5px auto 10px auto; font-weight:bold;font-size:1.2em; padding: 23px 0 7px 0; } 
 .app .description { height:100px; max-height:100px; padding: 20px; text-align:left;}
 
-.topLeftCorner {
-    width:25px;
-    height:25px;
-    clip-path: polygon(0px 25px, 0 0, 25px 0);
-    top:0;
-    left:0;
+#realEstate .heading { width:620px;top:50px;margin-bottom:50px;}
+#realEstate .heading p {line-height:1.2em;}
+
+#realEstate {
+    background: linear-gradient(180deg, #2db54d 80%, #873e23 20%);
+    background: linear-gradient(180deg, #2db54d, #873e23);
+    padding-bottom:80px;
 }
-.topLeftCorner {
-    width:25px;
-    height:25px;
-    clip-path: polygon(0px 25px, 0 0, 25px 0);
-    top:0;
-    left:0;
-}
+
+#realEstate .block {margin-top:80px;}
+
+.spacer { height:200px;}
