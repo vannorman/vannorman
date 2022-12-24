@@ -12,6 +12,7 @@ urlpatterns = [
 	url(r'^$', vannorman.views.home),
         url(r'^md/$', vannorman.views.render_md_blog),
 	url(r'^blog/$', vannorman.views.blog_base), 
+	url(r'^lotus/?$', vannorman.views.simple_page('lotus.html')), 
 	url(r'^base/$', vannorman.views.simple_page('base.html')), 
 	url(r'^resume/$', vannorman.views.simple_page('resume.html')), 
 	url(r'^portfolio/$', vannorman.views.simple_page('portfolio.html')), 
