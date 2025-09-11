@@ -514,6 +514,16 @@ def home(request):
     })
     obj['blogs'] = []
     obj['blogs'].append({
+        "title" : "Wealth, Abundance, and Homelessness", 
+        "description" : "We already pay for homelessness. What if we're doing it wrong?",
+        "link" : "https://vannorman-ai.medium.com/wealth-homelessness-and-abundance-eaa66558d2e4",
+    })
+    obj['blogs'].append({
+        "title" : "A Tribute to Hans Rosling",
+        "description" : "My homage to the statistician who changed the way I look at our world.",
+        "link" : "https://medium.com/@vannorman-ai/a-tribute-to-hans-rosling-2674f16d43b6",
+    })
+    obj['blogs'].append({
         "title" : "Enterprise Pre-Sales Equation",
         "description" : "How to consider different factors and evaluate a potential enterprise b2b opportunity.",
         "link" : "https://vannorman.medium.com/the-presales-equation-ce39703974f8",
@@ -522,11 +532,6 @@ def home(request):
         "title" : "How to Win Across Cultures",
         "description" : "A personal account of my experience as a Westerner working at a Ukrainian company.",
         "link" : "https://vannorman.medium.com/how-to-win-across-cultures-f2434983694a",
-    })
-    obj['blogs'].append({
-        "title" : "A Tribute to Hans Rosling",
-        "description" : "My homage to the statistician who changed the way I look at our world.",
-        "link" : "https://medium.com/@vannorman-ai/a-tribute-to-hans-rosling-2674f16d43b6",
     })
     return renderWithNav(request,'home.html', obj)
 
