@@ -1,0 +1,48 @@
+#portfolio {
+	position:relative;
+}
+
+#portfolio .featured {
+}
+
+ul {
+	list-style-type:none;
+	padding:0; margin:0;
+}
+
+.item {
+	padding-bottom:150px;
+}
+
+.item a, .item a:visited, .item a:hover {
+	text-decoration:none;
+	color:black;
+}
+
+.item .title {
+	font-size:25px;
+	font-weight:600;
+}
+
+.item .description {
+	margin-top:15px;
+	width:800px;
+	font-size:22px;
+}
+
+.item .iframe {
+	width:640px;
+	height:360px;
+}
+
+@media all and (max-width: 960px) {
+	.item .description {
+		width:500px;
+		font-size:22px;
+	}
+	.item .iframe {
+		width:50%;
+	}
+}
+
+
