@@ -478,7 +478,7 @@ def home(request):
             "org": "SoftServe",
             "role": "Consultant",
             "date": "",
-            "summary": "XR delivery for Magic Leap and a manufacturing training client. Government client engagements with SOC 2 requirements.",
+            "summary": "Pre-sales and solutions engineering for SMB and Fortune 500 enterprise clients.",
         },
         {
             "org": "InContext Solutions",
@@ -488,13 +488,13 @@ def home(request):
         },
         {
             "org": "Vantage Point VR",
-            "role": "Co-founder",
+            "role": "Interim CTO",
             "date": "",
             "summary": "Immersive VR workplace training.",
         },
         {
             "org": "Havik VR",
-            "role": "XR venture",
+            "role": "Interim CTO",
             "date": "",
             "summary": "Immersive technology venture.",
         },
@@ -525,7 +525,7 @@ def home(request):
         },
         {
             "group": "XR and 3D",
-            "items": ["Unity", "Unreal Engine", "PlayCanvas", "ARKit", "Oculus / Meta", "Magic Leap", "Ammo.js physics", "Mixamo animation", "Procedural meshes"],
+            "items": ["Unity3D", "Unreal Engine", "PlayCanvas", "ARKit", "Oculus / Meta", "Magic Leap", "Ammo.js physics", "Mixamo animation", "Procedural meshes"],
         },
     ]
 
