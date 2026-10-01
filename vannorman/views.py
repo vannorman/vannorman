@@ -379,7 +379,7 @@ def home(request):
         "date": "2026",
         "position": "Founder & Technical Lead",
         "org": "Manaborn Studios LLC",
-        "subtitle": "Browser-based 3D math game for grades 5-8, rebuilt in PlayCanvas with accounts, classrooms, and billing.",
+        "subtitle": "Browser-based 3D math game for grades 3-8, rebuilt in PlayCanvas with accounts, classrooms, and billing.",
         "description": "",
         "responsibilities": [
             "3D scene editor with transform gizmos and room editor",
@@ -466,7 +466,7 @@ def home(request):
             "org": "Manaborn Studios LLC",
             "role": "Founder & Technical Lead",
             "date": "2026 - present",
-            "summary": "Relaunching MathBreakers as a browser-based 3D math platform for grades 5-8. Full-stack development, DevOps, and go-to-market. Manages a team of 4.",
+            "summary": "Relaunching MathBreakers as a browser-based 3D math platform for grades 3-8. Full-stack development, DevOps, and go-to-market. Manages a team of 4.",
         },
         {
             "org": "StarCoach AI",
@@ -476,7 +476,7 @@ def home(request):
         },
         {
             "org": "SoftServe",
-            "role": "Consultant",
+            "role": "Solutions Consultant",
             "date": "",
             "summary": "Pre-sales and solutions engineering for SMB and Fortune 500 enterprise clients.",
         },
