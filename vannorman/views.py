@@ -166,6 +166,13 @@ def home(request):
         "resume": "",
     }
 
+    obj['social'] = [
+        # { "name" : "facebook.com/vannorman", "link" : "https://www.facebook.com/vannorman" },
+        # { "name" : "twitter.com/@vannorman", "link" : "https://twitter.com/@vannorman" },
+        # { "name" : "angel.co/supermathworld", "link" : "https://angel.co/supermathworld" },
+        # { "name" : "soundcloud.com/vannorman", "link" : "https://soundcloud.com/vannorman" },
+    ]
+
     obj['badges'] = [
         "Full Stack Engineer",
         "Growth Hacker",
@@ -207,8 +214,8 @@ def home(request):
     })
     obj['works'].append({
         "title": "MathBreakers",
-        "video": {"source": "https://player.vimeo.com/video/REPLACE", "img": "REPLACE.jpg"},
-        "background": "",
+        "video": {"source": "https://player.vimeo.com/video/1196387881", "img": "mb_1.jpg"},
+        "background": "mb_1.png",
         "link": "https://mathbreakers.com",
         "date": "2013-2017",
         "position": "Founder",
@@ -220,35 +227,45 @@ def home(request):
             "Classroom playtesting",
             "Shark Tank 1st Prize, 2013",
         ],
-        "images": [],
+        "images": [
+            {"img": "mb_1.jpg"},
+            {"img": "mb_2.jpg"},
+            {"img": "mb_3.jpg"},
+            {"img": "mb_4.jpg"},
+        ],
         "tags": ["games", "edtech"],
         "stack": ["Unity3D","C#","python","Mac", "PC", "iOS"],
     })
+    # obj['works'].append({
+    #     "title": "Super Math World",
+    #     "video": {"source": "https://player.vimeo.com/video/219464062", "img": "smw_1.jpg"},
+    #     "background": "smw_2.jpg",
+    #     "link": "https://supermathworld.com",
+    #     "date": "2016 Q1 - 2017 Q3",
+    #     "position": "Technical Co-founder",
+    #     "org": "",
+    #     "subtitle": "3D open world math learning game for Web Browsers, with level builder and teacher dashboard.",
+    #     "description": "",
+    #     "responsibilities": [
+    #         "Open world game development",
+    #         "Level builder",
+    #         "Teacher dashboard",
+    #     ],
+    #     "images": [
+    #         {"img": "smw_1.jpg"},
+    #         {"img": "smw_3.jpg"},
+    #         {"img": "smw_4.jpg"},
+    #         {"img": "smw_3.jpg"},
+    #     ],
+    #     "tags": ["games", "edtech"],
+    #     "stack": ["WebGL", "ES6", "Node.js", "Next.js", "Apache"],
+    # })
     obj['works'].append({
-        "title": "Super Math World",
-        "video": {"source": "https://player.vimeo.com/video/REPLACE", "img": "REPLACE.jpg"},
-        "background": "",
-        "link": "",
-        "date": "",
-        "position": "Technical Co-founder",
-        "org": "",
-        "subtitle": "3D open world math learning game for Web Browsers, with level builder and teacher dashboard.",
-        "description": "",
-        "responsibilities": [
-            "Open world game development",
-            "Level builder",
-            "Teacher dashboard",
-        ],
-        "images": [],
-        "tags": ["games", "edtech"],
-        "stack": ["WebGL", "ES6", "Node.js", "Next.js", "Apache"],
-    })
-    obj['works'].append({
-        "title": "Enterprise Training",
-        "video": {"source": "https://player.vimeo.com/video/REPLACE", "img": "REPLACE.jpg"},
-        "background": "",
-        "link": "",
-        "date": "",
+        "title": "VR Enterprise Training",
+        "video": {"source": "https://player.vimeo.com/video/294705276", "img": ""},
+        "background": "mm_background.jpg",
+        "link": "http://tryvantagepoint.com/",
+        "date": "2018 Q2",
         "position": "Co-founder",
         "org": "Vantage Point VR",
         "subtitle": "Harassment training app with virtual cell phone and branching narrative for Oculus Rift.",
@@ -257,16 +274,21 @@ def home(request):
             "Virtual cell phone interface",
             "Branching narrative system",
         ],
-        "images": [],
+        "images": [
+            {"img": "mm_1.jpg"},
+            {"img": "mm_2.jpg"},
+            {"img": "mm_3.jpg"},
+            {"img": "mm_4.jpg"},
+        ],
         "tags": ["xr", "training"],
         "stack": ["Oculus Rift"],
     })
     obj['works'].append({
         "title": "Military Training",
-        "video": {"source": "https://player.vimeo.com/video/REPLACE", "img": "REPLACE.jpg"},
+        "video": {"source": "https://player.vimeo.com/video/399474483", "img": ""},
         "background": "",
-        "link": "",
-        "date": "",
+        "link": "https://www.havik.us",
+        "date": "2019",
         "position": "Lead Developer",
         "org": "",
         "subtitle": "Virtual Air Strike simulator including weather control and several interactive military equipment pieces.",
@@ -277,14 +299,14 @@ def home(request):
         ],
         "images": [],
         "tags": ["xr", "training"],
-        "stack": ["VR"],
+        "stack": ["Unity3D","C#","Vive VR"],
     })
     obj['works'].append({
         "title": "Remote Control Robot",
-        "video": {"source": "https://player.vimeo.com/video/REPLACE", "img": "REPLACE.jpg"},
-        "background": "",
+        "video": {"source": "https://player.vimeo.com/video/250308773", "img": ""},
+        "background": "hi3.png",
         "link": "",
-        "date": "",
+        "date": "2017 Q4",
         "position": "Developer",
         "org": "",
         "subtitle": "Remote control industrial robot which can make toast, pour drinks, and pick junkyard metals.",
@@ -293,16 +315,21 @@ def home(request):
             "Remote control interface",
             "Task programming: toast, drink pouring, junkyard metal picking",
         ],
-        "images": [],
+        "images": [
+            {"img": "hi1.png"},
+            {"img": "hi2.png"},
+            {"img": "hi3.png"},
+            {"img": "hi4.png"},
+        ],
         "tags": ["robotics"],
-        "stack": ["Industrial robotics"],
+        "stack": ["Industrial robotics","video streaming","Vive controller interface", "C++ ROS/Rosbridge (WebSocket/JSON)","ROS#"],
     })
     obj['works'].append({
         "title": "Molecular Machines",
-        "video": {"source": "https://player.vimeo.com/video/REPLACE", "img": "REPLACE.jpg"},
-        "background": "",
-        "link": "",
-        "date": "",
+        "video": {"source": "https://player.vimeo.com/video/273109330", "img": "mm_background.jpg"},
+        "background": "mm_background.jpg",
+        "link": "https://foresight.org/nanotechnology-leading-to-molecular-machines/",
+        "date": "2018 Q1",
         "position": "Developer",
         "org": "",
         "subtitle": "Animated showcase including a modular catalyst synthesizer, controlled molecule flow, and energy storage.",
@@ -312,15 +339,20 @@ def home(request):
             "Controlled molecule flow",
             "Energy storage animation",
         ],
-        "images": [],
+        "images": [
+            {"img": "mm_1.jpg"},
+            {"img": "mm_2.jpg"},
+            {"img": "mm_3.jpg"},
+            {"img": "mm_4.jpg"},
+        ],
         "tags": ["science"],
-        "stack": ["3D animation"],
+        "stack": ["Procedural 3D animation","Unity3D"],
     })
     obj['works'].append({
         "title": "Cellular Anatomy",
-        "video": {"source": "https://player.vimeo.com/video/REPLACE", "img": "REPLACE.jpg"},
-        "background": "",
-        "link": "",
+        "video": {"source": "https://player.vimeo.com/video/294705147", "img": ""},
+        "background": "mm_background.jpg",
+        # "link": "http://vertical.ai/",
         "date": "",
         "position": "Developer",
         "org": "",
@@ -330,15 +362,20 @@ def home(request):
             "Immersive cell environment",
             "Labeled organelles and structures",
         ],
-        "images": [],
+        "images": [
+            {"img": "mm_1.jpg"},
+            {"img": "mm_2.jpg"},
+            {"img": "mm_3.jpg"},
+            {"img": "mm_4.jpg"},
+        ],
         "tags": ["science", "xr"],
         "stack": ["VR"],
     })
     obj['works'].append({
         "title": "Mouse Brain Explorer",
-        "video": {"source": "https://player.vimeo.com/video/REPLACE", "img": "REPLACE.jpg"},
-        "background": "",
-        "link": "",
+        "video": {"source": "https://player.vimeo.com/video/117482417", "img": "3scan_1.jpg"},
+        "background": "mouse4.png",
+        "link": "https://3scan.com",
         "date": "2015",
         "position": "Developer",
         "org": "Exploratorium",
@@ -349,27 +386,37 @@ def home(request):
             "Simulated Clopidogrel administration",
             "Public museum exhibit",
         ],
-        "images": [],
+        "images": [
+            {"img": "mouse2.png"},
+            {"img": "mouse3.png"},
+            {"img": "mouse1.png"},
+            {"img": "mouse4.png"},
+        ],
         "tags": ["science", "xr"],
-        "stack": ["VR"],
+        "stack": ["Unity3D","C#","Xbox Controller","VR"],
     })
     obj['works'].append({
-        "title": "VR Fitness",
-        "video": {"source": "https://player.vimeo.com/video/REPLACE", "img": "REPLACE.jpg"},
-        "background": "",
-        "link": "",
-        "date": "",
+        "title": "Space Frog VR",
+        "video": {"source": "https://player.vimeo.com/video/305282073", "img": "sf1.png"},
+        "background": "spacefrog_background.jpg",
+        "link": "https://store.steampowered.com/app/978650/SpaceFrog_VR/",
+        "date": "2018 Q1 - Q4",
         "position": "Developer",
         "org": "",
-        "subtitle": "Boxing / Dodging game that engages the player in motion throughout the full body as they rescue the Frog Princess.",
+        "subtitle": "Published (Steam) Boxing / Dodging game that engages the player in motion throughout the full body as they rescue the Frog Princess.",
         "description": "",
         "responsibilities": [
             "Full-body boxing and dodging mechanics",
             "Frog Princess rescue narrative",
         ],
-        "images": [],
+        "images": [
+            {"img": "sf5.png"},
+            {"img": "sf6.png"},
+            {"img": "sf7.png"},
+            {"img": "sf8.png"},
+        ],
         "tags": ["xr", "games"],
-        "stack": ["VR"],
+        "stack": ["Unity3D","C#","VR"],
     })
     obj['works'].append({
         "title": "MathBreakers Relaunch",
@@ -396,10 +443,10 @@ def home(request):
         "stack": ["PlayCanvas", "Node.js", "Express", "MongoDB", "Ammo.js", "Vite", "Stripe", "DigitalOcean"],
     })
     obj['works'].append({
-        "title": "VR Retail Training",
-        "video": {"source": "", "img": ""},
+        "title": "VR Retail Data & Research",
+        "video": {"source": "https://player.vimeo.com/video/1071911588", "img": ""},
         "background": "",
-        "link": "",
+        "link": "https://incontextsolutions.com",
         "date": "2019",
         "position": "Software Engineer",
         "org": "InContext Solutions",
@@ -412,53 +459,179 @@ def home(request):
         "tags": ["xr", "training"],
         "stack": ["Unity", "C#", "VR"],
     })
+    
     obj['works'].append({
-        "title": "XR Manufacturing Training",
-        "video": {"source": "", "img": ""},
+        "title": "Admirals of Adaris Multiplayer",
+        "video": {"source": "https://player.vimeo.com/video/362128849", "img": ""},
         "background": "",
-        "link": "",
-        "date": "",
-        "position": "XR Consultant",
-        "org": "SoftServe",
-        "subtitle": "XR-enabled training program for a client's manufacturing facility.",
+        "link": "https://www.havik.us",
+        "date": "2019",
+        "position": "Developer, Game Designer",
+        "org": "",
+        "subtitle": "A multiplayer VR experience where you build and control a fleet of ships in space.",
         "description": "",
-        "responsibilities": [
-            "XR training program delivery for a manufacturing client",
-        ],
+        "responsibilities": [],
         "images": [],
-        "tags": ["xr", "training"],
-        "stack": ["XR"],
+        "tags": ["xr", "games"],
+        "stack": ["VR", "Multiplayer"],
     })
     obj['works'].append({
-        "title": "Magic Leap Engagement",
-        "video": {"source": "", "img": ""},
-        "background": "",
-        "link": "",
-        "date": "",
-        "position": "XR Consultant",
-        "org": "SoftServe",
-        "subtitle": "XR development for Magic Leap as a SoftServe client.",
-        "description": "",
-        "responsibilities": [
-            "XR development for client Magic Leap",
+        "title": "Gamified AR Mapping",
+        "video": {"source": "https://player.vimeo.com/video/294704893", "img": ""},
+        "background": "mm_background.jpg",
+        "link": "http://vertical.ai/",
+        "date": "2018 Q3",
+        "position": "Consultant, Designer, Programmer",
+        "org": "",
+        "subtitle": "PlaceNote SDK extension with prefabs that guide users toward optimal AR mapping behaviors.",
+        "description": "PlaceNote is a platform for AR developers, many of whom need prefabs and techniques to get started for guiding the end user to optimal mapping behaviors. I wrote an extension to the PlaceNote SDK that includes prefabs for developers to help them achieve this.",
+        "responsibilities": [],
+        "images": [
+            {"img": "mm_1.jpg"},
+            {"img": "mm_2.jpg"},
+            {"img": "mm_3.jpg"},
+            {"img": "mm_4.jpg"},
         ],
-        "images": [],
         "tags": ["xr"],
-        "stack": ["Magic Leap"],
+        "stack": ["PlaceNote SDK", "AR"],
     })
-
     obj['works'].append({
-        "title" : "Code Hero",
+        "title": "Magic Hands",
+        "video": {"source": "https://player.vimeo.com/video/294705016", "img": ""},
+        "background": "mm_background.jpg",
+        # "link": "http://vertical.ai/",
+        "date": "",
+        "position": "Consultant, Designer, Programmer",
+        "org": "",
+        "subtitle": "Prototype gesture recognition spellcasting game with portals between worlds and hand-gesture spell casting.",
+        "description": "Using Vive and Leap Motion, I built a prototype game that lets you portal between worlds, and recognizes hand gestures for casting magic spells.",
+        "responsibilities": [],
+        "images": [
+            {"img": "mm_1.jpg"},
+            {"img": "mm_2.jpg"},
+            {"img": "mm_3.jpg"},
+            {"img": "mm_4.jpg"},
+        ],
+        "tags": ["xr", "games"],
+        "stack": ["HTC Vive", "Oculus", "Leap Motion"],
+    })
+    obj['works'].append({
+        "title": "Village Builder",
+        "video": {"source": "https://player.vimeo.com/video/246606943", "img": "vb1.png"},
+        "background": "vb1.png",
+        # "link": "",
+        "date": "2017",
+        "position": "Developer, Designer",
+        "org": "",
+        "subtitle": "A LightLodges.com production for communal coherence, village building and sustainable communities.",
+        "description": "A LightLodges.com production for communal coherence, village building and sustainable communities. Precursor to a live Mixed Reality gameshow coming 2018",
+        "responsibilities": [],
+        "images": [
+            {"img": "vb1.png"},
+            {"img": "vb2.png"},
+            {"img": "vb3.png"},
+            {"img": "vb4.png"},
+        ],
+        "tags": ["games"],
+        "stack": [],
+    })
+    
+  
+    obj['works'].append({
+        "title": "Space Archer VR",
+        "video": {"source": "https://player.vimeo.com/video/230824116", "img": ""},
+        "background": "archer2.png",
+        "link": "",
+        "date": "2017",
+        "position": "Developer/Designer",
+        "org": "",
+        "subtitle": "An action game for Vive/Oculus",
+        "description": "Fly around in 3D space and shoot drones and space-men with your bow and arrow.",
+        "responsibilities": [],
+        "images": [
+            {"img": "archer2.png"},
+            {"img": "archer1.png"},
+        ],
+        "tags": ["xr", "games"],
+        "stack": ["HTC Vive", "Oculus"],
+    })
+    obj['works'].append({
+        "title": "Fitness Cube VR",
+        "video": {"source": "https://player.vimeo.com/video/230823053", "img": "fitness2.png"},
+        "background": "fitness1.png",
+        "link": "",
+        "date": "2017",
+        "position": "",
+        "org": "",
+        "subtitle": "An exercise game for Vive/Oculus",
+        "description": "Cubes fly at you, and you smash them with your fists! Duck and dodge to prevent losing health.",
+        "responsibilities": [],
+        "images": [
+            {"img": "fitness1.png"},
+        ],
+        "tags": ["xr", "games"],
+        "stack": ["HTC Vive", "Oculus"],
+    })
+    
+    
+    obj['works'].append({
+        "title": "Startup Grid (Hactus)",
         "video": {"source": "", "img": ""},
-        "summary":"A 3D game to learn coding by editing the world around you in real time using a javascript laser."
-        "description",
-        "link" : "https://codehero.org",
-        "year" : "2011",
-        "position" : "Game Developer",
-        "description" : "Designed and shipped the full game prototype, leading to a $160k successful KickStarter campaign.",
-        "images" : [
-            {"img":"codehero.png"},
-        ], 
+        "background": "startupgrid.png",
+        # "link": "https://startupgrid.net",
+        "date": "2012",
+        "position": "Founder",
+        "org": "",
+        "subtitle": "A search-and-filter website for exploring the startup landscape.",
+        "description": "One of my first solo projects, a search-and-filter website for exploring the startup landscape and searching for new opportunities. The startup data is scraped from CrunchBase. The original vision was to provide startups a go-to resource for funding, incubators, and other opportunities.",
+        "responsibilities": [],
+        "images": [
+            {"img": "startupgrid.png", "link": "http://startupgrid.net"},
+        ],
+        "tags": ["web"],
+        "stack": [],
+    })
+    obj['works'].append({
+        "title": "Code Hero",
+        "video": {"source": "", "img": ""},
+        "background": "codehero.png",
+        "link": "https://codehero.org",
+        "date": "2011",
+        "position": "Game Developer",
+        "org": "",
+        "subtitle": "A 3D game to learn coding by editing the world around you in real time using a javascript laser.",
+        "description": "Designed and shipped the full game prototype, leading to a $160k successful KickStarter campaign.",
+        "responsibilities": [],
+        "images": [
+            {"img": "codehero.png"},
+        ],
+        "tags": ["games", "edtech"],
+        "stack": ["Unity3D"],
+    })
+    obj['works'].append({
+        "title": "Fractal Games",
+        "video": {"source": "", "img": ""},
+        "background": "fg.png",
+        "link": "",
+        "date": "2010 - 2011",
+        "position": "Founder",
+        "org": "",
+        "subtitle": "An iOS game development studio that published Bank Defense and Santa's Last Stand to iOS.",
+        "description": "I led a small team of developers and artists to design and publish two titles, \"Santa's Last Stand\" and \"Bank Defense\" for iOS.",
+        "responsibilities": [
+            "Game design & programming",
+            "Hired and managed art team",
+        ],
+        "images": [
+            {"img": "fg.png", "class": "contain"},
+            {"img": "bd1.png"},
+            {"img": "bd2.png"},
+            {"img": "bd3.png"},
+            {"img": "sls1.png"},
+            {"img": "sls2.png"},
+        ],
+        "tags": ["games"],
+        "stack": ["Unity3D","javascript","iOS"],
     })
 
     obj['experience'] = [
@@ -531,7 +704,7 @@ def home(request):
 
     obj['about'] = [
         """I started builing educational software in 2010 with Code Hero, a game that reprograms itself while you play. Since then I've published 5 titles including MathBreakers, Santa's Last Stand, Bank Defense, SpaceFrogVR, and NumberSpark.
-        As a co-founder, I've helped bring startups to funding or major growth events including VantagePoint, Havik, Humon Automation, and Primer Labs.""",
+        As a co-founder, I've helped bring startups to funding or major growth events including StarCoach AI, VantagePoint, Havik, Humon Automation, and Primer Labs.""",
         "Between ventures, I've written music, traveled abroad, lived in Chile and Thailand, taught English in China, and started a <a target='_blank' href='https://manaretreat.center'>retreat center</a> in Puerto Rico.",
         "Today I'm producing MathBreakers 2, a browser-based 3D platform for grades 3-8 with a built-in user generated content platform. Check it out <a target='_blank' href='https://mathbreakers.com'>here</a>.",
     ]
@@ -544,6 +717,12 @@ def home(request):
     ]
 
     obj['blogs'] = []
+    
+    obj['blogs'].append({
+        "title" : "How I use AI as an entrepreneur.", 
+        "description" : "AI. Superpower, or super liability?",
+        "link" : "https://vannorman-ai.medium.com/how-i-adopted-ai-as-an-impatient-entrepreneur-3726362f73a1",
+    })
     obj['blogs'].append({
         "title" : "Wealth, Abundance, and Homelessness", 
         "description" : "We already pay for homelessness. What if we're doing it wrong?",
@@ -564,222 +743,8 @@ def home(request):
         "description" : "A personal account of my experience as a Westerner working at a Ukrainian company.",
         "link" : "https://vannorman.medium.com/how-to-win-across-cultures-f2434983694a",
     })
-    # return renderWithNav(request,'home.html', obj)
-    
+
     return renderWithNav(request, "home.html", obj)
-    
-
-    
-
-#   obj['works'].append({
-#       "title" : "Admirals Multiplayer",
-#       "background" : "",
-#       "position" : "Developer, Game Designer",
-#       "link" : "https://www.havik.us",
-#       "date" : "2019",
-#       "description" : "A multiplayer VR experience where you build and control a fleet of ships in space.",
-#       "video" : { 
-#           "source": "https://player.vimeo.com/video/362128849", 
-#           "image" : "" 
-#       },
-#       "images" : [    
-#       ],
-#   })
-    
-#   obj['works'].append({
-#       "title" : "Gamified AR mapping",
-#       "background" : "mm_background.jpg",
-#       "position" : "Consultant, Designer, Programmer",
-#                "date" : "2018 Q3",
-#       "link" : "http://vertical.ai/",
-#       "description" : "PlaceNote is a platform for AR developers, many of whom need prefabs and techniques to get started for guiding the end user to optimal mapping behaviors. I wrote an extension to the PlaceNote SDK that includes prefabs for developers to help them achieve this.",
-#       "video" : { 
-#           "source": "https://player.vimeo.com/video/294704893", 
-#           "image" : "mm_background.jpg" 
-#       },
-#       "images" : [    
-#           {"img":"mm_1.jpg"},
-#           {"img":"mm_2.jpg"},
-#           {"img":"mm_3.jpg"},
-#           {"img":"mm_4.jpg"},
-#       ],
-#   })
-
-   
-#   obj['works'].append({
-#       "title" : "Village Builder",
-#       "background" : "vb1.png",
-#       "position" : "Developer, Designer",
-#       "link" : "",
-#       "year" : "2017",
-#       "subtitle" : "",
-#       "description" : "A LightLodges.com production for communal coherence, village building and sustainable communities. Precursor to a live Mixed Reality gameshow coming 2018", 
-#       "video" : { "source": "https://player.vimeo.com/video/246606943", "image" : "vb1.png" },
-#   
-#       "images" : [    
-#           {"img":"vb1.png"},
-#           {"img":"vb2.png"},
-#           {"img":"vb3.png"},
-#           {"img":"vb4.png"},
-#       ],  
-#   })
-  
-#   obj['works'].append({
-#       "title" : "Magic Hands",
-#       "background" : "mm_background.jpg",
-#       "position" : "Consultant, Designer, Programmer",
-#       "link" : "http://vertical.ai/",
-#       "description" : "Using Vive and Leap Motion, I built a prototype game that lets you portal between worlds, and recognizes hand gestures for casting magic spells.", 
-#       "video" : { 
-#           "source": "https://player.vimeo.com/video/294705016", 
-#           "image" : "mm_background.jpg" 
-#       },
-#       "images" : [    
-#           {"img":"mm_1.jpg"},
-#           {"img":"mm_2.jpg"},
-#           {"img":"mm_3.jpg"},
-#           {"img":"mm_4.jpg"},
-#       ],
-#   })
-
-#   obj['works'].append({
-#       "title" : "Ring Flight",
-#       "link" : "",
-#       "year" : "2012",
-#       "position" : "Developer",
-#       "subtitle" : "Fly through rings",
-#       "description" : "Made at a Kinect hackathon in 2012, this was my first experience integrating external hardware to a Unity game and capturing motion data as player input. In this game you fly through rings of different colors by tilting your body in the direction you wish to steer (lean forwards and backwards for pitch, left and right for yaw)",
-#       "images" : [
-#           
-#       ],  
-#   })  
-    #   obj['works2'] = []
-#   obj['works2'].append({
-#       "title" : "Coffee Command ARKit",
-#       "position" : "Developer/Designer",
-#       "link" : "",
-#       "year" : "2017",
-#       "subtitle" : "A passive multiplayer base control game",
-#       "description" : "Your phone becomes a ship which can attack bases and drones at your favorite coffee shop in a 3-D shooter style game. Once you clear the area, you can build your own turrets to deter other players and control the area, and mine resources from areas you control to become more powerful.",
-#       "images" : [
-#           {"img":"coffeecommand1.png"},
-#           {"img":"coffeecommand2.png"},
-#           {"img":"coffeecommand3.png"},
-#       ],  
-#   })
-#   obj['works2'].append({
-#       "title" : "Magic Hands VR",
-#       "position" : "Developer/Designer",
-#       "link" : "",
-#       "year" : "2017",
-#       "subtitle" : "An action game for Vive/Oculus + LeapMotion",
-#       "description" : "Use your hands to cast spells and open portals to other worlds.",
-#       "images" : [    
-#           {"video" : { "source": "https://player.vimeo.com/video/241614660", "image" : "" }},
-#           {"img":"magichands1.png"},
-#           {"img":"magichands2.png"}
-#       ],  
-#   })
-#   obj['works2'].append({
-#       "title" : "Space Archer VR",
-#       "position" : "Developer/Designer",
-#       "link" : "",
-#       "year" : "2017",
-#       "subtitle" : "An action game for Vive/Oculus",
-#       "description" : "Fly around in 3D space and shoot drones and space-men with your bow and arrow.",
-#       "images" : [    
-#           {"video" : { "source": "https://player.vimeo.com/video/230824116", "image" : "" }},
-#           {"img":"archer2.png"},
-#           {"img":"archer1.png"}
-#       ],  
-#   })
-#   obj['works'].append({
-#       "title" : "Fitness Cube VR",
-#       "link" : "",
-#       "year" : "2017",
-#       "subtitle" : "An exercise game for Vive/Oculus",
-#       "description" : "Cubes fly at you, and you smash them with your fists! Duck and dodge to prevent losing health.",
-#       "images" : [
-#           {"video" : { "source": "https://player.vimeo.com/video/230823053", "img" : "fitness2.png" }},
-#           {"img":"fitness1.png"},
-#       ],  
-#   })
-
-#   obj['works2'].append({
-#       "title" : "Radian.ai",
-#       "link" : "http://radian.ai",
-#       "year" : "2017",
-#       "position" : "Consultant",
-#       "description" : "Consulting for VR and AR applications, including project management, enterprise sales, experience design, and full stack development. ",
-#       "responsibilities" : 
-#       [
-#       ],
-#       "images" : [
-#           { "img" : "radian_logo.png", "class" : "contain square", "link" : "http://radian.ai"},
-#       ],  
-#   })
-#   obj['works'].append({
-#       "title" : "Fractal Games",
-#       "link" : "https://fractalgames.com (old)",
-#       "year" : "2010 - 2011",
-#       "position" : "Founder",
-#       "subtitle" : "An iOS game development studio.",
-#       "description" : "I led a small team of developers and artists to design and publish two titles, \"Santa's Last Stand\" and \"Bank Defense\" for iOS." ,
-#       "responsibilities" : 
-#       [
-#           "Game design & programming",
-#           "Hired and managed art team",
-#       ],
-#       "images" : [    
-#           {"img": "fg.png","class":"contain"},
-#           {"img" : "bd1.png"},
-#           {"img" : "bd2.png"},
-#           {"img" : "bd3.png"},
-#           {"img" : "sls1.png"},
-#           {"img" : "sls2.png"}
-#           ],  
-#       })
-#   obj['works'].append({
-#       "title" : "Startup Grid (Hactus)",
-#       "link" : "https://startupgrid.net",
-#       "year" : "2012",
-#       "position" : "Founder",
-#       "description" : "One of my first solo projects, a search-and-filter website for exploring the startup landscape and searching for new opportunities. The startup data is scraped from CrunchBase. The original vision was to provide startups a go-to resource for funding, incubators, and other opportunities.",
-#       "images" : [{"img":'startupgrid.png', "link":"http://startupgrid.net"}],    
-#       })
-                    
-#   obj['social'] = [
-#       { "name" : "github.com/vannorman", "link" : "https://github.com/vannorman" },
-#       { "name" : "linkedin.com/in/vannorman", "link" : "https://www.linkedin.com/in/vannorman" },
-#       { "name" : "facebook.com/vannorman", "link" : "https://www.facebook.com/vannorman" },
-#       { "name" : "twitter.com/@vannorman", "link" : "https://twitter.com/@vannorman" },
-#       { "name" : "angel.co/supermathworld", "link" : "https://angel.co/supermathworld" },
-#       { "name" : "soundcloud.com/vannorman", "link" : "https://soundcloud.com/vannorman" },
-#   ]
-   
-
-    obj['blogs'] = []
-    obj['blogs'].append({
-        "title" : "Wealth, Abundance, and Homelessness", 
-        "description" : "We already pay for homelessness. What if we're doing it wrong?",
-        "link" : "https://vannorman-ai.medium.com/wealth-homelessness-and-abundance-eaa66558d2e4",
-    })
-    obj['blogs'].append({
-        "title" : "A Tribute to Hans Rosling",
-        "description" : "My homage to the statistician who changed the way I look at our world.",
-        "link" : "https://medium.com/@vannorman-ai/a-tribute-to-hans-rosling-2674f16d43b6",
-    })
-    obj['blogs'].append({
-        "title" : "Enterprise Pre-Sales Equation",
-        "description" : "How to consider different factors and evaluate a potential enterprise b2b opportunity.",
-        "link" : "https://vannorman.medium.com/the-presales-equation-ce39703974f8",
-    })
-    obj['blogs'].append({
-        "title" : "How to Win Across Cultures",
-        "description" : "A personal account of my experience as a Westerner working at a Ukrainian company.",
-        "link" : "https://vannorman.medium.com/how-to-win-across-cultures-f2434983694a",
-    })
-    return renderWithNav(request,'home.html', obj)
 
 def file_a(request):
     return HttpResponse("7GN_wPd4X1PrCxmqKOrw9sHsAd0_uayFhOnWdEw6Ytc.HrFduo8MJADNQACN38q371h8yDpWwuARiTcP3lgNOOM")
@@ -790,4 +755,3 @@ def file_b(request):
 
 def test(request):
     return renderWithNav(request,"test.html", {})
-

@@ -37,6 +37,7 @@
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#about">About</a></li>
+                    {% if blogs %}<li><a href="#writing">Writing</a></li>{% endif %}
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -253,6 +254,29 @@
             </div>
         </section>
 
+        {% if blogs %}
+        <section class="writing" id="writing" aria-labelledby="writing-title">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2 id="writing-title">Writing</h2>
+                    <p>Essays on technology, business, and more.</p>
+                </div>
+                <ul class="blog-grid">
+                    {% for post in blogs %}
+                    <li>
+                        <a class="blog-card" href="{{ post.link }}" target="_blank" rel="noopener">
+                            <h3>{{ post.title }}</h3>
+                            {% if post.date %}<span class="blog-date">{{ post.date }}</span>{% endif %}
+                            {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+                            <span class="blog-source">{% if 'medium.com' in post.link %}Read on Medium{% else %}Read post{% endif %}</span>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </section>
+        {% endif %}
+
         <section class="contact" id="contact" aria-labelledby="contact-title">
             <div class="wrap contact-inner">
                 <h2 id="contact-title">Want to build something awesome? Let's talk.</h2>
@@ -264,6 +288,9 @@
                     {% if profile.linkedin %}<li><a href="{{ profile.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li>{% endif %}
                     {% if profile.github %}<li><a href="{{ profile.github }}" target="_blank" rel="noopener">GitHub</a></li>{% endif %}
                     {% if profile.resume %}<li><a href="{{ profile.resume }}" target="_blank" rel="noopener">Resume</a></li>{% endif %}
+                    {% for s in social %}
+                    <li><a href="{{ s.link }}" target="_blank" rel="noopener">{{ s.name }}</a></li>
+                    {% endfor %}
                     <li>{{ profile.location }}</li>
                 </ul>
             </div>
@@ -278,8 +305,43 @@
 
     <script>
         (function () {
+            var vimeoThumb = function (btn) {
+                if (btn.getAttribute("data-thumb-loading")) {
+                    return;
+                }
+                var match = /video\/(\d+)/.exec(btn.getAttribute("data-src") || "");
+                if (!match || !window.fetch) {
+                    return;
+                }
+                btn.setAttribute("data-thumb-loading", "1");
+                fetch("https://vimeo.com/api/oembed.json?width=640&url=" + encodeURIComponent("https://vimeo.com/" + match[1]))
+                    .then(function (r) {
+                        return r.ok ? r.json() : null;
+                    })
+                    .then(function (data) {
+                        if (!data || !data.thumbnail_url || !btn.parentNode) {
+                            return;
+                        }
+                        var img = document.createElement("img");
+                        img.src = data.thumbnail_url;
+                        img.alt = "";
+                        img.loading = "lazy";
+                        btn.insertBefore(img, btn.firstChild);
+                    })
+                    .catch(function () {});
+            };
+
             var posters = document.querySelectorAll(".video-poster");
             Array.prototype.forEach.call(posters, function (btn) {
+                var img = btn.querySelector("img");
+                if (!img || (img.complete && img.naturalWidth === 0)) {
+                    vimeoThumb(btn);
+                } else {
+                    img.addEventListener("error", function () {
+                        vimeoThumb(btn);
+                    });
+                }
+
                 btn.addEventListener("click", function () {
                     var src = btn.getAttribute("data-src");
                     var sep = src.indexOf("?") === -1 ? "?" : "&";
