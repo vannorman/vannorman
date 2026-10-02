@@ -155,7 +155,7 @@ def home(request):
         "name": "Charlie Van Norman",
         "first_name": "Charlie",
         "headline": "I build and sell technology people love.",
-        "summary": "Founder and software engineer. 15+ years across enterprise systems, VR training, 3D edtech games, and AI platforms.",
+        "summary": "Founder, math geek, and game developer. 15+ years across enterprise systems, VR training, 3D applications, and AI.",
         "availability": "Open to founding, sales, and engineering roles.",
         "location": "Austin, TX",
         "email": "charlie@vannorman.ai",
@@ -192,34 +192,13 @@ def home(request):
 
     obj['works'] = []
     obj['works'].append({
-        "title": "StarCoach AI",
-        "video": {"source": "https://player.vimeo.com/video/1220582758", "img": "sc_1.jpg"},
-        "background": "mb_1.png",
-        "link": "https://starcoach.ai",
-        "date": "2025-2026",
-        "position": "Interim CTO",
-        "org": "",
-        "subtitle": "An AI Powered Math Assessment Platform",
-        "description": "An AI Powered Math Assessment Platform with district pilots, built on a multi-agent content and evaluation pipeline.",
-        "responsibilities": [
-            "Application architecture",
-            "AI integration",
-            "Multi-agent pipeline: content extraction, question generation, synthetic student agents, evaluator and validator/critic agents",
-            "Agent orchestration layer routing tasks to agents and evaluation criteria, decoupled from business logic",
-            "Led a team of 3; interviewed, hired, and trained 2 engineers",
-        ],
-        "images": [],
-        "tags": ["ai", "edtech"],
-        "stack": ["LLM agents", "Agent orchestration", "Web platform", "Express.js", "React"],
-    })
-    obj['works'].append({
         "title": "MathBreakers",
         "video": {"source": "https://player.vimeo.com/video/1196387881", "img": "mb_1.jpg"},
         "background": "mb_1.png",
         "link": "https://mathbreakers.com",
-        "date": "2013-2017",
+        "date": "2026-present",
         "position": "Founder",
-        "org": "",
+        "org": "MathBreakers",
         "subtitle": "3D math adventure game for Mac, PC, and iOS with a linear storyline for arithmetic, number line, and fractions.",
         "description": "",
         "responsibilities": [
@@ -234,8 +213,30 @@ def home(request):
             {"img": "mb_4.jpg"},
         ],
         "tags": ["games", "edtech"],
-        "stack": ["Unity3D","C#","python","Mac", "PC", "iOS"],
+        "stack": ["ES6","TypeScript","Node.js","WebGL"],
     })
+    obj['works'].append({
+        "title": "StarCoach AI",
+        "video": {"source": "https://player.vimeo.com/video/1220582758", "img": "sc_1.jpg"},
+        "background": "mb_1.png",
+        "link": "https://starcoach.ai",
+        "date": "2025-2026",
+        "position": "Interim CTO",
+        "org": "StarCoach AI",
+        "subtitle": "An AI Powered Math Assessment Platform",
+        "description": "An AI Powered Math Assessment Platform with district pilots, built on a multi-agent content and evaluation pipeline.",
+        "responsibilities": [
+            "Application architecture",
+            "AI integration",
+            "Multi-agent pipeline: content extraction, question generation, synthetic student agents, evaluator and validator/critic agents",
+            "Agent orchestration layer routing tasks to agents and evaluation criteria, decoupled from business logic",
+            "Led a team of 3; interviewed, hired, and trained 2 engineers",
+        ],
+        "images": [],
+        "tags": ["ai", "edtech"],
+        "stack": ["LLM agents", "Agent orchestration", "Web platform", "Express.js", "React"],
+    })
+    
     # obj['works'].append({
     #     "title": "Super Math World",
     #     "video": {"source": "https://player.vimeo.com/video/219464062", "img": "smw_1.jpg"},
@@ -265,9 +266,9 @@ def home(request):
         "video": {"source": "https://player.vimeo.com/video/294705276", "img": ""},
         "background": "mm_background.jpg",
         "link": "http://tryvantagepoint.com/",
-        "date": "2018 Q2",
+        "date": "2018",
         "position": "Co-founder",
-        "org": "Vantage Point VR",
+        "org": "Vantage Point",
         "subtitle": "Harassment training app with virtual cell phone and branching narrative for Oculus Rift.",
         "description": "",
         "responsibilities": [
@@ -290,7 +291,7 @@ def home(request):
         "link": "https://www.havik.us",
         "date": "2019",
         "position": "Lead Developer",
-        "org": "",
+        "org": "Havik Inc.",
         "subtitle": "Virtual Air Strike simulator including weather control and several interactive military equipment pieces.",
         "description": "",
         "responsibilities": [
@@ -305,10 +306,10 @@ def home(request):
         "title": "Remote Control Robot",
         "video": {"source": "https://player.vimeo.com/video/250308773", "img": ""},
         "background": "hi3.png",
-        "link": "",
-        "date": "2017 Q4",
+        
+        "date": "2017",
         "position": "Developer",
-        "org": "",
+        
         "subtitle": "Remote control industrial robot which can make toast, pour drinks, and pick junkyard metals.",
         "description": "",
         "responsibilities": [
@@ -329,9 +330,9 @@ def home(request):
         "video": {"source": "https://player.vimeo.com/video/273109330", "img": "mm_background.jpg"},
         "background": "mm_background.jpg",
         "link": "https://foresight.org/nanotechnology-leading-to-molecular-machines/",
-        "date": "2018 Q1",
+        "date": "2018",
         "position": "Developer",
-        "org": "",
+        
         "subtitle": "Animated showcase including a modular catalyst synthesizer, controlled molecule flow, and energy storage.",
         "description": "",
         "responsibilities": [
@@ -369,7 +370,7 @@ def home(request):
             {"img": "mm_4.jpg"},
         ],
         "tags": ["science", "xr"],
-        "stack": ["VR"],
+        "stack": ["VR","Unity3D","Vive"],
     })
     obj['works'].append({
         "title": "Mouse Brain Explorer",
@@ -378,7 +379,7 @@ def home(request):
         "link": "https://3scan.com",
         "date": "2015",
         "position": "Developer",
-        "org": "Exploratorium",
+        "org": "3Scan",
         "subtitle": "Immersive tour through a mouse brain with simulated Clopidogrel administration. Exploratorium exhibit 2015.",
         "description": "",
         "responsibilities": [
@@ -400,9 +401,9 @@ def home(request):
         "video": {"source": "https://player.vimeo.com/video/305282073", "img": "sf1.png"},
         "background": "spacefrog_background.jpg",
         "link": "https://store.steampowered.com/app/978650/SpaceFrog_VR/",
-        "date": "2018 Q1 - Q4",
-        "position": "Developer",
-        "org": "",
+        "date": "2018",
+        "position": "Developer, Game Designer",
+        "org": "Steam Store Page",
         "subtitle": "Published (Steam) Boxing / Dodging game that engages the player in motion throughout the full body as they rescue the Frog Princess.",
         "description": "",
         "responsibilities": [
@@ -418,30 +419,30 @@ def home(request):
         "tags": ["xr", "games"],
         "stack": ["Unity3D","C#","VR"],
     })
-    obj['works'].append({
-        "title": "MathBreakers Relaunch",
-        "video": {"source": "", "img": ""},
-        "background": "",
-        "link": "https://mathbreakers.com",
-        "date": "2026",
-        "position": "Founder & Technical Lead",
-        "org": "Manaborn Studios LLC",
-        "subtitle": "Browser-based 3D math game for grades 3-8, rebuilt in PlayCanvas with accounts, classrooms, and billing.",
-        "description": "",
-        "responsibilities": [
-            "3D scene editor with transform gizmos and room editor",
-            "Procedural mesh system with 25+ primitive types",
-            "Portal rendering, cinematic director and cutscene runtime",
-            "NavAgent AI, conveyor systems, terrain-aligned path meshes",
-            "Ammo.js physics memory management, Mixamo animation layering, Vite ES6 migration",
-            "Shared JWT auth across mathbreakers.com and game.mathbreakers.com",
-            "Stripe checkout, GA4, Resend email campaigns, admin analytics dashboard",
-            "Hired, trained, and manages a team of 4",
-        ],
-        "images": [],
-        "tags": ["games", "edtech"],
-        "stack": ["PlayCanvas", "Node.js", "Express", "MongoDB", "Ammo.js", "Vite", "Stripe", "DigitalOcean"],
-    })
+    # obj['works'].append({
+    #     "title": "MathBreakers Relaunch",
+    #     "video": {"source": "", "img": ""},
+    #     "background": "",
+    #     "link": "https://mathbreakers.com",
+    #     "date": "2026",
+    #     "position": "Founder & Technical Lead",
+    #     "org": "Manaborn Studios LLC",
+    #     "subtitle": "Browser-based 3D math game for grades 3-8, rebuilt in PlayCanvas with accounts, classrooms, and billing.",
+    #     "description": "",
+    #     "responsibilities": [
+    #         "3D scene editor with transform gizmos and room editor",
+    #         "Procedural mesh system with 25+ primitive types",
+    #         "Portal rendering, cinematic director and cutscene runtime",
+    #         "NavAgent AI, conveyor systems, terrain-aligned path meshes",
+    #         "Ammo.js physics memory management, Mixamo animation layering, Vite ES6 migration",
+    #         "Shared JWT auth across mathbreakers.com and game.mathbreakers.com",
+    #         "Stripe checkout, GA4, Resend email campaigns, admin analytics dashboard",
+    #         "Hired, trained, and manages a team of 4",
+    #     ],
+    #     "images": [],
+    #     "tags": ["games", "edtech"],
+    #     "stack": ["PlayCanvas", "Node.js", "Express", "MongoDB", "Ammo.js", "Vite", "Stripe", "DigitalOcean"],
+    # })
     obj['works'].append({
         "title": "VR Retail Data & Research",
         "video": {"source": "https://player.vimeo.com/video/1071911588", "img": ""},
@@ -450,21 +451,20 @@ def home(request):
         "date": "2019",
         "position": "Software Engineer",
         "org": "InContext Solutions",
-        "subtitle": "Unity VR retail training platform.",
+        "subtitle": "Retail data & research platform.",
         "description": "",
         "responsibilities": [
             "Feature development as an individual contributor on an 8-person engineering team",
         ],
         "images": [],
         "tags": ["xr", "training"],
-        "stack": ["Unity", "C#", "VR"],
+        "stack": ["Data","Visualization","Unity", "C#", "VR","Docker","Azure","DevOps"],
     })
     
     obj['works'].append({
         "title": "Admirals of Adaris Multiplayer",
         "video": {"source": "https://player.vimeo.com/video/362128849", "img": ""},
         "background": "",
-        "link": "https://www.havik.us",
         "date": "2019",
         "position": "Developer, Game Designer",
         "org": "",
@@ -473,16 +473,16 @@ def home(request):
         "responsibilities": [],
         "images": [],
         "tags": ["xr", "games"],
-        "stack": ["VR", "Multiplayer"],
+        "stack": ["Unity3D","Photon","VR", "Vive","Real-time Multiplayer"],
     })
     obj['works'].append({
         "title": "Gamified AR Mapping",
         "video": {"source": "https://player.vimeo.com/video/294704893", "img": ""},
         "background": "mm_background.jpg",
-        "link": "http://vertical.ai/",
-        "date": "2018 Q3",
-        "position": "Consultant, Designer, Programmer",
-        "org": "",
+        "link": "https://github.com/placenote",
+        "date": "2018",
+        "position": "Consultant, Architect",
+        "org": "Placenote",
         "subtitle": "PlaceNote SDK extension with prefabs that guide users toward optimal AR mapping behaviors.",
         "description": "PlaceNote is a platform for AR developers, many of whom need prefabs and techniques to get started for guiding the end user to optimal mapping behaviors. I wrote an extension to the PlaceNote SDK that includes prefabs for developers to help them achieve this.",
         "responsibilities": [],
@@ -493,7 +493,7 @@ def home(request):
             {"img": "mm_4.jpg"},
         ],
         "tags": ["xr"],
-        "stack": ["PlaceNote SDK", "AR"],
+        "stack": ["Unity3D","C#","SDK", "AR"],
     })
     obj['works'].append({
         "title": "Magic Hands",
@@ -501,7 +501,7 @@ def home(request):
         "background": "mm_background.jpg",
         # "link": "http://vertical.ai/",
         "date": "",
-        "position": "Consultant, Designer, Programmer",
+        "position": "Game Developer",
         "org": "",
         "subtitle": "Prototype gesture recognition spellcasting game with portals between worlds and hand-gesture spell casting.",
         "description": "Using Vive and Leap Motion, I built a prototype game that lets you portal between worlds, and recognizes hand gestures for casting magic spells.",
@@ -533,7 +533,7 @@ def home(request):
             {"img": "vb4.png"},
         ],
         "tags": ["games"],
-        "stack": [],
+        "stack": ["Unity3D","C#","VR"],
     })
     
   
@@ -543,7 +543,7 @@ def home(request):
         "background": "archer2.png",
         "link": "",
         "date": "2017",
-        "position": "Developer/Designer",
+        "position": "Developer, Designer",
         "org": "",
         "subtitle": "An action game for Vive/Oculus",
         "description": "Fly around in 3D space and shoot drones and space-men with your bow and arrow.",
@@ -553,44 +553,11 @@ def home(request):
             {"img": "archer1.png"},
         ],
         "tags": ["xr", "games"],
-        "stack": ["HTC Vive", "Oculus"],
-    })
-    obj['works'].append({
-        "title": "Fitness Cube VR",
-        "video": {"source": "https://player.vimeo.com/video/230823053", "img": "fitness2.png"},
-        "background": "fitness1.png",
-        "link": "",
-        "date": "2017",
-        "position": "",
-        "org": "",
-        "subtitle": "An exercise game for Vive/Oculus",
-        "description": "Cubes fly at you, and you smash them with your fists! Duck and dodge to prevent losing health.",
-        "responsibilities": [],
-        "images": [
-            {"img": "fitness1.png"},
-        ],
-        "tags": ["xr", "games"],
-        "stack": ["HTC Vive", "Oculus"],
+        "stack": ["Unity3D","VR","C#","HTC Vive", "Oculus"],
     })
     
     
-    obj['works'].append({
-        "title": "Startup Grid (Hactus)",
-        "video": {"source": "", "img": ""},
-        "background": "startupgrid.png",
-        # "link": "https://startupgrid.net",
-        "date": "2012",
-        "position": "Founder",
-        "org": "",
-        "subtitle": "A search-and-filter website for exploring the startup landscape.",
-        "description": "One of my first solo projects, a search-and-filter website for exploring the startup landscape and searching for new opportunities. The startup data is scraped from CrunchBase. The original vision was to provide startups a go-to resource for funding, incubators, and other opportunities.",
-        "responsibilities": [],
-        "images": [
-            {"img": "startupgrid.png", "link": "http://startupgrid.net"},
-        ],
-        "tags": ["web"],
-        "stack": [],
-    })
+  
     obj['works'].append({
         "title": "Code Hero",
         "video": {"source": "", "img": ""},
@@ -598,7 +565,7 @@ def home(request):
         "link": "https://codehero.org",
         "date": "2011",
         "position": "Game Developer",
-        "org": "",
+        "org": "Code Hero",
         "subtitle": "A 3D game to learn coding by editing the world around you in real time using a javascript laser.",
         "description": "Designed and shipped the full game prototype, leading to a $160k successful KickStarter campaign.",
         "responsibilities": [],
@@ -606,7 +573,7 @@ def home(request):
             {"img": "codehero.png"},
         ],
         "tags": ["games", "edtech"],
-        "stack": ["Unity3D"],
+        "stack": ["Unity3D","javascript"],
     })
     obj['works'].append({
         "title": "Fractal Games",
@@ -631,26 +598,49 @@ def home(request):
             {"img": "sls2.png"},
         ],
         "tags": ["games"],
-        "stack": ["Unity3D","javascript","iOS"],
+        "stack": ["Unity3D","javascript","iOS","Hiring","Team Leadership"],
+    })
+    obj['works'].append({
+        "title": "Startup Grid (Hactus)",
+        "video": {"source": "", "img": ""},
+        "background": "startupgrid.png",
+        "link": "https://web.archive.org/web/20160313131504/http://startupgrid.net/ ",
+        "date": "2012",
+        "position": "Founder",
+        "org": "Startup Grid (archived)",
+        "subtitle": "A search-and-filter website for exploring the startup landscape.",
+        "description": "Part of StartUp Chile, and one of my first solo projects, a search-and-filter website for exploring the startup landscape and searching for new opportunities. The startup data is scraped from CrunchBase. The original vision was to provide startups a go-to resource for funding, incubators, and other opportunities.",
+        "responsibilities": [],
+        "images": [
+            {"img": "startupgrid.png", "link": "https://web.archive.org/web/20160313131504/http://startupgrid.net/"},
+        ],
+        "tags": ["web"],
+        "stack": ["php","MySQL","HTML"],
     })
 
     obj['experience'] = [
         {
-            "org": "Manaborn Studios LLC",
-            "role": "Founder & Technical Lead",
+            "org": "ManaBorn Studios LLC",
+            "role": "Founder",
             "date": "2026 - present",
             "summary": "Relaunching MathBreakers as a browser-based 3D math platform for grades 3-8. Full-stack development, DevOps, and go-to-market. Manages a team of 4.",
         },
         {
-            "org": "StarCoach AI",
+            "org": "StarCoach AI Inc.",
             "role": "Interim CTO",
-            "date": "Sep 2025 - Feb 2026",
+            "date": "2025 - 2026",
             "summary": "Built an AI-powered math assessment platform with district pilots. Led a team of 3.",
         },
         {
-            "org": "SoftServe",
+            "org": "HUE Inc.",
+            "role": "Business Development Manager",
+            "date": "2024 - 2025",
+            "summary": "Expanded US presence, partnerships, and sales pipeline.",
+        },
+        {
+            "org": "SoftServe Inc.",
             "role": "Solutions Consultant",
-            "date": "",
+            "date": "2019 - 2023",
             "summary": "Pre-sales and solutions engineering for SMB and Fortune 500 enterprise clients.",
         },
         {
@@ -660,22 +650,34 @@ def home(request):
             "summary": "Unity VR retail training platform on an 8-person engineering team.",
         },
         {
-            "org": "Vantage Point VR",
+            "org": "Vantage Point Inc.",
             "role": "Interim CTO",
             "date": "",
             "summary": "Immersive VR workplace training.",
         },
         {
-            "org": "Havik VR",
+            "org": "Havik Inc.",
             "role": "Interim CTO",
             "date": "",
             "summary": "Immersive technology venture.",
         },
         {
-            "org": "MathBreakers",
+            "org": "Imaginary Number Inc.",
             "role": "Founder",
             "date": "2013 - 2017",
             "summary": "3D math adventure game for Mac, PC, and iOS. Shark Tank 1st Prize, 2013.",
+        },
+        {
+            "org": "Fractal Games LLC",
+            "role": "Founder",
+            "date": "2011 - 2013",
+            "summary": "Produced iOS games including Bank Defense and Santa's Last Stand.",
+        },
+        {
+            "org": "Startup Grid LLC",
+            "role": "Founder",
+            "date": "2010 - 2011",
+            "summary": "As a part of the StartUp Chile program, developed an online resource for startups and job-seekers.",
         },
     ]
 
@@ -686,7 +688,7 @@ def home(request):
         },
         {
             "group": "Full-Stack Programming",
-            "items": ["JavaScript (ES6)", "Node.js", "Express", "EJS", "MongoDB", "Vite", "JWT auth", "Stripe"],
+            "items": ["JavaScript","TypeScript","ES6", "Node.js", "Express.js", "Next.js" "EJS", "MongoDB", "MySQL", "Vite", "JWT auth", "Stripe"],
         },
         {
             "group": "AI",
@@ -706,7 +708,7 @@ def home(request):
         """I started builing educational software in 2010 with Code Hero, a game that reprograms itself while you play. Since then I've published 5 titles including MathBreakers, Santa's Last Stand, Bank Defense, SpaceFrogVR, and NumberSpark.
         As a co-founder, I've helped bring startups to funding or major growth events including StarCoach AI, VantagePoint, Havik, Humon Automation, and Primer Labs.""",
         "Between ventures, I've written music, traveled abroad, lived in Chile and Thailand, taught English in China, and started a <a target='_blank' href='https://manaretreat.center'>retreat center</a> in Puerto Rico.",
-        "Today I'm producing MathBreakers 2, a browser-based 3D platform for grades 3-8 with a built-in user generated content platform. Check it out <a target='_blank' href='https://mathbreakers.com'>here</a>.",
+        "Today I'm producing <a target='_blank' href='https://mathbreakers.com'>MathBreakers</a>, a browser-based 3D platform for grades 3-8 with a built-in user generated content platform.",
     ]
 
     obj['facts'] = [

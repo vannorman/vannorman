@@ -17,6 +17,10 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Zen+Dots&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/portfolio.css' %}">
+
+    <link rel="icon" type="image/svg+xml" href="{% static 'img/favicon.svg' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon-32.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/apple-touch-icon.png' %}">
 </head>
 <body>
     <a class="skip" href="#work">Skip to projects</a>
@@ -67,28 +71,57 @@
                     <svg class="hero-art" viewBox="0 0 420 380" role="img" aria-label="Cartoon cube wearing a VR headset, surrounded by floating math tiles">
                         <ellipse class="ground" cx="210" cy="338" rx="112" ry="16"/>
 
+                                              <defs>
+                            <path id="glyph-sqrt2" d="M10 36 L16 32 L23 48 L31 16 L54 16 M37 27 Q38 21 44 21 Q51 21 51 27 Q51 32 44 37 L37 45 L52 45"/>
+                            <path id="glyph-5" d="M42 14 L24 14 L22 30 Q27 27 32 27 Q44 27 44 38 Q44 50 32 50 Q24 50 20 45"/>
+                            <path id="glyph-e" d="M16 30 L42 30 Q42 17 29 17 Q16 17 16 30 Q16 43 29 43 Q37 43 41 38"/>
+                            <path id="glyph-pi" d="M12 20 Q14 16 20 16 L46 16 M23 17 Q22 32 17 44 M36 17 L36 38 Q36 44 42 43"/>
+                            <path id="glyph-inf" d="M26 26 C20 16 8 16 8 26 C8 36 20 36 26 26 C32 16 44 16 44 26 C44 36 32 36 26 26 Z"/>
+                        </defs>
+
                         <g transform="translate(34 64) rotate(-12)">
                             <g class="float">
                                 <rect class="o" width="64" height="64" rx="14" fill="#FFFFFF"/>
-                                <text class="tile-text" x="32" y="45">+</text>
+                                <g fill="none" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+                                    <use href="#glyph-sqrt2" x="2.5" y="2.5" stroke="#3E8EF7"/>
+                                    <use href="#glyph-sqrt2" stroke="#1B2440"/>
+                                </g>
                             </g>
                         </g>
                         <g transform="translate(326 54) rotate(10)">
                             <g class="float float-2">
                                 <rect class="o" width="64" height="64" rx="14" fill="#2EC4A0"/>
-                                <text class="tile-text" x="32" y="45">&#189;</text>
+                                <g fill="none" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+                                    <use href="#glyph-5" x="2.5" y="2.5" stroke="#FFFFFF"/>
+                                    <use href="#glyph-5" stroke="#1B2440"/>
+                                </g>
                             </g>
                         </g>
                         <g transform="translate(336 236) rotate(-8)">
                             <g class="float float-3">
                                 <rect class="o" width="58" height="58" rx="12" fill="#FFFFFF"/>
-                                <text class="tile-text" x="29" y="41">&#215;</text>
+                                <g fill="none" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+                                    <use href="#glyph-e" x="2.5" y="2.5" stroke="#FFC93C"/>
+                                    <use href="#glyph-e" stroke="#1B2440"/>
+                                </g>
                             </g>
                         </g>
                         <g transform="translate(28 232) rotate(9)">
                             <g class="float float-2">
                                 <rect class="o" width="58" height="58" rx="12" fill="#9CC8FF"/>
-                                <text class="tile-text" x="29" y="41">7</text>
+                                <g fill="none" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+                                    <use href="#glyph-pi" x="2.5" y="2.5" stroke="#FFFFFF"/>
+                                    <use href="#glyph-pi" stroke="#1B2440"/>
+                                </g>
+                            </g>
+                        </g>
+                        <g transform="translate(248 10) rotate(6)">
+                            <g class="float float-3">
+                                <rect class="o" width="52" height="52" rx="12" fill="#FFC93C"/>
+                                <g fill="none" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+                                    <use href="#glyph-inf" x="2" y="2" stroke="#FFFFFF"/>
+                                    <use href="#glyph-inf" stroke="#1B2440"/>
+                                </g>
                             </g>
                         </g>
 
@@ -184,7 +217,7 @@
                             {% endif %}
 
                             {% if work.link %}
-                            <a class="card-link" href="{{ work.link }}" target="_blank" rel="noopener">Visit {{ work.title }}</a>
+                            <a class="card-link" href="{{ work.link }}" target="_blank" rel="noopener">Visit {{ work.org }}</a>
                             {% endif %}
                         </div>
                     </article>
@@ -197,7 +230,7 @@
             <div class="wrap narrow">
                 <div class="section-head">
                     <h2 id="exp-title">Experience</h2>
-                    <p>Founding, building, and selling across enterprise software, games, and AI.</p>
+                    <p>Founding, building, and selling across AI, enterprise and 3D applications.</p>
                 </div>
                 <ol class="timeline">
                     {% for job in experience %}
