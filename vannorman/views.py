@@ -623,7 +623,7 @@ def home(request):
             "org": "ManaBorn Studios LLC",
             "role": "Founder",
             "date": "2026 - present",
-            "summary": "Relaunching MathBreakers as a browser-based 3D math platform for grades 3-8. Full-stack development, DevOps, and go-to-market. Manages a team of 4.",
+            "summary": "Relaunching MathBreakers as a browser-based 3D math platform with UGC engine. Manages a team of 4.",
         },
         {
             "org": "StarCoach AI Inc.",
@@ -647,19 +647,19 @@ def home(request):
             "org": "InContext Solutions",
             "role": "Software Engineer",
             "date": "2019",
-            "summary": "Unity VR retail training platform on an 8-person engineering team.",
+            "summary": "Unity VR retail data platform for Retailers and CPG clients including Walmart, Home Depot and Coca Cola.",
         },
         {
             "org": "Vantage Point Inc.",
             "role": "Interim CTO",
             "date": "",
-            "summary": "Immersive VR workplace training.",
+            "summary": "Immersive VR workplace training. Helped secure 1.5M funding round.",
         },
         {
             "org": "Havik Inc.",
             "role": "Interim CTO",
             "date": "",
-            "summary": "Immersive technology venture.",
+            "summary": "Immersive military training. Helped secure Phase I military contract.",
         },
         {
             "org": "Imaginary Number Inc.",
