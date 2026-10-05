@@ -155,7 +155,7 @@ def home(request):
         "name": "Charlie Van Norman",
         "first_name": "Charlie",
         "headline": "I build and sell technology people love.",
-        "summary": "Founder, math geek, and game developer. 15+ years across enterprise systems, VR training, 3D applications, and AI.",
+        "summary": "Founder, math geek, and game developer. 15+ years across games, enterprise systems, VR training, and AI.",
         "availability": "Open to founding, sales, and engineering roles.",
         "location": "Austin, TX",
         "email": "charlie@vannorman.ai",
