@@ -492,8 +492,8 @@ def home(request):
             {"img": "mm_3.jpg"},
             {"img": "mm_4.jpg"},
         ],
-        "tags": ["xr"],
-        "stack": ["Unity3D","C#","SDK", "AR","ai"],
+        "tags": ["xr", "ai"],
+        "stack": ["Unity3D","C#","SDK", "AR"],
     })
     obj['works'].append({
         "title": "Magic Hands",
