@@ -212,7 +212,7 @@ def home(request):
             {"img": "mb_3.jpg"},
             {"img": "mb_4.jpg"},
         ],
-        "tags": ["games", "edtech"],
+        "tags": ["games", "edtech", "ai", "data"],
         "stack": ["ES6","TypeScript","Node.js","WebGL"],
     })
     obj['works'].append({
@@ -233,7 +233,7 @@ def home(request):
             "Led a team of 3; interviewed, hired, and trained 2 engineers",
         ],
         "images": [],
-        "tags": ["ai", "edtech"],
+        "tags": ["ai", "edtech", "data"],
         "stack": ["LLM agents", "Agent orchestration", "Web platform", "Express.js", "React"],
     })
     
@@ -322,7 +322,7 @@ def home(request):
             {"img": "hi3.png"},
             {"img": "hi4.png"},
         ],
-        "tags": ["robotics"],
+        "tags": ["robotics", "ai","data"],
         "stack": ["Industrial robotics","video streaming","Vive controller interface", "C++ ROS/Rosbridge (WebSocket/JSON)","ROS#"],
     })
     obj['works'].append({
@@ -457,7 +457,7 @@ def home(request):
             "Feature development as an individual contributor on an 8-person engineering team",
         ],
         "images": [],
-        "tags": ["xr", "training"],
+        "tags": ["xr", "training", "ai", "data"],
         "stack": ["Data","Visualization","Unity", "C#", "VR","Docker","Azure","DevOps"],
     })
     
@@ -493,7 +493,7 @@ def home(request):
             {"img": "mm_4.jpg"},
         ],
         "tags": ["xr"],
-        "stack": ["Unity3D","C#","SDK", "AR"],
+        "stack": ["Unity3D","C#","SDK", "AR","ai"],
     })
     obj['works'].append({
         "title": "Magic Hands",
