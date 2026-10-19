@@ -16,11 +16,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Zen+Dots&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'css/portfolio.css' %}">
+    <link rel="stylesheet" href="{% static 'css/portfolio.css' %}?v=d06d254e8f1e">
 
-    <link rel="icon" type="image/svg+xml" href="{% static 'img/favicon.svg' %}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon-32.png' %}">
-    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/svg+xml" href="{% static 'img/favicon.svg' %}?v=d7fdae4b773b">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon-32.png' %}?v=d7fdae4b773b">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/apple-touch-icon.png' %}?v=d7fdae4b773b">
 </head>
 <body>
     <a class="skip" href="#work">Skip to projects</a>
@@ -28,11 +28,9 @@
     <header class="nav">
         <div class="wrap nav-inner">
             <a class="brand" href="#top">
-                <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
-                    <polygon class="o" points="20,4 36,12 20,20 4,12" fill="#FFE08A"/>
-                    <polygon class="o" points="4,12 20,20 20,36 4,28" fill="#FFC93C"/>
-                    <polygon class="o" points="20,20 36,12 36,28 20,36" fill="#F0A92E"/>
-                </svg>
+                <span class="brand-avatar" aria-hidden="true">
+                    <img src="{% static 'img/avatar.jpg' %}" alt="" width="1008" height="1008" decoding="async">
+                </span>
                 <span>{{ profile.name }}</span>
             </a>
             <nav aria-label="Sections">
