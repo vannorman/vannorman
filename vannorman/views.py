@@ -154,7 +154,7 @@ def home(request):
     obj['profile'] = {
         "name": "Charlie Van Norman",
         "first_name": "Charlie",
-        "headline": "I build and sell technology people love.",
+        "headline": "Building and selling technology people love.",
         "summary": "Founder, math geek, and game developer. 15+ years across games, enterprise systems, VR training, and AI.",
         "availability": "Open to founding, sales, and engineering roles.",
         "location": "Austin, TX",
